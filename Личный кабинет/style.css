@@ -1,0 +1,932 @@
+@import url("font/stylesheet.css");
+
+* {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-style: normal;
+    color: #263238;
+    line-height: normal;
+}
+/* Общие классы */
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
+}
+.disable-flex-wrap {
+    flex-wrap: nowrap !important;
+}
+.br-none {
+    border: none !important;
+}
+.box-shadow-none {
+    box-shadow: none !important;
+}
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+.flex-row {
+    display: grid;
+
+    @media(max-width: 576px) {
+        display: flex;
+    }
+}
+.border-radius-24 {
+    border-radius: 24px;
+}
+.appearance-none {
+    appearance: none;
+    -webkit-appearance: none; /* Убирает стрелку в Safari */
+    -moz-appearance: none; /* Убирает стрелку в Firefox */
+}
+.br-1 {
+    border: 1px solid rgba(38, 50, 56, 0.1) !important;
+}
+.pt-36 {
+    padding-top: 2.25rem;
+}
+.pb-36 {
+    padding-bottom: 2.25rem;
+}
+.pt-20 {
+    padding-top: 1.25rem;
+}
+.pt-16 {
+    padding-top: 1rem;
+}
+.pt-12 {
+    padding-top: 0.75rem;
+}
+.mt-sm-24 {
+    @media(max-width: 991px) {
+        margin-top: 1.5rem;
+    }
+}
+.mb-sm-24 {
+    @media(max-width: 991px) {
+        margin-bottom: 1.5rem;
+    }
+}
+.mt-36 {
+    margin-top: 2.25rem !important;
+}
+.mt-20 {
+    margin-top: 1.25rem;
+}
+.mt-xs-12 {
+    @media(max-width: 576px) {
+        margin-top: 0.75rem !important;
+    }
+}
+.mt-16 {
+    margin-top: 1rem;
+}
+.mt-12 {
+    margin-top: 0.75rem;
+}
+
+
+/* Тексты */
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px !important;
+
+    @media(max-width: 576px) {
+        font-size: 12px !important;
+    }
+}
+.fs-15 {
+    font-size: 15px;
+
+    @media(max-width: 576px) {
+        font-size: 13px !important;
+    }
+}
+.fs-16 {
+    font-size: 16px !important;
+
+    @media(max-width: 576px) {
+        font-size: 14px !important;
+    }
+}
+.fs-18 {
+    font-size: 18px;
+
+    @media(max-width: 576px) {
+        font-size: 16px !important;
+    }
+}
+.fs-20 {
+    font-size: 20px;
+
+    @media(max-width: 576px) {
+        font-size: 18px !important;
+    }
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.lh-15 {
+    line-height: 15px;
+}
+.lh-18 {
+    line-height: 18px;
+}
+.lh-20 {
+    line-height: 20px;
+}
+.lh-24 {
+    line-height: 24px;
+}
+.text-red {
+    color: rgba(107, 10, 19, 1) !important;
+}
+.text-blue {
+    color: rgba(7, 78, 140, 1) !important;
+}
+.text-orange {
+    color: rgba(255, 137, 6, 1) !important;
+}
+.underline {
+    text-decoration: underline;
+}
+.opacity-70 {
+    opacity: 70%;
+}
+.gradient-border {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #FAB336 0%, #F46F40 100%) border-box;
+}
+
+
+
+/* Адаптивная левая панель*/
+#mobile-menu {
+    position: fixed;
+    display: none;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    z-index: 10000;
+    transition: transform 0.5s ease;
+
+    @media(max-width: 991px) {;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.rotate {
+    transform: rotate(180deg); /* Поворот на 90 градусов */
+}
+
+.step-item.page-item {
+    @media(max-width: 576px) {
+        width: 100%;
+    }
+}
+/* Левая панель */
+.left-panel {
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    z-index: 1000;
+
+    @media(max-width: 991px) {
+        display: none !important;
+        border-radius: 0;
+        overflow-y: auto;
+        height: 100%;
+        position: absolute;
+    }
+}
+.left-panel.show {
+    @media(max-width: 991px) {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+.left-panel-item {
+    cursor: pointer;
+}
+.left-panel-item.active {
+    background: linear-gradient(90deg, rgba(250, 179, 54, 0.1) 0%, rgba(244, 111, 64, 0.1) 100%);
+    font-weight: 600;
+}
+.left-panel-last-elem {
+    border-radius: 0 0 20px 20px;
+}
+.left-panel-first-elem {
+    border-radius: 0 20px 0 0;
+}
+
+
+/* Правая панель */
+.right-panel-item {
+    display: none;
+}
+.right-panel {
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+
+    padding: 3rem;
+
+    @media(max-width: 576px) {
+        padding: 1.5rem;
+    }
+}
+
+/* Начальная страница */
+.start-panel {
+    background: rgba(249, 250, 252, 1);
+    border-radius: 20px;
+    padding: 3rem;
+
+    @media(max-width: 576px) {
+        padding: 1.5rem;
+    }
+}
+.warning-block {
+    border-radius: 20px;
+    background: rgba(248, 215, 218, 0.7);
+}
+
+
+/* Кнопки */
+.left-button {
+    border-radius: 20px 0 0 20px !important;
+}
+.right-button {
+    border-radius: 0 20px 20px 0 !important;
+}
+.orange-fill-button {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: white;
+}
+.orange-border-button {
+    border-radius: 20px;
+    border: 1px solid rgba(254, 135, 5, 1);
+    background: rgba(255, 255, 255, 0.93);
+    color: rgba(254, 135, 5, 1);
+
+}
+
+
+/* Навигационные табы */
+#right-panel-tabs,
+#right-panel-tabs .nav-tabs {
+    display: none;
+}
+#right-panel-tabs .nav-tabs {
+    border-bottom: 0;
+}
+#right-panel-tabs .nav-link {
+    border-radius: 20px 20px 0 0;
+    background: rgba(249, 250, 252, 1);
+    border: 1px solid rgba(38, 50, 56, 0.1);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(143, 150, 154, 0.7) !important;
+    padding: 1rem 1.25rem 0.75rem 0.94rem;
+    border-bottom: 0;
+}
+#right-panel-tabs .nav-link.active {
+    border-radius: 20px 20px 0 0;
+    background: white;
+    display: block;
+    border: none;
+    color: rgba(38, 50, 56, 1) !important;
+    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Инпуты и Селекты */
+input[type="password"]:focus,
+select:focus{
+    outline: 1px solid rgba(255, 137, 6, 1) !important;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="date"]::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    opacity: 70% !important;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border: 1px solid rgba(255, 137, 6, 1) !important;
+    box-shadow: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.09) !important;
+    border-radius: 14px !important;
+    padding: 0.94rem 1.25rem !important;
+}
+textarea {
+    resize: none !important;
+}/* стрелка select */
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-width: 8px 6px 0 6px !important;
+    margin-top: 22px !important;
+    margin-left: -20px !important;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-width: 0 6px 8px 6px !important;
+    margin-top: 22px !important;
+    margin-left: -20px !important;
+}
+.select2-selection__rendered {
+    padding: 0 !important;
+    line-height: 20px !important;
+}
+.select2.select2-container {
+    width: 100% !important;
+}
+.select2-selection__placeholder {
+    font-size: 14px !important;
+    opacity: 70% !important;
+}
+.select2-selection__rendered {
+    font-size: 14px !important;
+}
+/* select2 dropdown-menu */
+.select2-dropdown.select2-dropdown--below {
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.09);
+    border-left: 1px solid rgba(38, 50, 56, 0.1);
+    border-right: 1px solid rgba(38, 50, 56, 0.1);
+    border-bottom: 1px solid rgba(38, 50, 56, 0.1);
+    border-radius: 0 0 14px 14px;
+    padding-bottom: 16px;
+}
+.select2-results__option.select2-results__option--selectable {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    opacity: 0.8;
+}
+.select2-container--default .select2-results__option--selected {
+    background: linear-gradient(90deg, rgba(250, 179, 54, 0.1) 0%, rgba(244, 111, 64, 0.1) 100%) !important;
+    font-weight: 600;
+}
+.select2-results__option.select2-results__option--selectable.select2-results__option--highlighted {
+    background-color: transparent !important;
+}
+
+
+/* Чекбоксы */
+input[type="checkbox"] {
+    appearance: none !important;
+}
+input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('img/not-checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+input[type="checkbox"]:checked {
+    border: none;
+    background-image: url('img/checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Радиокнопки */
+.form_radio input[type=radio] {
+    display: none;
+}
+.form_radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    user-select: none;
+}
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url('img/radio.svg') 0 0 no-repeat;
+}
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+    background: url('img/radio-checked.svg') 0 0 no-repeat;
+}
+/* Hover */
+.form_radio label:hover:before {
+    filter: brightness(120%);
+}
+
+
+/* Замена стандартного глаза у input:password */
+input::-ms-reveal {
+    display: none;
+}
+input::-webkit-textfield-decoration-container {
+    display: none;
+}
+.password-container {
+    position: relative;
+}
+.password-container i {
+    position: absolute;
+    right: 1.3rem;
+    top: 0.9rem;
+    cursor: pointer;
+    opacity: 50%;
+
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+/* Пагинация */
+.pagination .page-link.fw-600 {
+    padding: 0.625rem 0.9rem;
+    border: 0;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination .page-link.step {
+    border: none;
+}
+.pagination {
+    @media(max-width: 576px) {
+        justify-content: left;
+    }
+}
+.active-tag,
+.active-tag:hover,
+.active-tag:focus {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    z-index: 10;
+}
+
+
+/* СТИЛИЗАЦИЯ ТАБЛИЦ */
+
+/* скролл у таблицы */
+.table-overflow {
+    display: block;
+    overflow-x: auto;
+}
+.table-overflow tr {
+    flex-wrap: nowrap;
+}
+.table-overflow::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+.table-overflow::-webkit-scrollbar-track {
+    background: transparent;
+}
+.table-overflow::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #FAB336 0%, #F46F40 100%);
+    border-radius: 5px;
+    border: 0 solid #FFFFFF;
+}
+.table-overflow::-webkit-scrollbar-button {
+    display: none;
+}
+/* Отступ у thead */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /
+}
+table thead{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1rem;
+}
+table tbody{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+/* thead */
+table thead td {
+    padding: 0.875rem 0.5rem !important;
+    border-top: 1px solid rgba(222, 226, 230, 1);
+    border-right: 1px solid rgba(222, 226, 230, 1);
+    border-bottom: 1px solid rgba(222, 226, 230, 1);
+}
+/* Скругленные углы thead */
+table thead td:first-child {
+    border-left: 1px solid rgba(222, 226, 230, 1);
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+table thead td:last-child {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+/* tbody */
+table tbody td {
+    padding: 0.875rem 0.5rem !important;
+    background: transparent;
+    word-wrap: break-word;
+
+    border-bottom: 1px solid rgba(222, 226, 230, 1);
+    border-right: 1px solid rgba(222, 226, 230, 1);
+}
+table tbody td:first-child {
+    border-left: 1px solid rgba(222, 226, 230, 1);
+}
+table tbody tr:first-child td {
+    border-top: 1px solid rgba(222, 226, 230, 1);
+}
+/* Скругленные углы tbody */
+table tbody tr:first-child td:first-child {
+    /* border-radius: 24px 0 0 0; */
+    border-top-left-radius: 24px;
+}
+table tbody tr:first-child td:last-child {
+    /* border-radius: 0 24px 0 0; */
+    border-top-right-radius: 24px;
+}
+table tbody tr:last-child td:last-child {
+    /* border-radius: 0 0 24px 0; */
+    border-bottom-right-radius: 24px;
+}
+table tbody tr:last-child td:first-child {
+    /* border-radius: 0 0 0 24px; */
+    border-bottom-left-radius: 24px;
+}
+table tbody .del-radius td {
+    border-radius: 0 !important;
+}
+
+
+/* Стилизация скролла */
+.left-panel::-webkit-scrollbar,
+.select2-results__options::-webkit-scrollbar {
+    width: 8px;
+    padding-right: 10px;
+}
+.left-panel::-webkit-scrollbar-track,
+.select2-results__options::-webkit-scrollbar-track {
+    background: transparent;
+}
+.left-panel::-webkit-scrollbar-thumb,
+.select2-results__options::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #FAB336 0%, #F46F40 100%);
+    border-radius: 5px;
+    border: 0 solid #FFFFFF;
+}
+.left-panel::-webkit-scrollbar-button,
+.select2-results__options::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+/* Карточки */
+.course-card {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 26px;
+    border: 2px solid;
+    border-image-source: linear-gradient(82.51deg, rgba(127, 147, 234, 0.15) 4.18%, rgba(105, 188, 229, 0.03) 40.11%);
+
+    padding: 1.5rem 1rem;
+}
+.course-card .img-block img {
+    border-radius: 12px;
+}
+.course-card .course-tag {
+    background: linear-gradient(180deg, rgba(250, 179, 54, 0.25) 0%, rgba(244, 111, 64, 0.25) 100%);
+    box-shadow: 0 0 15px 0 rgba(0, 77, 215, 0.1);
+    border-radius: 100px;
+    padding: 0.25rem 0.625rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+.course-card .col-auto {
+    padding: 0 0 !important;
+}
+.course-card .img-block .img-tag {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    box-shadow: 0 0 7px 0 rgba(0, 77, 215, 0.2);
+    padding: 0.25rem 0.625rem;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: white
+}
+.webinar-card {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.webinar-card .text-block {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.webinar-card .time {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.webinar-card .time div {
+    background: rgba(255, 137, 6, 1);
+    border-radius: 36px;
+    padding: 0.625rem 0.75rem;
+}
+.instruction-card {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.instruction-card .file-type {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    @media(max-width: 1200px) {
+        height: 90px;
+    }
+}
+.instruction-card .instruction-name {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+.video-instruction-card {
+    border-radius: 20px;box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    height: 100%;
+}
+.video-instruction-card .time {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 36px;
+    background-color: white;
+    padding: 0.625rem 0.75rem;
+}
+
+
+
+/* Адаптивные табы */
+#instructions-tabs .nav-item,
+#teacher-training-tabs .nav-item,
+#working-with-publications-tabs .nav-item {
+    @media(max-width: 768px) {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+#instructions-tabs .nav-item .nav-link,
+#teacher-training-tabs .nav-item .nav-link,
+#working-with-publications-tabs .nav-item .nav-link {
+    @media(max-width: 768px) {
+        border-radius: 0 0 0 0;
+    }
+}
+#new-arrivals-tabs .nav-item {
+    @media(max-width: 1200px) {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+#new-arrivals-tabs .nav-item .nav-link {
+    @media(max-width: 1200px) {
+        border-radius: 0 0 0 0;
+    }
+}
+#recommended-literature-tabs .nav-item {
+    @media(max-width: 1400px) {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+#recommended-literature-tabs .nav-item .nav-link {
+    @media(max-width: 1400px) {
+        border-radius: 0 0 0 0;
+    }
+}
+
+
+
+/* Слайдер даты */
+.date-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-win {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    gap: 72px;
+}
+.slider-control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.date-slider .slider-item {
+    width: auto;
+    font-size: 20px;
+
+    flex-grow: 0;
+    flex-shrink:0;
+}
+.date-slider .sl-btn {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: white;
+}
+.slider-day .weekend {
+    color: rgba(185, 12, 12, 1) !important;
+}
+
+
+
+/* РАЗДЕЛЫ */
+
+/* Профили */
+#my-profile-form .edit-block {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#my-profile-form .online-block {
+    top: 16px;
+    left: 16px;
+    position: absolute;
+
+    @media(max-width: 576px) {
+        top: 30px;
+        left: 30px;
+    }
+}
+#my-profile-form .edit-btn {
+    top: 16px;
+    right: 16px;
+    position: absolute;
+    padding: 0;
+
+    @media(max-width: 576px) {
+        top: 30px;
+        right: 30px;
+    }
+}
+#my-profile-form button[type="submit"] {
+    border: none;
+    background: transparent;
+}
+/* Смена пароля */
+.password-strength .grey {
+    background: rgba(217, 217, 217, 1);
+    height: 4px;
+    border-radius: 2px;
+}
+.password-strength .current {
+    position: absolute;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #FAB336 0%, #F46F40 100%);
+    height: 4px;
+    top: 0;
+}
+/* Библиотека */
+#library:hover + #libraryMenu {
+    display: block;
+}
+#libraryMenu:hover {
+    display: block;
+}
+#libraryMenu {
+    width: 100%;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 7px 14px 22.1px 0 rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu .left-panel-item.active {
+    background: white;
+}
+.dropdown-item:active {
+    background: white !important;
+}
+.dropdown-menu {
+    z-index: 1001;
+}
+/* Библиотека -> Новые поступления -> Сводный по книгам */
+.table.summary-of-books td{
+    padding: 0.875rem 1.5rem !important;
+}
+/* select2 */
+.select-with-no-arrow + .select2-container .select2-selection--single .select2-selection__arrow b{
+    display: none;
+}
+.select2-selection.select2-selection--single[aria-expanded='true'] {
+    border-radius: 14px 14px 0 0 !important;
+    border-bottom: none !important;
+}
+.select2-container--default .select2-selection--single {
+    margin-top: 0.75rem;
+    border-radius: 14px !important;
+    border: 1px solid rgba(38, 50, 56, 0.1) !important;
+    padding: 0.94rem 1.25rem;
+    height: 52.68px !important;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.09);
+}
+.current-page {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.09);
+    padding: 0.75rem 0.625rem;
+    border-radius: 12px;
+}
+.current-page a {
+    display: inline-flex;
+}
+#online-courses-search-bar {
+    box-shadow: none !important;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 0;
+
+    border-radius: 10px 0 0 10px !important;
+
+    border-style: solid;
+    border-color: rgba(206, 212, 218, 1);
+}
+.search-icon-block {
+    padding: 10px 16px 15px 0;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+
+    border-top: 1px;
+    border-bottom: 1px;
+    border-right: 1px;
+    border-left: 0;
+
+    border-radius: 0 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(206, 212, 218, 1);
+}
+#online-courses-search-bar {
+    padding-right: 0 !important;
+}
+#online-courses-search-bar:focus {
+    border-right: 0 !important;
+    border-color: rgba(255, 137, 6, 1) !important;
+}
+#online-courses-search-bar:focus + .search-icon-block {
+    border-color: rgba(255, 137, 6, 1) !important;
+}
+#instructions-instructions iframe {
+    height: 230px;
+}
+#ebs-in-lms-tabs-content iframe {
+    height: 450px;
+
+    @media(max-width: 991px) {
+        height: 300px;
+    }
+}
+.text-support-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media(max-width: 1400px) {
+        display: none;
+    }
+}
+
+
+
+
+
