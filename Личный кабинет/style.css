@@ -285,7 +285,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .left-panel-item.active {
     background: linear-gradient(90deg, rgba(250, 179, 54, 0.1) 0%, rgba(244, 111, 64, 0.1) 100%);
-    font-weight: 600;
+}
+.left-panel-item.active span {
+    font-weight: 600 !important;
 }
 .left-panel-last-elem {
     border-radius: 0 0 20px 20px;
@@ -886,6 +888,12 @@ table tbody .del-radius td {
     top: 0;
 }
 /* Библиотека */
+#library .arrow {
+    display: none;
+}
+#library.active .arrow {
+    display: block;
+}
 #library:hover + #libraryMenu {
     display: block;
 }

@@ -16,7 +16,7 @@ function makeActiveLeftPanelItem() {
         $('#right-panel-tabs').show();
     }
 
-    // Для иконок адапативной верстки
+    // ID для иконок адаптивной верстки
     let id = $(this).attr('id');
 
     if (id.endsWith('-mobile')) {
@@ -123,6 +123,9 @@ $(document).ready(function() {
     changeEye('#togglePassword-1', '#password');
     changeEye('#togglePassword-2', '#repeat-password');
 });
+
+
+// Мобильное меню
 $(document).ready(function() {
    $('#mobile-menu i').click(function () {
        $('.icon').toggleClass('show');
@@ -134,4 +137,33 @@ $(document).ready(function() {
        $('#overlay').toggleClass('d-none');
        $('body').toggleClass('overflow-hidden');
    });
+
+
+
+});
+
+
+// Стрелка у вкладки Библиотека
+$(document).ready(function() {
+    $('#libraryMenu').hover(
+        function() {
+            // Поворачиваем элемент на 180 градусов при наведении
+            $('#library .arrow').css('transform', 'rotate(180deg)');
+        },
+        function() {
+            // Возвращаем элемент в исходное положение при уходе курсора
+            $('#library .arrow').css('transform', 'rotate(0deg)');
+        }
+    );
+
+    $('#library').hover(
+        function() {
+            // Поворачиваем элемент на 180 градусов при наведении
+            $('#library .arrow').css('transform', 'rotate(180deg)');
+        },
+        function() {
+            // Возвращаем элемент в исходное положение при уходе курсора
+            $('#library .arrow').css('transform', 'rotate(0deg)');
+        }
+    );
 });
