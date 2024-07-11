@@ -16,7 +16,7 @@ function makeActiveLeftPanelItem() {
         $('#right-panel-tabs').show();
     }
 
-    // Для иконок адапативной верстки
+    // ID для иконок адаптивной верстки
     let id = $(this).attr('id');
 
     if (id.endsWith('-mobile')) {

@@ -886,6 +886,12 @@ table tbody .del-radius td {
     top: 0;
 }
 /* Библиотека */
+#library span + img {
+    display: none;
+}
+#library.active span + img {
+    display: block;
+}
 #library:hover + #libraryMenu {
     display: block;
 }
