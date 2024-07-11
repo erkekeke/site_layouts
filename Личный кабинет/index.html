@@ -14,9 +14,53 @@
 </head>
 <body>
 <main>
-    <button class="br-none" id="mobile-menu" style="background-color: transparent">
-        <i class="fa fa-bars fs-20" aria-hidden="true"></i>
-    </button>
+    <div class="position-relative">
+        <div id="overlay" class="d-none"></div>
+        <button class="br-none" id="mobile-menu" style="background-color: transparent">
+            <span class="row gap-4">
+                <i class="fa fa-bars fs-20 w-auto d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+
+                <span class="icon left-panel-item" id="profile-mobile">
+                    <img src="img/left-panel-icon-1.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="user-management-mobile">
+                    <img src="img/left-panel-icon-2.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="ebs-in-lms-mobile">
+                    <img src="img/left-panel-icon-3.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="working-with-publications-mobile">
+                    <img src="img/book-marked.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="new-arrivals-mobile">
+                    <img src="img/book-down.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="recommended-literature-mobile">
+                    <img src="img/book-copy.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="excluded-editions-mobile">
+                    <img src="img/book-off.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="books-mobile">
+                    <img src="img/left-panel-icon-5.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="applications-in-library-mobile">
+                    <img src="img/left-panel-icon-6.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="teacher-training-mobile">
+                    <img src="img/left-panel-icon-7.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="mobile-mobile">
+                    <img src="img/left-panel-icon-8.svg" alt="">
+                </span>
+                <span class="icon left-panel-item" id="instructions-mobile">
+                    <img src="img/left-panel-icon-9.svg" alt="">
+                </span>
+
+
+            </span>
+        </button>
+    </div>
     <div class="container py-5">
         <div class="row m-auto">
             <div class="col-lg-3">
@@ -38,6 +82,7 @@
                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="img/left-panel-icon-4.svg" alt="">
                             <span class="fs-16 lh-20 ps-2 w-100 text-left">Библиотека</span>
+
                         </div>
                         <div class="dropdown-menu" id="libraryMenu" aria-labelledby="library">
                             <div class="d-flex align-items-center left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="working-with-publications">
@@ -183,7 +228,7 @@
                         </li>
                     </ul>
 
-                    <!-- Табы для&nbsp;Библиотека -> Работа с изданиями -->
+                    <!-- Табы для Библиотека -> Работа с изданиями -->
                     <ul class="nav nav-tabs" id="working-with-publications-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link fs-14 active" id="favourites-tab" data-bs-toggle="tab" data-bs-target="#favourites"

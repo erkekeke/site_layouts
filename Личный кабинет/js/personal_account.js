@@ -16,13 +16,20 @@ function makeActiveLeftPanelItem() {
         $('#right-panel-tabs').show();
     }
 
+    // Для иконок адапативной верстки
+    let id = $(this).attr('id');
+
+    if (id.endsWith('-mobile')) {
+        id = id.slice(0, -7);  // Удаляем последние 7 символов ('-mobile')
+    }
+
     // Смена табов в правой панели
     $('#right-panel-tabs .nav-tabs').hide();
-    $('#' + $(this).attr('id') + '-tabs').css('display', 'flex');
+    $('#' + id + '-tabs').css('display', 'flex');
 
     // Смена контента в правой панели
     $('.right-panel-item').hide();
-    $('#' + $(this).attr('id') + '-content').show();
+    $('#' + id + '-content').show();
 }
 
 /* checkPasswordStrength - функция для проверки сложности пароля */
@@ -78,9 +85,6 @@ function initSelect(tag, placeholder="") {
 }
 
 $(document).ready(function () {
-
-
-
     // Подключение функционала левой панели
     $('.left-panel-item').click(makeActiveLeftPanelItem);
 
@@ -120,8 +124,14 @@ $(document).ready(function() {
     changeEye('#togglePassword-2', '#repeat-password');
 });
 $(document).ready(function() {
-   $('#mobile-menu').click(function () {
-       $('.left-panel').toggleClass('show');
+   $('#mobile-menu i').click(function () {
+       $('.icon').toggleClass('show');
        $(this).toggleClass('rotate');
+       $(this).toggleClass('fa-bars');
+       $(this).toggleClass('fa-times');
+
+       // Оверлей и блокировка скролла
+       $('#overlay').toggleClass('d-none');
+       $('body').toggleClass('overflow-hidden');
    });
 });
