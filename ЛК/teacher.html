@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <div class="position-relative">
+        <button class="br-none" id="mobile-menu" style="background-color: transparent">
+            <i class="fa fa-bars fs-20 w-auto d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="container py-5">
+        <div class="row m-auto">
+            <div class="col-lg-3">
+                <div class="left-panel bg-white flex-column">
+                    <a href="profile.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-first-elem" style="padding: 1.25rem 1rem;" id="profile">
+                        <img src="img/left-panel-icon-1.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Профиль</span>
+                    </a>
+                    <a href="user-management.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="user-management">
+                        <img src="img/left-panel-icon-2.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Управление<br>пользователями</span>
+                    </a>
+                    <a href="ebs-in-lms.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="ebs-in-lms">
+                        <img src="img/left-panel-icon-3.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с ЭБС в&nbsp;LMS<br>MOODLE</span>
+                    </a>
+                    <div class="dropend">
+                        <span type="button" class="w-100 d-flex justify-content-center align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="library"
+                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="img/left-panel-icon-4.svg" alt="">
+
+                            <span class="fs-16 lh-20 ps-2 w-100 text-left">Библиотека</span>
+                        </span>
+                        <div class="dropdown-menu" id="libraryMenu" aria-labelledby="library">
+                            <a href="working-with-publications.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="working-with-publications">
+                                <img src="img/book-marked.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с изданиями</span>
+                            </a>
+
+                            <a href="new-arrivals.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="new-arrivals">
+                                <img src="img/book-down.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Новые <br>поступления</span>
+                            </a>
+
+                            <a href="recommended-literature.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="recommended-literature">
+                                <img src="img/book-copy.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Рекомендуемая <br>литература</span>
+                            </a>
+
+                            <a href="excluded-editions.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="excluded-editions">
+                                <img src="img/book-off.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Исключенные <br>издания</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="books.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="books">
+                        <img src="img/left-panel-icon-5.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left" style="word-break: break-word">Книгообеспеченность</span>
+                    </a>
+                    <a href="applications.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="applications-in-library">
+                        <img src="img/left-panel-icon-6.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Заявки в&nbsp;библиотеку</span>
+                    </a>
+                    <a href="teacher.html" class="d-flex align-items-center text-decoration-none left-panel-item active" style="padding: 1.25rem 1rem;" id="teacher-training">
+                        <img src="img/left-panel-icon-7.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Обучение <br>преподавателей</span>
+                    </a>
+                    <a href="mobile.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="mobile">
+                        <img src="img/left-panel-icon-8.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Мобильное приложение</span>
+                    </a>
+                    <a href="instructions.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-last-elem" style="padding: 1.25rem 1rem;" id="instructions">
+                        <img src="img/left-panel-icon-9.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Инструкции</span>
+                    </a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="col-lg-9">
+                <div id="right-panel-tabs">
+                    <ul class="nav nav-tabs" id="teacher-training-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link fs-14 active" id="professional-development-tab" data-bs-toggle="tab" data-bs-target="#professional-development"
+                               type="button" role="tab" aria-controls="professional-development" aria-selected="true">
+                                Повышение квалификации
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" id="online-courses-tab" data-bs-toggle="tab" data-bs-target="#online-courses"
+                               type="button" role="tab" aria-controls="online-courses" aria-selected="true">
+                                Онлайн-курсы
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" id="webinars-tab" data-bs-toggle="tab" data-bs-target="#webinars"
+                               type="button" role="tab" aria-controls="webinars" aria-selected="true" onclick="dateSliderFunctional()">
+                                Вебинары
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-panel position-relative">
+                    <div class="right-panel-item" id="teacher-training-content">
+                        <div class="tab-content" id="teacher-training-tabs-content">
+                            <div class="tab-pane fade show active" id="professional-development" role="tabpanel"
+                                 aria-labelledby="professional-development-tab" tabindex="0">
+
+                                <div>
+                                    <h2 class="fw-600 fs-20 lh-24">
+                                        <span class="text-uppercase">IPR Education</span><br>
+                                        Учебный центр ООО Компании «Ай Пи Ар Медиа»
+                                    </h2>
+
+                                    <p class="fs-16 pt-36">
+                                        Мы знаем, как сделать обучение удобным, эффективным и&nbsp;надежным.
+                                        Поэтому разрабатываем специальные программы и&nbsp;курсы, а также проводим
+                                        обучающие вебинары. Все это развивает профессиональные компетенции и&nbsp;навыки
+                                        педагогов.
+                                    </p>
+                                </div>
+
+                                <div class="pt-5">
+                                    <h3 class="fs-20 fw-600">Обзор лучших курсов</h3>
+
+                                    <div class="pt-36">
+                                        <div class="row g-4">
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 2.25rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">10</a></li>
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            <div class="tab-pane fade show" id="online-courses" role="tabpanel"
+                                 aria-labelledby="online-courses-tab" tabindex="0">
+
+                                <form action="#">
+                                    <div class="row g-4">
+                                        <div class="col-xl-12">
+                                            <div class="d-flex">
+                                                <input type="text" class="form-control fs-14" id="online-courses-search-bar"
+                                                       placeholder="Поиск видеозаписей по названию...">
+                                                <div class="search-icon-block d-flex align-items-center justify-content-center">
+                                                    <button type="submit" class="br-none bg-white">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+
+                                                <button type="reset" class="bg-white br-none">
+                                                    <img src="img/btn-reset.svg" class="ps-4" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-12">
+                                            <label class="fw-600 fs-15" for="online-courses-course-holder">Держатель курса</label>
+
+                                            <select name="online-courses-course-holder" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="online-courses-course-holder">
+                                                <option></option>
+                                                <option value="not-active">1</option>
+                                                <option value="not-active">2</option>
+                                                <option value="not-active">3</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <div class="form_radio" style="margin-top: 1.75rem;">
+                                                        <input id="catalog-search" type="radio" name="radio" value="catalog-search">
+                                                        <label for="catalog-search">Искать во всем каталоге</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="d-flex align-items-center" style="margin-top: 1.75rem;">
+                                                        <input type="checkbox" name="user-agreement" id="online-courses-free">
+                                                        <label for="online-courses-free" class="fw-500 fs-14 opacity-70">
+                                                            Бесплатный
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="d-flex align-items-center" style="margin-top: 1.75rem;">
+                                                        <input type="checkbox" name="user-agreement" id="online-courses-paid">
+                                                        <label for="online-courses-paid" class="fw-500 fs-14 opacity-70">
+                                                            Платный
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6">
+                                            <label class="fw-600 fs-15" for="online-courses-end-to-end-technologies">Сквозные технологии</label>
+
+                                            <select name="online-courses-end-to-end-technologies" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="online-courses-end-to-end-technologies">
+                                                <option></option>
+                                                <option value="not-active">1</option>
+                                                <option value="not-active">2</option>
+                                                <option value="not-active">3</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6">
+                                            <label class="fw-600 fs-15" for="online-courses-branches-of-knowledge">Отрасли знаний</label>
+
+                                            <select name="online-courses-branches-of-knowledge" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="online-courses-branches-of-knowledge">
+                                                <option></option>
+                                                <option value="not-active">1</option>
+                                                <option value="not-active">2</option>
+                                                <option value="not-active">3</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-4 col-md-12">
+                                            <label class="fw-600 fs-15" for="online-courses-special-sections">Специальные разделы</label>
+
+                                            <select name="online-courses-special-sections" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="online-courses-special-sections">
+                                                <option></option>
+                                                <option value="not-active">1</option>
+                                                <option value="not-active">2</option>
+                                                <option value="not-active">3</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="pt-5">
+                                    <h3 class="fs-20 fw-600">Вывод результатов</h3>
+
+                                    <div class="pt-36">
+                                        <div class="row g-4">
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="course-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="position-relative img-block">
+                                                            <div class="img-tag">SMART-курс</div>
+                                                            <img src="img/course.png" class="img-fluid w-100" alt="">
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="d-flex align-items-center" style="gap: 12px;">
+                                                                <img src="img/course-icon.svg" alt="">
+                                                                <span class="fs-16">ЮУрГАУ</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="fs-18 fw-700">Название курса Lorem ipsum</p>
+
+                                                        <div class="row m-auto" style="gap: 6px;">
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Знакомство с профессией
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Оценка навыков
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="course-tag">
+                                                                    Стажировка
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="opacity-50 fs-16">
+                                                            <p>Длительность: 3 мес.</p>
+                                                            <p style="padding-top: 6px;">Старт курса: 14.12.2023</p>
+                                                        </div>
+
+                                                        <a href="#" class="d-flex justify-content-center orange-fill-button
+                                                        text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                            <span class="fw-600 fs-14 text-white">Перейти</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 2.25rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">10</a></li>
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="tab-pane fade show" id="webinars" role="tabpanel"
+                                 aria-labelledby="webinars-tab" tabindex="0">
+
+                                <div class="date-slider slider-control d-flex">
+                                    <div class="bg-white d-flex align-items-end z-3">
+                                        <div id="sl-prev" class="sl-btn d-flex align-items-center position-relative" style="height: 65.5px;">
+                                            <img src="img/left.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-win"></div>
+
+                                    <div class="bg-white d-flex align-items-end z-3">
+                                        <div id="sl-next" class="sl-btn d-flex align-items-center position-relative" style="height: 65.5px;">
+                                            <img src="img/right.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pt-5">
+                                    <h3 class="fs-20 fw-600">Вывод результатов</h3>
+
+                                    <div class="pt-36">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="webinar-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="img-block position-relative">
+                                                            <div class="d-flex fw-600 fs-18 time" style="gap: 12px;">
+                                                                <div class="text-white">13.03.2024</div>
+                                                                <div class="text-white">11:00 МСК</div>
+                                                            </div>
+                                                            <img src="img/webinar-img.png" class="w-100" alt="">
+                                                        </div>
+
+                                                        <div class="text-block">
+                                                            <p class="fs-15">05 декабря 2023</p>
+                                                            <div class="pt-12">
+                                                                <p class="fs-20 fw-600 lh-24">
+                                                                    Название вебинара
+                                                                </p>
+                                                                <div class="d-flex pt-4" style="gap: 12px;">
+                                                                    <a href="#"><img src="img/vk.png" alt=""></a>
+                                                                    <a href="#"><img src="img/ok.png" alt=""></a>
+                                                                    <a href="#"><img src="img/tg.png" alt=""></a>
+                                                                    <a href="#"><img src="img/share.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="webinar-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="img-block position-relative">
+                                                            <div class="d-flex fw-600 fs-18 time" style="gap: 12px;">
+                                                                <div class="text-white">13.03.2024</div>
+                                                                <div class="text-white">11:00 МСК</div>
+                                                            </div>
+                                                            <img src="img/webinar-img.png" class="w-100" alt="">
+                                                        </div>
+
+                                                        <div class="text-block">
+                                                            <p class="fs-15">05 декабря 2023</p>
+                                                            <div class="pt-12">
+                                                                <p class="fs-20 fw-600 lh-24">
+                                                                    Название вебинара
+                                                                </p>
+                                                                <div class="d-flex pt-4" style="gap: 12px;">
+                                                                    <a href="#"><img src="img/vk.png" alt=""></a>
+                                                                    <a href="#"><img src="img/ok.png" alt=""></a>
+                                                                    <a href="#"><img src="img/tg.png" alt=""></a>
+                                                                    <a href="#"><img src="img/share.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="webinar-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="img-block position-relative">
+                                                            <div class="d-flex fw-600 fs-18 time" style="gap: 12px;">
+                                                                <div class="text-white">13.03.2024</div>
+                                                                <div class="text-white">11:00 МСК</div>
+                                                            </div>
+                                                            <img src="img/webinar-img.png" class="w-100" alt="">
+                                                        </div>
+
+                                                        <div class="text-block">
+                                                            <p class="fs-15">05 декабря 2023</p>
+                                                            <div class="pt-12">
+                                                                <p class="fs-20 fw-600 lh-24">
+                                                                    Название вебинара
+                                                                </p>
+                                                                <div class="d-flex pt-4" style="gap: 12px;">
+                                                                    <a href="#"><img src="img/vk.png" alt=""></a>
+                                                                    <a href="#"><img src="img/ok.png" alt=""></a>
+                                                                    <a href="#"><img src="img/tg.png" alt=""></a>
+                                                                    <a href="#"><img src="img/share.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="webinar-card">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="img-block position-relative">
+                                                            <div class="d-flex fw-600 fs-18 time" style="gap: 12px;">
+                                                                <div class="text-white">13.03.2024</div>
+                                                                <div class="text-white">11:00 МСК</div>
+                                                            </div>
+                                                            <img src="img/webinar-img.png" class="w-100" alt="">
+                                                        </div>
+
+                                                        <div class="text-block">
+                                                            <p class="fs-15">05 декабря 2023</p>
+                                                            <div class="pt-12">
+                                                                <p class="fs-20 fw-600 lh-24">
+                                                                    Название вебинара
+                                                                </p>
+                                                                <div class="d-flex pt-4" style="gap: 12px;">
+                                                                    <a href="#"><img src="img/vk.png" alt=""></a>
+                                                                    <a href="#"><img src="img/ok.png" alt=""></a>
+                                                                    <a href="#"><img src="img/tg.png" alt=""></a>
+                                                                    <a href="#"><img src="img/share.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 2.25rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">10</a></li>
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="select2/select2.min.js"></script>
+    <script src="js/select2_dropdown_plugin.js"></script>
+    <script src="js/personal_account.js"></script>
+    <script src="js/fillDateSlider.js"></script>
+    <script src="js/dateSlider.js"></script>
+</footer>
+</body>
+</html>

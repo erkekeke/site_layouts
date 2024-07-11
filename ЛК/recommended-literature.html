@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <div class="position-relative">
+        <button class="br-none" id="mobile-menu" style="background-color: transparent">
+            <i class="fa fa-bars fs-20 w-auto d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="container py-5">
+        <div class="row m-auto">
+            <div class="col-lg-3">
+                <div class="left-panel bg-white flex-column">
+                    <a href="profile.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-first-elem" style="padding: 1.25rem 1rem;" id="profile">
+                        <img src="img/left-panel-icon-1.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Профиль</span>
+                    </a>
+                    <a href="user-management.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="user-management">
+                        <img src="img/left-panel-icon-2.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Управление<br>пользователями</span>
+                    </a>
+                    <a href="ebs-in-lms.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="ebs-in-lms">
+                        <img src="img/left-panel-icon-3.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с ЭБС в&nbsp;LMS<br>MOODLE</span>
+                    </a>
+                    <div class="dropend">
+                        <span type="button" class="w-100 d-flex justify-content-center align-items-center text-decoration-none left-panel-item active" style="padding: 1.25rem 1rem;" id="library"
+                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="img/left-panel-icon-4.svg" alt="">
+
+                            <span class="fs-16 lh-20 ps-2 w-100 text-left">Библиотека</span>
+                        </span>
+                        <div class="dropdown-menu" id="libraryMenu" aria-labelledby="library">
+                            <a href="working-with-publications.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="working-with-publications">
+                                <img src="img/book-marked.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с изданиями</span>
+                            </a>
+
+                            <a href="new-arrivals.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="new-arrivals">
+                                <img src="img/book-down.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Новые <br>поступления</span>
+                            </a>
+
+                            <a href="recommended-literature.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item active" style="padding: 1.25rem 1rem;" id="recommended-literature">
+                                <img src="img/book-copy.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Рекомендуемая <br>литература</span>
+                            </a>
+
+                            <a href="excluded-editions.html" class="d-flex justify-content-center align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="excluded-editions">
+                                <img src="img/book-off.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Исключенные <br>издания</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="books.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="books">
+                        <img src="img/left-panel-icon-5.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left" style="word-break: break-word">Книгообеспеченность</span>
+                    </a>
+                    <a href="applications.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="applications-in-library">
+                        <img src="img/left-panel-icon-6.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Заявки в&nbsp;библиотеку</span>
+                    </a>
+                    <a href="teacher.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="teacher-training">
+                        <img src="img/left-panel-icon-7.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Обучение <br>преподавателей</span>
+                    </a>
+                    <a href="mobile.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="mobile">
+                        <img src="img/left-panel-icon-8.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Мобильное приложение</span>
+                    </a>
+                    <a href="instructions.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-last-elem" style="padding: 1.25rem 1rem;" id="instructions">
+                        <img src="img/left-panel-icon-9.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Инструкции</span>
+                    </a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="col-lg-9">
+                <div id="right-panel-tabs">
+                    <ul class="nav nav-tabs" id="recommended-literature-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link fs-14 active" id="rec-literature-tab" data-bs-toggle="tab" data-bs-target="#rec-literature"
+                               type="button" role="tab" aria-controls="rec-literature" aria-selected="true">
+                                Рекомендуемая литература
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" id="recommended-publications-on-UGNP-tab" data-bs-toggle="tab" data-bs-target="#recommended-publications-on-UGNP"
+                               type="button" role="tab" aria-controls="recommended-publications-on-UGNP" aria-selected="true">
+                                Рекомендуемые издания по УГНП за&nbsp;10 лет
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" id="collections-on-digital-disciplines-tab" data-bs-toggle="tab" data-bs-target="#collections-on-digital-disciplines"
+                               type="button" role="tab" aria-controls="collections-on-digital-disciplines" aria-selected="true">
+                                Подборки по цифровым дисциплинам
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-panel position-relative">
+                    <div class="right-panel-item" id="recommended-literature-content">
+                        <div class="tab-content" id="recommended-literature-tabs-content">
+                            <div class="tab-pane fade show active" id="rec-literature"
+                                 role="tabpanel" aria-labelledby="rec-literature-tab" tabindex="0">
+                                <div>
+                                    <h2 class="fw-600 fs-20 lh-24">Укажите параметры отображения списка рекомендуемой литературы:</h2>
+
+                                    <div class="row g-4 pt-36">
+                                        <div class="col-xl-3 col-md-6">
+                                            <label class="fw-600 fs-15" for="rec-literature-registration-start">Начало периода</label>
+                                            <input type="text" id="rec-literature-registration-start" class="form-control fs-14 br-1 mt-12"
+                                                   placeholder="Введите">
+                                        </div>
+                                        <div class="col-xl-3 col-md-6">
+                                            <label class="fw-600 fs-15" for="rec-literature-registration-end">Конец периода</label>
+                                            <input type="text" id="rec-literature-registration-end" class="form-control fs-14 br-1 mt-12"
+                                                   placeholder="Введите">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="fw-600 fs-15" for="rec-literature-chapter">Раздел</label>
+                                            <select name="rec-literature-chapter" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="rec-literature-chapter">
+                                                <option></option>
+                                                <option value="not-active">Конституционное право</option>
+                                                <option value="not-active">Общая и&nbsp;неорганическая химия</option>
+                                                <option value="not-active">Административное право</option>
+                                                <option value="not-active">Общая теория права</option>
+                                                <option value="not-active">Спорт</option>
+                                                <option value="not-active">Экономическая теория</option>
+                                                <option value="not-active">Социальное управление</option>
+                                                <option value="not-active">Общая биология</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="fw-600 fs-15" for="rec-literature-recommended-by-whom">Кем рекомендовано</label>
+                                            <select name="v" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="rec-literature-recommended-by-whom">
+                                                <option></option>
+                                                <option value="not-active">1</option>
+                                                <option value="not-active">2</option>
+                                                <option value="not-active">3</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                                <option value="not-active">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="d-flex justify-content-end h-100">
+                                                <div class="col-xl-7 col-12">
+                                                    <div class="d-flex align-items-end h-100">
+                                                        <a href="#" class="d-flex align-items-center justify-content-center orange-fill-button w-100 text-center
+                                                            text-decoration-none" style="padding: 0.91rem 1.25rem;">
+                                                            <img src="img/mdi_filter.svg" alt="">
+                                                            <span class="fw-600 fs-14 text-white">Применить</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-5">
+                                        <h3 class="fw-600 fs-20 lh-24">Вывод результатов</h3>
+                                    </div>
+
+                                    <div class="pt-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-18">Всего страниц: <span class="fw-bold">3</span></p>
+
+                                            <div class="d-flex align-items-center">
+                                                <div class="current-page d-flex align-items-center">
+                                                    <span style="padding-left: 20px;" class="pe-2">1</span>
+                                                    <div class="d-flex flex-column" style="gap: 4px;">
+                                                        <a href="#">
+                                                            <img src="img/up.svg" class="" alt="">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="img/down.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <span class="fs-18 opacity-50 ps-2">из 3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-36">
+                                        <table class="table table-overflow table-overflow" style="margin: 0;">
+                                            <thead>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15">Наименование</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15">Раздел</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 lh-18">Дата рекомендации</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15">Кем рекомендовано</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 lh-18">Кафедра</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 lh-18">Должность</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 lh-18">Ученая степень</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 lh-18">Действия</p>
+                                                </td>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody class="fs-13">
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="row m-auto">
+                                                <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                    <p class="fw-600 fs-15 text-blue">А ты хочешь знать химию?</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">24.1 Общая и&nbsp;неорганическая химия</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">22.05.2017</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15">2024</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">93</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">978-5-9275-4516-2</p>
+                                                </td>
+                                                <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                    <p class="fs-15 lh-18">03.04.2024 15:04</p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <nav aria-label="Page navigation" style="margin-top: 1.5rem;">
+                                        <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                    Предыдущая
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                    Следующая
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="recommended-publications-on-UGNP"
+                                 role="tabpanel" aria-labelledby="recommended-publications-on-UGNP-tab" tabindex="0">
+                                <div>
+                                    <h2 class="fw-600 fs-20">Выберите УГНП</h2>
+
+                                    <div class="row g-4 pt-36">
+                                        <div class="col-lg-6">
+                                            <label class="fw-600 fs-15" for="recommended-publications-on-UGNP-select-a-group">Выберите группу</label>
+                                            <select name="recommended-publications-on-UGNP-select-a-group" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                    id="recommended-publications-on-UGNP-select-a-group">
+                                                <option></option>
+                                                <option value="not-active">Группа 1</option>
+                                                <option value="not-active">Группа 2</option>
+                                                <option value="not-active">Группа 3</option>
+                                                <option value="not-active">Группа 4</option>
+                                                <option value="not-active">Группа 4</option>
+                                                <option value="not-active">Группа 4</option>
+                                                <option value="not-active">Группа 4</option>
+                                                <option value="not-active">Группа 4</option>
+                                                <option value="not-active">Группа 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="d-flex justify-content-end h-100">
+                                                <div class="col-xl-7 col-12">
+                                                    <div class="d-flex align-items-end h-100">
+                                                        <a href="#" class="d-flex align-items-center justify-content-center orange-fill-button w-100 text-center
+                                                            text-decoration-none" style="padding: 0.91rem 1.25rem;">
+                                                            <img src="img/mdi_filter.svg" alt="">
+                                                            <span class="fw-600 fs-14 text-white">Применить</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pt-5">
+                                    <h3 class="fw-600 fs-20">Обзор публикаций, рекомендованных к включению в&nbsp;рабочие программы</h3>
+
+                                    <div class="pt-3">
+                                        <div class="d-lg-flex g-4 justify-content-between align-items-center">
+                                            <div class="col">
+                                                <p class="fs-18">Количество публикаций: <span class="fw-500">77</span></p>
+                                            </div>
+
+                                            <div class="col-lg-6 mt-sm-24">
+                                                <div class="col-xl-7 w-100">
+                                                    <div class="d-lg-flex justify-content-end">
+                                                        <a href="#" class="orange-border-button text-decoration-none fs-14 fw-600
+                                                    d-flex align-items-center justify-content-center text-orange" style="padding: 0.91rem 3rem;">
+                                                            <img src="img/floppy-disc.svg" class="me-1" alt="">
+                                                            Экспорт в&nbsp;Excel
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="table table-overflow" style="margin-top: 2.25rem;">
+                                        <thead>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">№</p>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Заголовок издания</p>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Издательство</p>
+                                            </td>
+                                            <td class="col-xl-1 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Автор</p>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Год издания</p>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Тип издания</p>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">какая-то дата?</p>
+                                            </td>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody class="fs-13">
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                <span class="text-blue">Алгебра матриц и&nbsp;линейные пространства</span>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                Интернет-Университет Информационных Технологий (ИНТУИТ), Ай Пи Ар Медиа
+                                            </td>
+                                            <td class="col-xl-1 fs-13">
+                                                Михалев А.В., Михалев А.А.
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                2024
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                учебное пособие
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                До 30.10.2025 (автопролонгация)
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                <span class="text-blue">Алгебра матриц и&nbsp;линейные пространства</span>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                Интернет-Университет Информационных Технологий (ИНТУИТ), Ай Пи Ар Медиа
+                                            </td>
+                                            <td class="col-xl-1 fs-13">
+                                                Михалев А.В., Михалев А.А.
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                2024
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                учебное пособие
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                До 30.10.2025 (автопролонгация)
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                <span class="text-blue">Алгебра матриц и&nbsp;линейные пространства</span>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                Интернет-Университет Информационных Технологий (ИНТУИТ), Ай Пи Ар Медиа
+                                            </td>
+                                            <td class="col-xl-1 fs-13">
+                                                Михалев А.В., Михалев А.А.
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                2024
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                учебное пособие
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                До 30.10.2025 (автопролонгация)
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                <span class="text-blue">Алгебра матриц и&nbsp;линейные пространства</span>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                Интернет-Университет Информационных Технологий (ИНТУИТ), Ай Пи Ар Медиа
+                                            </td>
+                                            <td class="col-xl-1 fs-13">
+                                                Михалев А.В., Михалев А.А.
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                2024
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                учебное пособие
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                До 30.10.2025 (автопролонгация)
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                <span class="text-blue">Алгебра матриц и&nbsp;линейные пространства</span>
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                Интернет-Университет Информационных Технологий (ИНТУИТ), Ай Пи Ар Медиа
+                                            </td>
+                                            <td class="col-xl-1 fs-13">
+                                                Михалев А.В., Михалев А.А.
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                2024
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                учебное пособие
+                                            </td>
+                                            <td class="col-xl-2 col-xs-4 fs-13">
+                                                До 30.10.2025 (автопролонгация)
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav aria-label="Page navigation" style="margin-top: 2.25rem;">
+                                        <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                    Предыдущая
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">6</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">25</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">26</a></li>
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                    Следующая
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="collections-on-digital-disciplines"
+                                 role="tabpanel" aria-labelledby="collections-on-digital-disciplines-tab" tabindex="0">
+
+                                <div class="row justify-content-between align-items-start">
+                                    <div class="col">
+                                        <h2 class="fw-600 fs-20">Сквозные технологии</h2>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-end">
+                                            <img src="img/datalib-logo.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-lg-flex mt-sm-24">
+                                    <div class="col-lg-6">
+                                        <label class="fw-600 fs-15" for="collections-on-digital-disciplines-select-a-section">Выберите раздел</label>
+                                        <select name="collections-on-digital-disciplines-select-a-section" class="form-control no-appearance fs-14 br-1 mt-12"
+                                                id="collections-on-digital-disciplines-select-a-section">
+                                            <option></option>
+                                            <option value="not-active">Группа 1</option>
+                                            <option value="not-active">Группа 2</option>
+                                            <option value="not-active">Группа 3</option>
+                                            <option value="not-active">Группа 4</option>
+                                            <option value="not-active">Группа 4</option>
+                                            <option value="not-active">Группа 4</option>
+                                            <option value="not-active">Группа 4</option>
+                                            <option value="not-active">Группа 4</option>
+                                            <option value="not-active">Группа 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mt-sm-24">
+                                        <div class="d-lg-flex justify-content-end h-100">
+                                            <div class="col-xl-7">
+                                                <div class="d-flex align-items-end h-100">
+                                                    <a href="#" class="d-flex align-items-center justify-content-center orange-fill-button w-100 text-center
+                                                            text-decoration-none" style="padding: 0.91rem 1.25rem;">
+                                                        <img src="img/mdi_filter.svg" alt="">
+                                                        <span class="fw-600 fs-14 text-white">Применить</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-5">
+                                    <h3 class="fw-600 fs-20">Обзор публикаций по отраслям знаний</h3>
+
+                                    <div class="pt-3">
+                                        <div class="d-lg-flex justify-content-between align-items-center">
+                                            <p class="fs-18">Количество публикаций: <span class="fw-500">77</span></p>
+
+                                            <a href="#" class="mt-sm-24 orange-border-button text-decoration-none fs-14 fw-600
+                                                    d-flex align-items-center justify-content-center text-orange" style="padding: 0.91rem 3rem;">
+                                                <img src="img/floppy-disc.svg" class="me-1" alt="">
+                                                Экспорт в&nbsp;Excel
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <table class="table table-overflow" style="margin-top: 2.25rem;">
+                                        <thead>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 d-flex align-items-center justify-content-center">
+                                                <p class="fw-600 fs-15 lh-18">№</p>
+                                            </td>
+                                            <td class="col-lg-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Основное заглавие</p>
+                                            </td>
+                                            <td class="col-lg-4 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Основная информация</p>
+                                            </td>
+                                            <td class="col-lg-3 d-flex align-items-center justify-content-start">
+                                                <p class="fw-600 fs-15 lh-18">Отрасли знаний</p>
+                                            </td>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody class="fs-13">
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                125018
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Автоматизированные системы обработки информации и&nbsp;управления объектами недвижимости
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Шмидт И.В., Царенко А.А.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Общество и&nbsp;государство, Информационные технологии и&nbsp;информационная безопасность
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Алгоритмы и&nbsp;анализ их сложности
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Косовская Т.М.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Педагогика, образование, наука
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Алгоритмы и&nbsp;анализ их сложности
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Косовская Т.М.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Педагогика, образование, наука
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Алгоритмы и&nbsp;анализ их сложности
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Косовская Т.М.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Педагогика, образование, наука
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Алгоритмы и&nbsp;анализ их сложности
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Косовская Т.М.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Педагогика, образование, наука
+                                            </td>
+                                        </tr>
+                                        <tr class="row m-auto">
+                                            <td class="col-xl-1 fs-13 text-center">
+                                                133917
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                    <span class="fw-600 text-blue">
+                                                        Алгоритмы и&nbsp;анализ их сложности
+                                                    </span>
+                                            </td>
+                                            <td class="col-lg-4 fs-13">
+                                                2023, Ай Пи Ар Медиа
+                                                Косовская Т.М.
+                                            </td>
+                                            <td class="col-lg-3 fs-13">
+                                                Педагогика, образование, наука
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav aria-label="Page navigation" style="margin-top: 1.5rem;">
+                                        <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                    Предыдущая
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">6</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">25</a></li>
+                                            <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">26</a></li>
+                                            <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                                <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                    Следующая
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="select2/select2.min.js"></script>
+    <script src="js/select2_dropdown_plugin.js"></script>
+    <script src="js/personal_account.js"></script>
+    <script src="js/fillDateSlider.js"></script>
+    <script src="js/dateSlider.js"></script>
+</footer>
+</body>
+</html>
