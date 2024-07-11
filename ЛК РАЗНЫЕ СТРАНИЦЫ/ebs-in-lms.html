@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="select2/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <div class="position-relative">
+        <div id="overlay" class="d-none"></div>
+        <button class="br-none" id="mobile-menu" style="background-color: transparent">
+            <span class="row gap-4">
+                <i class="fa fa-bars fs-20 w-auto d-flex justify-content-center align-items-center" aria-hidden="true"></i>
+
+                <a href="profile.html" class="icon left-panel-item" id="profile-mobile">
+                    <img src="img/left-panel-icon-1.svg" alt="">
+                </a>
+                <a href="user-management.html" class="icon left-panel-item" id="user-management-mobile">
+                    <img src="img/left-panel-icon-2.svg" alt="">
+                </a>
+                <a href="ebs-in-lms.html" class="icon left-panel-item" id="ebs-in-lms-mobile">
+                    <img src="img/left-panel-icon-3.svg" alt="">
+                </a>
+                <a href="working-with-publications.html" class="icon left-panel-item" id="working-with-publications-mobile">
+                    <img src="img/book-marked.svg" alt="">
+                </a>
+                <a href="new-arrivals.html" class="icon left-panel-item" id="new-arrivals-mobile">
+                    <img src="img/book-down.svg" alt="">
+                </a>
+                <a href="recommended-literature.html" class="icon left-panel-item" id="recommended-literature-mobile">
+                    <img src="img/book-copy.svg" alt="">
+                </a>
+                <a href="excluded-editions.html" class="icon left-panel-item" id="excluded-editions-mobile">
+                    <img src="img/book-off.svg" alt="">
+                </a>
+                <a href="books.html" class="icon left-panel-item" id="books-mobile">
+                    <img src="img/left-panel-icon-5.svg" alt="">
+                </a>
+                <a href="applications.html" class="icon left-panel-item" id="applications-in-library-mobile">
+                    <img src="img/left-panel-icon-6.svg" alt="">
+                </a>
+                <a href="teacher.html" class="icon left-panel-item" id="teacher-training-mobile">
+                    <img src="img/left-panel-icon-7.svg" alt="">
+                </a>
+                <a href="mobile.html" class="icon left-panel-item" id="mobile-mobile">
+                    <img src="img/left-panel-icon-8.svg" alt="">
+                </a>
+                <a href="instructions.html" class="icon left-panel-item" id="instructions-mobile">
+                    <img src="img/left-panel-icon-9.svg" alt="">
+                </a>
+            </span>
+        </button>
+    </div>
+    <div class="container py-5">
+        <div class="row m-auto">
+            <div class="col-lg-3">
+                <div class="left-panel bg-white flex-column">
+                    <a href="profile.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-first-elem" style="padding: 1.25rem 1rem;" id="profile">
+                        <img src="img/left-panel-icon-1.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Профиль</span>
+                    </a>
+                    <a href="user-management.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="user-management">
+                        <img src="img/left-panel-icon-2.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Управление<br>пользователями</span>
+                    </a>
+                    <a href="ebs-in-lms.html" class="d-flex align-items-center text-decoration-none left-panel-item active" style="padding: 1.25rem 1rem;" id="ebs-in-lms">
+                        <img src="img/left-panel-icon-3.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с ЭБС в&nbsp;LMS<br>MOODLE</span>
+                    </a>
+                    <div class="dropdown">
+                        <span class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="library"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="img/left-panel-icon-4.svg" alt="">
+
+                            <span class="fs-16 lh-20 ps-2 w-100 text-left">Библиотека</span>
+
+                            <img class="arrow" src="img/library-arrow.svg" alt="">
+                        </span>
+                        <div class="dropdown-menu" id="libraryMenu" aria-labelledby="library">
+                            <a href="working-with-publications.html" class="d-flex align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="working-with-publications">
+                                <img src="img/book-marked.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Работа с изданиями</span>
+                            </a>
+
+                            <a href="new-arrivals.html" class="d-flex align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="new-arrivals">
+                                <img src="img/book-down.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Новые <br>поступления</span>
+                            </a>
+
+                            <a href="recommended-literature.html" class="d-flex align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="recommended-literature">
+                                <img src="img/book-copy.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Рекомендуемая <br>литература</span>
+                            </a>
+
+                            <a href="excluded-editions.html" class="d-flex align-items-center text-decoration-none left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="excluded-editions">
+                                <img src="img/book-off.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2 w-100 text-left">Исключенные <br>издания</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="books.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="books">
+                        <img src="img/left-panel-icon-5.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left" style="word-break: break-word">Книгообеспеченность</span>
+                    </a>
+                    <a href="applications.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="applications-in-library">
+                        <img src="img/left-panel-icon-6.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Заявки в&nbsp;библиотеку</span>
+                    </a>
+                    <a href="teacher.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="teacher-training">
+                        <img src="img/left-panel-icon-7.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Обучение <br>преподавателей</span>
+                    </a>
+                    <a href="mobile.html" class="d-flex align-items-center text-decoration-none left-panel-item" style="padding: 1.25rem 1rem;" id="mobile">
+                        <img src="img/left-panel-icon-8.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Мобильное приложение</span>
+                    </a>
+                    <a href="instructions.html" class="d-flex align-items-center text-decoration-none left-panel-item left-panel-last-elem" style="padding: 1.25rem 1rem;" id="instructions">
+                        <img src="img/left-panel-icon-9.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2 w-100 text-left">Инструкции</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div id="right-panel-tabs">
+                    <ul class="nav nav-tabs" id="user-management-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link fs-14 active" id="my-students-tab" data-bs-toggle="tab" data-bs-target="#my-students"
+                               type="button" role="tab" aria-controls="my-students" aria-selected="true">
+                                Мои студенты
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-14" id="invite-codes-tab" data-bs-toggle="tab" data-bs-target="#invite-codes-password"
+                               type="button" role="tab" aria-controls="invite-codes" aria-selected="true">
+                                Коды приглашения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-panel position-relative">
+                    <div class="right-panel-item" id="ebs-in-lms-content">
+                        <div class="tab-content" id="ebs-in-lms-tabs-content">
+                            <div class="tab-pane fade show active" id="video-instructions" role="tabpanel" aria-labelledby="video-instructions-tab" tabindex="0">
+                                <p class="fs-16">
+                                    в&nbsp;разделе размещены инструкции по использованию IPR&nbsp;SMART в&nbsp;LMS MOODLE с установленными
+                                    плагинами. Этот функционал упрощает создание курсов в&nbsp;LMS и&nbsp;позволяет интегрировать материалы
+                                    из ЭБС прямо в&nbsp;вашу образовательную среду.
+                                </p>
+
+                                <p class="fs-16 pt-16">
+                                    Если плагины не установлены <a href="#" class="text-orange underline">отправьте запрос</a> для&nbsp;администрации.
+                                </p>
+
+                                <div class="videos pt-5 d-flex flex-column" style="gap: 36px;">
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR&nbsp;SMART для&nbsp;LMS MOODLE: Книга IPR&nbsp;SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%" src="https://www.youtube.com/embed/iAgE1YQAvQ8?si=bTtkRAzTPdUGjqgJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR&nbsp;SMART для&nbsp;LMS MOODLE: Книга IPR&nbsp;SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%" src="https://www.youtube.com/embed/iAgE1YQAvQ8?si=bTtkRAzTPdUGjqgJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                    </div>
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR&nbsp;SMART для&nbsp;LMS MOODLE: Книга IPR&nbsp;SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%"
+                                                src="https://www.youtube.com/embed/iAgE1YQAvQ8?si=bTtkRAzTPdUGjqgJ"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 1.5rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item d-flex align-items-center justify-content-center step-item">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="select2/select2.min.js"></script>
+    <script src="js/select2_dropdown_plugin.js"></script>
+    <script src="js/personal_account.js"></script>
+    <script src="js/fillDateSlider.js"></script>
+    <script src="js/dateSlider.js"></script>
+</footer>
+</body>
+</html>
