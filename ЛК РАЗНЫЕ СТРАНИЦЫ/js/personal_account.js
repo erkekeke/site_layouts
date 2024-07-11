@@ -1,13 +1,6 @@
 
-/* makeActiveLeftPanelItem - функция для переключения опций левой панели */
-function makeActiveLeftPanelItem() {
-    // Изменения активного элемента в левой панели
-    $('.left-panel-item').removeClass('active');
-    $(this).addClass('active');
-
-    if($(this).hasClass('dropdown-item')) {
-        $('#library').addClass('active');
-    }
+/* changeTabs - функция для переключения табов правой панели */
+function changeTabs() {
 
     // ID для иконок адаптивной верстки
     let id = $(this).attr('id');
@@ -79,10 +72,7 @@ function initSelect(tag, placeholder="") {
 
 $(document).ready(function () {
     // Подключение функционала левой панели
-    $('.left-panel-item').click(makeActiveLeftPanelItem);
-
-    // отключение события клика для элемента Библиотека в левой панели
-    $('#library.left-panel-item').off('click');
+    $('.left-panel-item').click(changeTabs);
 
     // инициализация селектов
     // Массив с парами ключ-значение
