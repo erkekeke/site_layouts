@@ -16,6 +16,13 @@
         font-size: 12px;
     }
 }
+.fs-20 {
+    font-size: 20px;
+
+    @media(max-width: 576px) {
+        font-size: 18px;
+    }
+}
 .fs-24 {
     font-size: 24px;
 
@@ -23,11 +30,18 @@
         font-size: 16px;
     }
 }
+.fs-32 {
+    font-size: 32px;
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
 .fs-36 {
     font-size: 36px;
 
     @media(max-width: 576px) {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 .fs-40 {
@@ -40,15 +54,21 @@
 .fs-44 {
     font-size: 44px;
 
-    @media(max-width: 576px) {
+    @media(max-width: 992px) {
         font-size: 26px;
+    }
+    @media(max-width: 576px) {
+        font-size: 22px;
     }
 }
 .fs-56 {
     font-size: 56px;
 
-    @media(max-width: 576px) {
+    @media(max-width: 992px) {
         font-size: 40px;
+    }
+    @media(max-width: 576px) {
+        font-size: 26px;
     }
 }
 .fw-600 {
@@ -78,7 +98,7 @@
     line-height: 48px;
 
     @media(max-width: 576px) {
-        line-height: 30px;
+        line-height: 28px;
     }
 }
 .lh-32 {
@@ -109,29 +129,74 @@
 }
 #button-1 {
     position: absolute;
-    top: 43px;
-    left: 0;
-    width: 25%;
+    top: 83px;
+    left: 48px;
+    width: 37%;
+
+    @media(max-width: 1200px) {
+        left: -20px;
+    }
+    @media(max-width: 991px) {
+        position: static;
+    }
 }
 #button-2 {
     position: absolute;
-    top: 43px;
-    left: 0;
-    width: 25%;
+    top: 83px;
+    right: 81px;
+    width: 37%;
+
+    @media(max-width: 1200px) {
+        right: 39px;
+    }
+    @media(max-width: 991px) {
+        position: static;
+        width: auto;
+    }
 }
 #button-3 {
     position: absolute;
-    top: 43px;
+    top: 317px;
+    left: 48px;
+    width: 37%;
+
+    @media(max-width: 1200px) {
+        left: -20px;
+    }
+    @media(max-width: 991px) {
+        position: static;
+        width: auto;
+    }
 }
 #button-4 {
     position: absolute;
-    top: 43px;
+    top: 317px;
+    right: 81px;
+    width: 37%;
+
+    @media(max-width: 1200px) {
+        right: 39px;
+    }
+    @media(max-width: 991px) {
+        position: static;
+        width: auto;
+    }
+}
+.links-block {
+    @media(max-width: 991px) {
+        flex-direction: column;
+        gap: 24px;
+        width: auto;
+    }
 }
 
 
 /* Общие */
 p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0 !important;
+}
+.mt-32 {
+    margin-top: 2rem;
 }
 .pb-96 {
     padding-bottom: 6rem;
@@ -157,7 +222,23 @@ p, h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 6rem;
     right: 0;
-    max-width: 100%;
+    max-width: 50%;
+    height: auto;
+
+    @media(max-width: 1400px) {
+        display: none;
+    }
+}
+.img-2 {
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+.img-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 50%;
     height: auto;
 
     @media(max-width: 1200px) {
@@ -180,10 +261,13 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-top: 2.75rem;
 }
 .custom-card-header {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2.8rem;
     border-radius: 66px;
     background: linear-gradient(180deg, #7454AE 0%, #C152C5 100%);
 
+    @media(max-width: 576px) {
+        padding: 0.5rem 1.2rem;
+    }
 }
 
 
@@ -200,4 +284,48 @@ li:before {
 }
 ul {
     padding-left: 0 !important;
+}
+
+
+/* Форма */
+.custom-form-border {
+    --b: .3em;
+    --c: 3em;
+    --r: 1.6em;
+    position: relative;
+    border: solid var(--b) transparent;
+}
+.custom-form-border::before {
+    background: linear-gradient(#FFE500, #FF5C00) border-box;
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1*var(--b));
+    border: inherit;
+    border-radius: var(--r);
+    --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 0 0/ calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+    --inner: conic-gradient(red 0 0) padding-box;
+    mask: var(--corner) subtract, var(--inner);
+    content: '';
+}
+.custom-form-border .custom-form {
+    background: linear-gradient(180deg, #FFFEFF 0%, #FEF7EB 100%);
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 0px #00000026;
+}
+
+
+/* Инпуты и Селекты */
+input[type="text"]::placeholder {
+    font-size: 18px;
+    opacity: 50% !important;
+}
+input[type="text"]:focus {
+    border: 1px solid rgba(255, 137, 6, 1) !important;
+    box-shadow: none;
+}
+input[type="text"] {
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    border-radius: 12px !important;
+    padding: 1.25rem;
+    border: none;
 }
