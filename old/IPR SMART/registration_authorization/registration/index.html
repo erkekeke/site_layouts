@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
+
+    <title>РЕГИСТРАЦИЯ В IPR SMART</title>
+</head>
+<body>
+    <main>
+        <div class="container py-5">
+            <div id="registration-modal" class="d-flex justify-content-center">
+                <div class="registration-card p-5 col-lg-6">
+                    <h1 class="fw-bold">РЕГИСТРАЦИЯ В&nbsp;<span class="orange-text">IPR&nbsp;SMART</span></h1>
+
+                    <div id="first-step" class="step">
+                        <form action="#" class="pt-3 d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3 position-relative">
+                                <div class="d-flex custom-shadow">
+                                    <input type="text" class="form-control small-text typeahead users" placeholder="Тип пользователя*" required>
+                                    <div class="arrow"><img src="img/hidden.svg" alt=""></div>
+                                </div>
+
+                                <div class="d-flex custom-shadow">
+                                    <input type="text" class="form-control small-text typeahead organizations" placeholder="Выберите организацию*" required>
+                                    <div class="arrow"><img src="img/hidden.svg" alt=""></div>
+                                </div>
+
+                                <input type="text" class="input custom-shadow small-text" placeholder="Дополнительные сведения о месте учебы, работы"
+                                       id="additionally" name="additionally" required>
+                            </div>
+
+                            <div class="pt-3 row justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <p class="small-text fw-bold" style="color: rgba(38, 50, 56, 0.5)">Уже есть аккаунт? <a href="#" class="text-decoration-none orange-text">Войдите</a></p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <button type="submit" class="submit-btn next py-2 px-3 fw-medium text-white w-100 text-uppercase">
+                                        Далее
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="pt-4 row g-2 stepper">
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                        </div>
+                    </div>
+
+                    <div id="second-step" class="step">
+                        <form action="#" class="pt-3 d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3">
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Фамилия*" required>
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Имя*" required>
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Отчество*" required>
+
+                                <div class="row g-3">
+                                    <div class="col-lg-3">
+                                        <select title="День*" class="  custom-shadow" id="days" required></select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <select title="Месяц*" class="selectpicker custom-shadow" id="months" required></select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select title="Год*" class="selectpicker custom-shadow" id="years" required></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3 row justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <p class="small-text fw-bold" style="color: rgba(38, 50, 56, 0.5)">Уже есть аккаунт? <a href="#" class="text-decoration-none orange-text">Войдите</a></p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <button type="submit" class="submit-btn next py-2 px-3 fw-medium text-white w-100 text-uppercase">
+                                        Далее
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="pt-4 row g-2 stepper">
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                        </div>
+                    </div>
+
+                    <div id="third-step" class="step">
+                        <form action="#" class="pt-3 d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3">
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Ваш E-mail*" required>
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Ваш номер телефона" required>
+                            </div>
+
+                            <div class="pt-3 row justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <p class="small-text fw-bold" style="color: rgba(38, 50, 56, 0.5)">Уже есть аккаунт? <a href="#" class="text-decoration-none orange-text">Войдите</a></p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <button type="submit" class="submit-btn next py-2 px-3 fw-medium text-white w-100 text-uppercase">
+                                        Далее
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="pt-4 row g-2 stepper">
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display"></div></div>
+                        </div>
+                    </div>
+
+                    <div id="fourth-step" class="step">
+                        <form action="#" class="pt-3 d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3">
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Придумайте логин" required>
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Придумайте пароль" required>
+                                <input type="text" class="form-control small-text custom-shadow" placeholder="Подтвердите пароль" required>
+                            </div>
+
+                            <div class="pt-3 row g-3 justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <p class="small-text fw-bold" style="color: rgba(38, 50, 56, 0.5)">Уже есть аккаунт? <a href="#" class="text-decoration-none orange-text">Войдите</a></p>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <button type="submit" class="submit-btn py-2 px-3 fw-medium text-white w-100 text-uppercase">
+                                        Зарегистрироваться
+                                    </button>
+                                </div>
+
+                                <div class="col-12 d-flex align-items-center">
+                                    <input type="checkbox" name="user-agreement" id="user-agreement" required>
+                                    <label for="user-agreement" class="small-text fw-medium">Согласен с условиями <a  href="#" class="link">пользовательского соглашения</a></label>
+                                </div>
+
+                                <div class="col-12 d-flex align-items-center">
+                                    <input type="checkbox" name="personal-data" id="personal-data" required>
+                                    <label for="personal-data" class="small-text fw-medium">Согласен на <a href="#" class="link">обработку персональных данных</a></label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="pt-4 row g-2 stepper">
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                            <div class="col-3"><div class="step-display active-step-display"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/js/bootstrap-select.min.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/stepper.js"></script>
+    </footer>
+</body>
+</html>

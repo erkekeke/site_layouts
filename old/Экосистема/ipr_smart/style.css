@@ -1,0 +1,147 @@
+@import url("font/stylesheet.css");
+
+* {
+    color: #263238;
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+}
+
+.large-text {
+    margin: 0;
+    font-size: 44px;
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+
+.medium-text {
+    margin: 0;
+    font-size: 24px;
+    @media(max-width: 576px) {
+        font-size: 20px;
+    }
+}
+
+.small-text {
+    margin: 0;
+    font-size: 20px;
+    @media(max-width: 576px) {
+        font-size: 16px;
+    }
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.gradient-text {
+    background: linear-gradient(180deg, #F77531 0%, #FFA927 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-el-overflow {
+    overflow: visible;
+    position: relative;
+    margin-left: -70%;
+
+    @media (max-width: 992px) {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+        position: inherit;
+    }
+}
+
+.quantity {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.custom-card-head {
+    background: linear-gradient(180deg, #F77531 0%, #FFA927 100%);
+    border-radius: 66px;
+    padding: 5px 32px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 24px;
+    width: auto;
+}
+.custom-card-body {
+    box-shadow: 0px 0px 15px 0px #00000026;
+    border-radius: 20px;
+    position: relative;
+    padding: 38px 24px 24px 24px;
+    bottom: 20px;
+    left: 16px;
+    font-size: 20px;
+}
+
+
+.custom-card {
+    box-shadow: 0px 0px 15px 0px #00000026;
+    border-radius: 20px;
+}
+
+.ipr-smart-card-text {
+    font-size: 18px;
+}
+
+.ipr-smart-card {
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 0px #00000026;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-32 {
+    font-size: 32px;
+
+    @media(max-width: 576px) {
+        font-size: 20px;
+    }
+}
+
+.gradient-button {
+    background: linear-gradient(180deg, #F77531 0%, #FFA927 100%);
+    padding: 10px 32px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 66px;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "•";
+    font-size: 120%;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+.img {
+    @media(max-width: 576px) {
+        margin: 32px 0;
+    }
+}
+
+.container {
+    @media(max-width: 576px) {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+    }
+}

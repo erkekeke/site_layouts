@@ -1,0 +1,345 @@
+@import url("font/stylesheet.css");
+
+* {
+    font-family: Montserrat;
+    color: rgba(38, 50, 56, 1) !important;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
+}
+.br-none {
+    border: none !important;
+}
+.border-radius-24 {
+    border-radius: 24px;
+}
+.appearance-none {
+    appearance: none;
+    -webkit-appearance: none; /* Убирает стрелку в Safari */
+    -moz-appearance: none; /* Убирает стрелку в Firefox */
+}
+.br-1 {
+    border: 1px solid rgba(38, 50, 56, 0.1) !important;
+}
+.pt-36 {
+    padding-top: 2.25rem;
+}
+.pt-20 {
+    padding-top: 1.25rem;
+}
+.pt-16 {
+    padding-top: 1rem;
+}
+.pt-12 {
+    padding-top: 0.75rem;
+}
+.mt-36 {
+    margin-top: 2.25rem;
+}
+.mt-20 {
+    margin-top: 1.25rem;
+}
+.mt-16 {
+    margin-top: 1rem;
+
+}
+.mt-12 {
+    margin-top: 0.75rem;
+}
+
+/* Тексты */
+.fs-14 {
+    font-size: 14px !important;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px !important;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.lh-20 {
+    line-height: 20px;
+}
+.lh-24 {
+    line-height: 24px;
+}
+.text-red {
+    color: rgba(107, 10, 19, 1) !important;
+}
+.text-blue {
+    color: rgba(7, 78, 140, 1) !important;
+}
+.text-orange {
+    color: rgba(255, 137, 6, 1) !important;
+}
+.underline {
+    text-decoration: underline;
+}
+.opacity-70 {
+    opacity: 70%;
+}
+
+
+/* Левая панель */
+.left-panel {
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.left-panel-item {
+    cursor: pointer;
+}
+.left-panel-item.active {
+    background: linear-gradient(90deg, rgba(250, 179, 54, 0.1) 0%, rgba(244, 111, 64, 0.1) 100%);
+    font-weight: 600;
+}
+.left-panel-last-elem {
+    border-radius: 0 0 20px 20px;
+}
+.left-panel-first-elem {
+    border-radius: 0 20px 0 0;
+}
+
+
+/* Правая панель */
+.right-panel-item {
+    display: none;
+}
+.right-panel {
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Начальная страница */
+.start-panel {
+    background: rgba(249, 250, 252, 1);
+    border-radius: 20px;
+}
+.warning-block {
+    border-radius: 20px;
+    background: rgba(248, 215, 218, 0.7);
+}
+
+
+/* Кнопки */
+.orange-fill-button {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: white;
+}
+.orange-border-button {
+    border-radius: 20px;
+    border: 1px solid rgba(254, 135, 5, 1);
+    background: rgba(255, 255, 255, 0.93);
+    color: rgba(254, 135, 5, 1);
+}
+
+
+/* Навигационные табы */
+#right-panel-tabs,
+#right-panel-tabs .nav-tabs {
+    display: none;
+}
+#right-panel-tabs .nav-tabs {
+    border-bottom: 0;
+}
+#right-panel-tabs .nav-link {
+    border-radius: 20px 20px 0 0;
+    background: rgba(249, 250, 252, 1);
+    border: 1px solid rgba(38, 50, 56, 0.1);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(143, 150, 154, 1);
+    padding: 1rem 1.25rem 0.75rem 1.25rem;
+    border-bottom: 0;
+}
+#right-panel-tabs .nav-link.active {
+    border-radius: 20px 20px 0 0;
+    background: white;
+    display: block;
+    border: none;
+    color: rgba(38, 50, 56, 1);
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Инпуты и Селекты */
+input[type="password"]:focus,
+select:focus{
+    outline: 1px solid rgba(255, 137, 6, 1) !important;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    opacity: 70% !important;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border: 1px solid rgba(255, 137, 6, 1) !important;
+    box-shadow: none;
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09) !important;
+    border-radius: 14px !important;
+    padding: 0.75rem 1.25rem !important;
+}
+textarea {
+    resize: none !important;
+}
+/* Профили */
+#my-profile-form .edit-block {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#my-profile-form button[type="submit"] {
+    border: none;
+    background: white;
+}
+/* Чекбоксы */
+input[type="checkbox"] {
+   appearance: none !important;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(38, 50, 56, 0.7);
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+input[type="checkbox"]:checked {
+    border: none;
+    background-image: url('img/checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Смена пароля */
+.password-strength .grey {
+    background: rgba(217, 217, 217, 1);
+    height: 4px;
+    border-radius: 2px;
+}
+.password-strength .current {
+    position: absolute;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #FAB336 0%, #F46F40 100%);
+    height: 4px;
+    top: 0;
+}
+.password-container {
+    position: relative;
+}
+.password-container i {
+    position: absolute;
+    right: 1.3rem;
+    top: 0.7rem;
+    cursor: pointer;
+    opacity: 50%;
+
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+}
+input::-ms-reveal {
+    display: none;
+}
+/* Скрываем стандартный глаз для Chrome */
+input::-webkit-textfield-decoration-container {
+    display: none;
+}
+/* Скрываем стандартный глаз для Firefox */
+input[type="password"]::-moz-eye {
+    display: none;
+}
+
+
+/* Управление пользователями -> Мои студенты */
+.table-headers .table-header {
+    padding: 0.875rem 0.5rem;
+    border-top: 1px solid rgba(222, 226, 230, 1);
+    border-right: 1px solid rgba(222, 226, 230, 1);
+    border-bottom: 1px solid rgba(222, 226, 230, 1);
+}
+.table-headers .table-header.first-elem {
+    border-left: 1px solid rgba(222, 226, 230, 1);
+    border-radius: 24px 0 0 24px;
+}
+.table-headers .table-header.last-elem {
+    border-radius: 0 24px 24px 0;
+}
+
+
+/* Пагинация */
+.pagination .page-link.fw-600 {
+    padding: 0.625rem 0.9rem;
+    border: 0;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination .page-link.step {
+    border: none;
+}
+.pagination {
+    @media(max-width: 576px) {
+        justify-content: left;
+    }
+}
+.active-tag,
+.active-tag:hover,
+.active-tag:focus {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    z-index: 10;
+}
+
+
+/* Библиотека */
+#library:hover + #libraryMenu {
+    display: block;
+}
+#libraryMenu:hover {
+    display: block;
+}
+#libraryMenu {
+    width: 100%;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 7px 14px 22.1px 0px rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu .left-panel-item.active {
+    background: white;
+}
+.dropdown-item:active {
+    background: white !important;
+}
+.history-work {
+    border-radius: 24px;
+    border: 1px solid rgba(222, 226, 230, 1);
+}
+.history-work table td {
+    padding: 14px 8px;
+    background: transparent;
+}
+.history-work .separate td {
+    border: none;
+}

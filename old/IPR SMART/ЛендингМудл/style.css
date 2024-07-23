@@ -1,0 +1,251 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(38, 50, 56, 1);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+    /* Тексты */
+.fs-72 {
+    font-size: 72px;
+
+    @media(max-width: 911px) {
+        font-size: 62px;
+    }
+    @media(max-width: 576px) {
+        font-size: 48px;
+    }
+}
+.fs-48 {
+    font-size: 48px;
+
+    @media(max-width: 576px) {
+        font-size: 32px;
+    }
+}
+.fs-40 {
+    font-size: 40px;
+
+    @media(max-width: 911px) {
+        font-size: 34px;
+    }
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
+.fs-36 {
+    font-size: 36px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.fs-32 {
+    font-size: 32px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.lh-65 {
+    line-height: 65px;
+}
+.lh-48 {
+    line-height: 48px;
+}
+.lh-28 {
+    line-height: 28px;
+}
+.lh-21 {
+    line-height: 21px;
+}
+.text-orange {
+    color: rgba(255, 137, 6, 1);
+}
+.text-gradient-orange {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-orange {
+    color: rgba(255, 137, 6, 1);
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.opacity-75 {
+    opacity: 0.75;
+}
+
+/* Кнопки */
+.fill-orange-button {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    border-radius: 66px;
+}
+
+
+/* Преимущества */
+.advantage-card {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 20px 20px 0;
+}
+
+
+/* Плагины */
+.plugin-card {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    height: 100%;
+}
+.plugin-card.pc-1 {
+    border-radius: 20px 20px 0 20px;
+}
+.plugin-card.pc-2 {
+    border-radius: 20px 20px 20px 0;
+}
+.plugin-card.pc-3 {
+    border-radius: 20px 0 20px 20px;
+}
+.plugin-card.pc-4 {
+    border-radius: 0 20px 20px 20px;
+}
+.plugin-card-header {
+    background: linear-gradient(180deg, #7454AE 0%, #C152C5 100%);
+    opacity: 80%;
+    border-radius: 66px;
+    padding: 0.6rem 2rem;
+    position: relative;
+    top: 13px;
+    right: 13px;
+    display: inline;
+}
+
+
+/* Доступно */
+.available-card {
+    background: linear-gradient(90deg, rgba(250, 179, 54, 0.05) 0%, rgba(244, 111, 64, 0.05) 100%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.ac-1 {
+    border-radius: 20px 20px 20px 0;
+}
+.ac-2 {
+    border-radius: 20px 0 20px 20px;
+}
+.ac-3 {
+    border-radius: 0 0 20px 20px;
+}
+.ac-4 {
+    border-radius: 0 20px 20px 20px;
+}
+
+
+/* Установка плагина */
+.step {
+    background: linear-gradient(180deg, #7454AE 0%, #C152C5 100%);
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+
+    @media(max-width: 991px) {
+        height: 0;
+        width: 0;
+    }
+}
+.step-line {
+    background: linear-gradient(180deg, #7454AE 0%, #C152C5 100%);
+    border-radius: 100px;
+    width: 29%;
+    height: 4px;
+    margin: 0 1rem;
+
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+.step-card {
+    border-radius: 20px 0 20px 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Блок верхней картинки */
+.img-block-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media(max-width: 1200px) {
+        position: static;
+    }
+}
+/* Блок нижней картинки */
+.img-block-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media(max-width: 991px) {
+        position: static;
+    }
+}
+
+
+/* Форма */
+.form-block {
+    border-radius: 24px;
+    --b: .3em;
+    --c: 3em;
+    --r: 1.6em;
+    position: relative;
+    border: solid var(--b) transparent;
+}
+.form-block .lin {
+    background: linear-gradient(180deg, #FFFEFF 0%, #FEF7EB 100%);
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.form-block::before {
+    background: linear-gradient(180deg, #FFC327 0%, #FF5C01 113.39%) border-box;
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1*var(--b));
+    border: inherit;
+    border-radius: var(--r);
+    --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
+    0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+    --inner: conic-gradient(red 0 0) padding-box;
+    -webkit-mask: var(--corner), var(--inner);
+    -webkit-mask-composite: source-out;
+    mask: var(--corner) subtract, var(--inner);
+    content: ''
+}
+.form-control::placeholder {
+    font-size: 18px;
+    opacity: 50%;
+}
+.form-control {
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}

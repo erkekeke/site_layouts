@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="left-panel d-flex flex-column">
+                    <div class="d-flex align-items-center left-panel-item left-panel-first-elem" style="padding: 1.25rem 1rem;" id="profile">
+                        <img src="img/left-panel-icon-1.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Профиль</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="user-management">
+                        <img src="img/left-panel-icon-2.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Управление пользователями</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="ebs-in-lms">
+                        <img src="img/left-panel-icon-3.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Работа с ЭБС в LMS<br>MOODLE</span>
+                    </div>
+                    <div class="dropdown">
+                        <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="library" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/left-panel-icon-4.svg" alt="">
+                            <span class="fs-16 lh-20 ps-2">Библиотека</span>
+                        </div>
+                        <div class="dropdown-menu" id="libraryMenu" aria-labelledby="library">
+                            <div class="d-flex align-items-center left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="working-with-publications">
+                                <img src="img/book-marked.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2">Работа с изданиями</span>
+                            </div>
+
+                            <div class="d-flex align-items-center left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="new-arrivals">
+                                <img src="img/book-down.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2">Новые поступления</span>
+                            </div>
+
+                            <div class="d-flex align-items-center left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="">
+                                <img src="img/book-copy.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2">Рекомендуемая литература</span>
+                            </div>
+
+                            <div class="d-flex align-items-center left-panel-item dropdown-item" style="padding: 1.25rem 1rem;" id="">
+                                <img src="img/book-off.svg" alt="">
+                                <span class="fs-16 lh-20 ps-2">Исключенные издания</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="books">
+                        <img src="img/left-panel-icon-5.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Книгообеспеченность</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="applications-in-library">
+                        <img src="img/left-panel-icon-6.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Заявки в библиотеку</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="teacher-training">
+                        <img src="img/left-panel-icon-7.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Обучение преподавателей</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item" style="padding: 1.25rem 1rem;" id="mobile">
+                        <img src="img/left-panel-icon-8.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Мобильное приложение</span>
+                    </div>
+                    <div class="d-flex align-items-center left-panel-item left-panel-last-elem" style="padding: 1.25rem 1rem;" id="instructions">
+                        <img src="img/left-panel-icon-9.svg" alt="">
+                        <span class="fs-16 lh-20 ps-2">Инструкции</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-9">
+                <div class="start-panel p-5">
+                    <h2 class="fw-600 fs-20">Уважаемый пользователь!</h2>
+
+                    <p class="fw-600 fs-16" style="margin-top: 2.25rem;">
+                        На связи Команда IPR MEDIA. Благодарим Вас за прохождение регистрации
+                        в электронной библиотеке IPR SMART!
+                    </p>
+                    <p class="fs-16 mt-3">
+                        ЭБС IPR SMART — самая большая библиотека лицензионного контента по всем УГСН.
+                        Все книги доступны в электронном формате, что позволяет читать их с любого устройства:
+                        планшета или компьютера.
+                    </p>
+                    <p class="fs-16 mt-3">
+                        IPR SMART регулярно пополняется новыми изданиями, что делает ее актуальным источником
+                        знаний для преподавателей и специалистов из различных областей.
+                    </p>
+                    <p class="fs-16 mt-3">
+                        ЭБС IPR SMART предлагает широкий спектр функций для комфортного использования библиотеки.
+                        Удобный интерфейс позволяет быстро найти нужную книгу, функция сохранения изданий
+                        в избранном и создания заметок упрощает процесс работы с контентом, а модуль «Книгообеспеченность»
+                        облегчит работу по формированию списков используемой литературы в РПД.
+                    </p>
+                    <p class="fw-600 fs-16 mt-3">Начните работу с ЭБС IPR SMART прямо сейчас!</p>
+
+                    <div class="warning-block text-red p-4 mt-3">
+                        Внимание! Важно правильно заполнить профиль пользователя. Некорректное или ошибочное заполнение может привести
+                        к блокировке учетной записи администратором платформы.
+                    </div>
+
+                    <p class="fw-600 fs-16 text-center mt-5 mb-3">
+                        Возникли вопросы или есть предложения по улучшению ЭБС IPR SMART?<br>Напишите нам!
+                    </p>
+
+                    <div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <a href="#" class="d-block orange-fill-button text-decoration-none fs-14 fw-600
+                                    d-flex align-items-center px-4 py-3 justify-content-center">
+                                    <img src="img/telegram-white.svg" alt="">
+                                    <span class="ps-2 text-white">Экспертный Telegram-канал</span>
+                                </a>
+                            </div>
+
+                            <div class="col-md-5">
+                                <a href="#" class="d-block orange-fill-button text-decoration-none fs-14 fw-600
+                                    d-flex align-items-center px-4 py-3 justify-content-center">
+                                    <img src="img/mail-white.svg" alt="">
+                                    <span class="ps-2 text-white">marketing@iprmedia.ru</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-panel-tabs">
+                    <!-- Табы для Профиля -->
+                    <ul class="nav nav-tabs" id="profile-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="my-profile-tab" data-bs-toggle="tab" data-bs-target="#my-profile"
+                               type="button" role="tab" aria-controls="my-profile" aria-selected="true">
+                                Мой профиль
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="change-password-tab" data-bs-toggle="tab" data-bs-target="#change-password"
+                               type="button" role="tab" aria-controls="change-password" aria-selected="true">
+                                Смена пароля
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Табы для Управление пользователями -->
+                    <ul class="nav nav-tabs" id="user-management-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="my-students-tab" data-bs-toggle="tab" data-bs-target="#my-students"
+                               type="button" role="tab" aria-controls="my-students" aria-selected="true">
+                                Мои студенты
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="invite-codes-tab" data-bs-toggle="tab" data-bs-target="#invite-codes-password"
+                               type="button" role="tab" aria-controls="invite-codes" aria-selected="true">
+                                Коды приглашения
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Табы для Работа с ЭБС -->
+                    <ul class="nav nav-tabs" id="ebs-in-lms-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="video-instructions-tab" data-bs-toggle="tab" data-bs-target="#video-instructions"
+                               type="button" role="tab" aria-controls="video-instructions" aria-selected="true">
+                                Видеоинструкции по работе с IPR SMART в LMS MOODLE
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Табы для Библиотека -> Работа с изданиями -->
+                    <ul class="nav nav-tabs" id="working-with-publications-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="favourites-tab" data-bs-toggle="tab" data-bs-target="#favourites"
+                               type="button" role="tab" aria-controls="favourites" aria-selected="true">
+                                Избранное
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bookmarks-tab" data-bs-toggle="tab" data-bs-target="#bookmarks"
+                               type="button" role="tab" aria-controls="bookmarks" aria-selected="true">
+                                Закладки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="synopsis-tab" data-bs-toggle="tab" data-bs-target="#synopsis"
+                               type="button" role="tab" aria-controls="synopsis" aria-selected="true">
+                                Конспекты
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="work-history-tab" data-bs-toggle="tab" data-bs-target="#work-history"
+                               type="button" role="tab" aria-controls="work-history" aria-selected="true">
+                                История работы
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Табы для Библиотека -> Новые поступления -->
+                    <ul class="nav nav-tabs" id="new-arrivals-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="summary-of-books-tab" data-bs-toggle="tab" data-bs-target="#summary-of-books"
+                               type="button" role="tab" aria-controls="summary-of-books" aria-selected="true">
+                                Сводный по книгам
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="detailed-by-books-tab" data-bs-toggle="tab" data-bs-target="#detailed-by-books"
+                               type="button" role="tab" aria-controls="detailed-by-books" aria-selected="true">
+                                Детализированный по книгам
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="detailed-by-periodicals-tab" data-bs-toggle="tab" data-bs-target="#detailed-by-periodicals"
+                               type="button" role="tab" aria-controls="detailed-by-periodicals" aria-selected="true">
+                                Детализированный по периодике
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-panel p-5 position-relative" style="display: none;">
+                    <div class="right-panel-item" id="profile-content">
+                        <div class="tab-content" id="profile-tabs-content">
+                            <div class="tab-pane fade show active" id="my-profile" role="tabpanel" aria-labelledby="my-profile-tab" tabindex="0">
+                                <div class="row g-5">
+                                    <div class="col-lg-5">
+                                        <div class="d-flex flex-column gap-4">
+                                            <img src="img/profile-img.png" alt="">
+
+                                            <a href="#" class="orange-border-button text-decoration-none fs-14 fw-600
+                                             d-flex align-items-center justify-content-center" style="padding: 0.81rem 1rem;">
+                                                <img src="img/update-photo-icon.svg" class="me-1" alt="">
+                                                Обновить фото
+                                            </a>
+
+                                            <a href="#" class="orange-border-button text-decoration-none fs-14 fw-600
+                                             d-flex align-items-center justify-content-center" style="padding: 0.81rem 1rem;">
+                                                <img src="img/remove-photo-icon.svg" class="me-1" alt="">
+                                                Удалить фото
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-5">
+                                            <a href="#" class="orange-fill-button text-decoration-none fs-14 fw-600
+                                             d-flex align-items-center gap-2 justify-content-center text-white" style="padding: 0.9rem 1rem;">
+                                                Открыть сайт бибилиотеки
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <div class="d-flex justify-content-center" style="gap: 0.75rem;">
+                                                <a href="#"><img src="img/VK-icon.png" alt=""></a>
+                                                <a href="#"><img src="img/telegram-icon.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7">
+                                        <form action="#" id="my-profile-form" class="d-flex flex-column gap-4">
+                                            <div>
+                                                <label class="fw-600 fs-16" for="organization">Организация</label>
+                                                <input type="text" id="organization" class="form-control fs-14 br-none" style="margin-top: 0.75rem;"
+                                                       placeholder="Пользователь для бесплатного преподавательского доступа">
+                                            </div>
+
+                                            <div>
+                                                <label class="fw-600 fs-16" for="department">Кафедра <span class="opacity-70 fw-normal">(подразделение)</span></label>
+                                                <input type="text" id="department" class="form-control fs-14 br-none" style="margin-top: 0.75rem;"
+                                                       placeholder="Кафедра истории государства и права">
+                                            </div>
+
+                                            <div>
+                                                <label class="fw-600 fs-16" for="role">Роль в ЭБС</label>
+                                                <input type="text" id="role" class="form-control fs-14 br-none" style="margin-top: 0.75rem;"
+                                                       placeholder="Преподаватель">
+                                            </div>
+
+                                            <div>
+                                                <label class="fw-600 fs-16" for="phone-number">Телефон <span class="opacity-70 fw-normal">(личный)</span></label>
+                                                <input type="text" id="phone-number" class="form-control fs-14 br-none" style="margin-top: 0.75rem;"
+                                                       placeholder="+7 (000) 000-00-00">
+                                            </div>
+
+                                            <div>
+                                                <label class="fw-600 fs-16" for="email">E-mail <span class="opacity-70 fw-normal">(личный)</span></label>
+                                                <input type="text" id="email" class="form-control fs-14 br-none" style="margin-top: 0.75rem;"
+                                                       placeholder="teacher@elibs.ru">
+                                            </div>
+
+                                            <div>
+                                                <label class="fw-600 fs-16" for="info">
+                                                    Информация <span class="opacity-70 fw-normal">
+                                                    (биография, достижения, прочие сведения)</span>
+                                                </label>
+                                                <textarea class="form-control fs-14 br-none" placeholder="Расскажите немного о себе"
+                                                          id="info" rows="7" style="margin-top: 0.75rem;"></textarea>
+                                            </div>
+
+                                            <div class="pt-4 d-flex flex-column agreements">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="checkbox" name="user-agreement" id="user-agreement">
+                                                    <span class="fw-500 fs-14">
+                                                        <span class="opacity-70">Согласен с условиями </span>
+                                                        <a href="#" class="text-blue opacity-100">пользовательского соглашения</a>
+                                                    </span>
+                                                </div>
+
+                                                <div class="d-flex align-items-center" style="padding-top: 0.75rem;">
+                                                    <input type="checkbox" name="processing-of-personal-data" id="processing-of-personal-data">
+                                                    <span class="fw-500 fs-14">
+                                                        <span class="opacity-70">Согласен на </span>
+                                                        <a href="#" class="text-blue opacity-100">обработку персональных данных</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between position-absolute edit-block">
+                                                <div class="d-flex align-items-center gap-1" style="padding: 1.25rem 0 0 1.25rem;">
+                                                    <img src="img/online-icon.svg" alt="">
+                                                    <span class="fs-14 opacity-70">в&nbsp;сети</span>
+                                                </div>
+
+                                                <div style="padding: 1.25rem 1.25rem 0 0;">
+                                                    <button type="submit">
+                                                        <img src="img/edit-icon.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="change-password" role="tabpanel" aria-labelledby="change-password-tab" tabindex="0">
+                                <h2 class="fs-20 fw-600">Придумайте пароль</h2>
+
+                                <form action="#">
+                                    <div class="col-md-6 d-flex flex-column pt-36">
+                                        <div class="password-container">
+                                            <input class="w-100 br-none" type="password" id="password" onkeyup="checkPasswordStrength()"
+                                                   placeholder="Задайте новый пароль" required>
+                                            <i class="fas fa-eye" id="togglePassword-1"></i>
+                                        </div>
+
+                                        <div class="password-strength position-relative" style="margin-top: 1.25rem;">
+                                            <div class="grey"></div>
+                                            <div class="current"></div>
+                                            <p class="fs-14 opacity-70 pt-12">Пароль должен состоять минимум из 6 символов</p>
+                                        </div>
+
+                                        <div class="password-container mt-4">
+                                            <input class="w-100 br-none" type="password" id="repeat-password" placeholder="Повторите пароль во избежание ошибок" required>
+                                            <i class="fas fa-eye" id="togglePassword-2"></i>
+                                        </div>
+
+                                        <div class="pt-36">
+                                            <button type="submit" class="orange-fill-button br-none fw-600 fs-14 w-100"
+                                                    style="padding: 0.9rem 1rem;">
+                                                Сохранить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-item" id="user-management-content">
+                        <div class="tab-content" id="user-tabs-management">
+                              <div class="tab-pane fade show active" id="my-students" role="tabpanel" aria-labelledby="my-students-tab" tabindex="0">
+
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <label class="fw-600 fs-16" for="name-search">Поиск по имени</label>
+                                        <input type="text" id="name-search" class="form-control fs-14 br-1 mt-12"
+                                               placeholder="Введите несколько первых символов">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label class="fw-600 fs-16" for="email-search">Поиск по e-mail</label>
+                                        <input type="text" id="email-search" class="form-control fs-14 br-1 mt-12"
+                                               placeholder="Введите несколько первых символов">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label class="fw-600 fs-16" for="users-status">Статус пользователей</label>
+                                        <select name="users-status" class="form-control no-appearance fs-14 br-1 mt-12" id="users-status">
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label class="fw-600 fs-16" for="registration-start">Начало периода регистрации</label>
+                                        <input type="text" id="registration-start" class="form-control fs-14 br-1 mt-12"
+                                               placeholder="Введите несколько первых символов">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label class="fw-600 fs-16" for="registration-end">Конец периода регистрации</label>
+                                        <input type="text" id="registration-end" class="form-control fs-14 br-1 mt-12"
+                                               placeholder="Введите несколько первых символов">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="d-flex align-items-end h-100">
+
+                                            <a href="#" class="d-flex justify-content-center orange-fill-button w-100 text-center
+                                                text-decoration-none" style="padding: 0.75rem 1.25rem;">
+                                                <span class="fw-600 fs-14 text-white">Применить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="output_results pt-5">
+                                    <h3 class="fw-600 fs-20 lh-20">Вывод результатов</h3>
+
+                                    <div class="pt-4">
+                                        <div class="table-headers row m-auto">
+                                            <div class="col table-header first-elem">
+                                                <p class="text-center fw-600 fs-15">Данные обучающегося</p>
+                                            </div>
+                                            <div class="col-auto table-header">
+                                                <p class="text-center fw-600 fs-15">Дата регистрации</p>
+                                            </div>
+                                            <div class="col-auto table-header">
+                                                <p class="text-center fw-600 fs-15">Статус</p>
+                                            </div>
+                                            <div class="col table-header last-elem">
+                                                <p class="text-center fw-600 fs-15">Действия</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="results pt-4">
+                                            <div class="fs-16 ">
+                                                Ни найдено ни одного обучающегося, который связан с Вами.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show" id="invite-codes-password" role="tabpanel" aria-labelledby="invite-codes-tab" tabindex="0">
+                                <form action="#">
+                                    <h2 class="fw-600 fs-20 lh-24">
+                                        Создание новых приглашений
+                                    </h2>
+
+                                    <div class="row g-4 pt-36 m-auto">
+                                        <div class="col-lg-4 m-0">
+                                            <label class="fw-600 fs-15" for="create-invite-type">Тип приглашения</label>
+                                            <input type="text" id="create-invite-type" class="form-control fs-14 br-1" style="margin-top: 0.75rem;"
+                                                   placeholder="Приглашения для студентов">
+                                        </div>
+                                        <div class="col-lg-4 m-0">
+                                            <label class="fw-600 fs-15" for="quantity">Количество</label>
+                                            <input type="text" id="quantity" class="form-control fs-14 br-1" style="margin-top: 0.75rem;"
+                                                   placeholder="Введите количество приглашений">
+                                        </div>
+                                        <div class="col-lg-4 m-0">
+                                            <div class="d-flex align-items-end h-100">
+
+                                                <a href="#" class="d-flex justify-content-center align-items-center
+                                                    orange-fill-button w-100 text-center text-decoration-none"
+                                                    style="padding: 0.75rem 1.25rem;">
+
+                                                    <img src="img/check.svg" alt="">
+                                                    <span class="fw-600 fs-14 text-white">Создать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form action="#" class="pt-5">
+                                    <h2 class="fw-600 fs-20 lh-24">Фильтрация кодов</h2>
+
+
+                                    <div class="d-flex m-auto pt-36 justify-content-between">
+                                        <div class="col-lg-4 m-0">
+                                            <label class="fw-600 fs-15" for="filter-invite-type">Тип приглашения</label>
+                                            <input type="text" id="filter-invite-type" class="form-control fs-14 br-1" style="margin-top: 0.75rem;"
+                                                   placeholder="Приглашения для студентов">
+                                        </div>
+
+                                        <div class="col-lg-7">
+                                            <div class="row g-4 align-items-end h-100 m-auto">
+                                                <div class="col-lg-6">
+                                                    <a href="#" class="d-flex justify-content-center align-items-center
+                                                    orange-fill-button w-100 text-center text-decoration-none"
+                                                       style="padding: 0.91rem 1rem;">
+
+                                                        <span class="fw-600 fs-14 text-white">Показать</span>
+
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <a href="#" class="orange-border-button text-decoration-none fs-14 fw-600
+                                                    d-flex align-items-center justify-content-center" style="padding: 0.91rem 1rem;">
+                                                        <img src="img/floppy-disc.svg" class="me-1" alt="">
+                                                        Экспорт в Excel
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="pt-5">
+                                    <div class="table-headers row m-auto">
+                                        <div class="col-auto table-header first-elem">
+                                            <p class="text-center fw-600 fs-15">Код приглашения</p>
+                                        </div>
+                                        <div class="col-auto table-header">
+                                            <p class="text-center fw-600 fs-15">Истечение срока&nbsp;действия</p>
+                                        </div>
+                                        <div class="col-auto table-header">
+                                            <p class="text-center fw-600 fs-15">Тип приглашения</p>
+                                        </div>
+                                        <div class="col-auto table-header last-elem">
+                                            <p class="text-center fw-600 fs-15">Лимит регистраций</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="results pt-4">
+                                        <div class="fs-16">
+                                            Не создано ни одного кода приглашения
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-item" id="ebs-in-lms-content">
+                        <div class="tab-content" id="ebs-in-lms-tabs-content">
+                            <div class="tab-pane fade show active" id="video-instructions" role="tabpanel" aria-labelledby="video-instructions-tab" tabindex="0">
+                                <p class="fs-16">
+                                    В разделе размещены инструкции по использованию IPR SMART в LMS MOODLE с установленными
+                                    плагинами. Этот функционал упрощает создание курсов в LMS и позволяет интегрировать материалы
+                                    из ЭБС прямо в вашу образовательную среду.
+                                </p>
+
+                                <p class="fs-16 pt-16">
+                                    Если плагины не установлены <a href="#" class="text-orange underline">отправьте запрос</a> для администрации.
+                                </p>
+
+                                <div class="videos pt-5 d-flex flex-column" style="gap: 36px;">
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR SMART для LMS MOODLE: Книга IPR SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%" height="400px"
+                                                src="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR SMART для LMS MOODLE: Книга IPR SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%" height="400px"
+                                                src="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div class="video-block">
+                                        <p class="fw-600 fs-20 lh-24">
+                                            Плагин «IPR SMART для LMS MOODLE: Книга IPR SMART как элемент курса»
+                                        </p>
+
+                                        <iframe class="pt-4" width="100%" height="400px"
+                                                src="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 1.5rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item d-flex align-items-center">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-item" id="library-content">
+                        Здесь Библиотека
+                    </div>
+
+                    <div class="right-panel-item" id="working-with-publications-content">
+                        <div class="tab-content" id="working-with-publications-tabs-content">
+                            <div class="tab-pane fade show active" id="favourites" role="tabpanel" aria-labelledby="favourites-tab" tabindex="0">
+                                <div class="table-headers row m-auto">
+                                    <div class="col-2 table-header first-elem">
+                                        <p class="text-center fw-600 fs-15">Наименование</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Раздел</p>
+                                    </div>
+                                    <div class="col-auto table-header">
+                                        <p class="text-center fw-600 fs-15">Издательство</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Автор</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Год&nbsp;издания</p>
+                                    </div>
+                                    <div class="col-2 table-header last-elem">
+                                        <p class="text-center fw-600 fs-15">Действия</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="bookmarks" role="tabpanel" aria-labelledby="bookmarks-tab" tabindex="0">
+                                <div class="table-headers row m-auto">
+                                    <div class="col-auto table-header first-elem">
+                                        <p class="text-center fw-600 fs-15">Заголовок издания</p>
+                                    </div>
+                                    <div class="col-auto table-header">
+                                        <p class="text-center fw-600 fs-15">Номер страницы</p>
+                                    </div>
+                                    <div class="col table-header">
+                                        <p class="text-center fw-600 fs-15">Комментарий</p>
+                                    </div>
+                                    <div class="col-auto table-header">
+                                        <p class="text-center fw-600 fs-15">Дата</p>
+                                    </div>
+                                    <div class="col-auto table-header last-elem">
+                                        <p class="text-center fw-600 fs-15">Действия</p>
+                                    </div>
+                                </div>
+
+                                <div class="results pt-4">
+                                    <div class="fs-16">
+                                        Вами не создано ни одной закладки
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="synopsis" role="tabpanel" aria-labelledby="synopsis-tab" tabindex="0">
+                                <div class="fs-16">
+                                    Вы не создали ни одного конспекта.
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="work-history" role="tabpanel" aria-labelledby="work-history-tab" tabindex="0">
+
+                                <div class="history-work table-headers row m-auto">
+                                    <div class="col-2 table-header first-elem">
+                                        <p class="text-center fw-600 fs-15">Наименование</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Раздел</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Издательство</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Автор</p>
+                                    </div>
+                                    <div class="col-2 table-header">
+                                        <p class="text-center fw-600 fs-15">Год издания</p>
+                                    </div>
+                                    <div class="col-2 table-header last-elem">
+                                        <p class="text-center fw-600 fs-15">Дата просмотра</p>
+                                    </div>
+                                </div>
+                                <div class="results history-work mt-16 table-responsive-xl">
+                                    <table class="table table-bordered" style="margin: 0;">
+                                        <tr class="first-row" style="border-top: none;">
+                                            <td class="col-2 br-none">
+                                                <a href="#" class="text-orange">
+                                                    Работа преподавателя на портале электронного
+                                                    обучения в среде LMS Moodle
+                                                </a>
+                                            </td>
+                                            <td class="col-2">
+                                                74.5 Профессиональное и специальное образование
+                                            </td>
+                                            <td class="col-2">
+                                                Издательство Омского государственного университета
+                                            </td>
+                                            <td class="col-2">
+                                                Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.
+                                            </td>
+                                            <td class="col-2">2022</td>
+                                            <td class="col-2 br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="br-none">
+                                                <span class="text-blue">
+                                                    Работа преподавателя на портале электронного обучения в среде LMS Moodle
+                                                </span>
+                                            </td>
+                                            <td>74.5 Профессиональное и специальное образование</td>
+                                            <td>Издательство Омского государственного университета</td>
+                                            <td>Тимкин С.Л., Максимов А.В., Грисимов А.В., Москалёв Г.Н.</td>
+                                            <td>2022</td>
+                                            <td class="br-none">09.03.2023</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                                <nav aria-label="Page navigation" style="margin-top: 2.25rem;">
+                                    <ul class="pagination justify-content-center flex-wrap m-0" style="gap: 5px;">
+                                        <li class="page-item d-flex align-items-center">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Previous">
+                                                Предыдущая
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none text-white active-tag" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link fw-600 fs-16 br-none" href="#">5</a></li>
+                                        <li class="page-item d-flex align-items-center">
+                                            <a class="page-link step fw-500 fs-16" href="#" aria-label="Next">
+                                                Следующая
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-item" id="new-arrivals-content">
+                        <div class="tab-content" id="new-arrivals-tabs-content">
+                            <div class="tab-pane fade show active" id="summary-of-books"
+                                 role="tabpanel" aria-labelledby="summary-of-books-tab" tabindex="0">
+
+                                <div class="filter">
+                                    <form action="#">
+                                        <h2 class="fw-600 fs-20">Настройте период загрузки и доступность книг в IPR SMART</h2>
+
+                                        <div class="row pt-36">
+                                            <div class="col-lg-3">
+                                                <label class="fw-600 fs-16" for="name-search">Поиск по имени</label>
+                                                <input type="text" id="summary-of-books-start-date" class="form-control fs-14 br-1 mt-12"
+                                                       placeholder="Введите дату">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label class="fw-600 fs-16" for="email-search">Поиск по e-mail</label>
+                                                <input type="text" id="summary-of-books-end-date" class="form-control fs-14 br-1 mt-12"
+                                                       placeholder="Введите дату">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label class="fw-600 fs-16" for="name-search">Поиск по имени</label>
+
+                                                <div class="mt-20 d-flex align-items-center">
+                                                    <input type="checkbox" name="user-agreement" id="summary-of-books-availability">
+                                                    <span class="fw-400 fs-14 opacity-70">Только доступные</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="d-flex align-items-end h-100">
+
+                                                    <a href="#" class="d-block orange-fill-button text-decoration-none fs-14 fw-600 w-100
+                                                        d-flex align-items-center justify-content-center" style="padding: 0.9rem 1.25rem;">
+                                                        <img src="img/mdi_filter.svg" alt="">
+                                                        <span class="ps-2 text-white">Применить</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="pt-5">
+                                        <h3 class="fw-500 fs-20">
+                                            За выбранный период всего <span class="fw-bold">1436</span>
+                                            новинок по всем УГНП (<a href="#" class="text-orange">скачать сводный отчет</a>)
+                                        </h3>
+
+                                        <div class="summary-of-books results border-radius-24">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="detailed-by-books"
+                                 role="tabpanel" aria-labelledby="detailed-by-books-tab" tabindex="0">
+                                Здесь Библиотека -> Новые поступления -> Детализированный по книгам
+                            </div>
+                            <div class="tab-pane fade show" id="detailed-by-periodicals"
+                                 role="tabpanel" aria-labelledby="detailed-by-periodicals-tab" tabindex="0">
+                                Здесь Библиотека -> Новые поступления -> Детализированный по периодике
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-item" id="books-content">
+                        Здесь Книгообеспеченность
+                    </div>
+
+                    <div class="right-panel-item" id="applications-in-library-content">
+                        Здесь Заявки в библиотеку
+                    </div>
+
+                    <div class="right-panel-item" id="teacher-training-content">
+                        Здесь Обучение преподавателей
+                    </div>
+
+                    <div class="right-panel-item" id="mobile-content">
+                        Здесь Мобильное приложение
+                    </div>
+
+                    <div class="right-panel-item" id="instructions-content">
+                        Здесь Инструкции
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/personal_account.js"></script>
+</footer>
+</body>
+</html>

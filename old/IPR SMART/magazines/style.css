@@ -1,0 +1,305 @@
+@import url("font/stylesheet.css");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(38, 50, 56, 1);
+}
+
+/* Тексты */
+.fs-40 {
+    font-size: 40px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.fs-36 {
+    font-size: 36px;
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
+.fw-600 {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    columns: inherit;
+}
+
+
+/* Форма */
+.form {
+    background: rgba(249, 250, 252, 1);
+    border-radius: 20px;
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.13);
+}
+/* Поля формы */
+.form-label {
+    font-weight: 600;
+    font-size: 16px;
+}
+.form-control {
+    padding: 1em;
+    border: none;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 7px;
+}
+.form-control::placeholder {
+    color: rgba(38, 50, 56, 0.5);
+    border-bottom: 1px solid rgba(38, 50, 56, 0.5);
+}
+#search-container .select2-container--default .select2-selection--single {
+    border-radius: 7px;
+    border: none;
+    padding: 1rem !important;
+    height: 100%;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09);
+}
+#search-container .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: -15px;
+}
+#search-container .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    display: inline-block;
+    transform: rotate(0deg);
+    margin-top: 12px;
+    margin-left: -15px;
+}
+.select2-results__option {
+    padding: 1em !important;
+}
+.select2-dropdown {
+    border: none;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09) !important;
+}
+.select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #FF8A00 !important;
+}
+#search-container .select2-selection__rendered {
+    padding: 0;
+}
+
+
+/* Кнопки */
+#search-container .button {
+    padding: 0.5em 1.5em;
+    width: 100%;
+    height: 100%;
+    border-radius: 71px;
+    border: 2px solid transparent;
+}
+#search-container .button span {
+    font-size: 16px;
+    font-weight: 700;
+}
+.switch-button,
+.orange-button {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%) border-box;
+}
+.switch-button,
+.orange-button span {
+    background: linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.orange-button:hover {
+    background: linear-gradient(180deg, #FE5B00 100%, #FF8A00 0%);
+}
+.orange-button:hover span {
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-button {
+    background: linear-gradient(90.49deg, #E64EFF -4.13%, #FF7A00 115.24%);
+}
+.gradient-button span {
+    color: white;
+}
+/* Кнопка переключения поиска */
+.switch-button {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%) border-box;
+}
+.switch-button span {
+    background: linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.switch-button.active {
+    background: linear-gradient(90.49deg, #E64EFF -4.13%, #FF7A00 115.24%);
+}
+.switch-button.active span {
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#pills-tab {
+    @media(max-width: 768px) {
+        display: grid;
+    } 
+}
+
+
+/* Табы для просмотра */
+#viewing-tab .nav-link{
+    background: linear-gradient(90.49deg, #FF7A00 -4.13%, #E64EFF 101.56%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+    font-weight: 500;
+}
+#viewing-tab .nav-link.active {
+    opacity: 1;
+}
+.upload-results {
+    background: linear-gradient(90.95deg, #8B2CF5 -8.31%, #D92CF5 50.82%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+
+/* Пагинация */
+.pagination .page-link {
+    color: #263238;
+    font-weight: 700;
+    box-shadow: none;
+}
+.pagination .page-link,
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+.pagination .page-link.active,
+.pagination .page-link.next {
+    border-radius: 67px;
+    background: linear-gradient(113deg, #E64EFF 0%, #FF7A00 100%);
+    color: #FFF;
+}
+
+
+/* Карточки журналов */
+.magazin-list {
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media(max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+.magazin-list .col {
+    display: flex;
+    justify-content: center;
+}
+.magazin-card {
+    background-image: url('img/book-background-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+
+    position: relative;
+    margin-top: 6em;
+    border-radius: 26px;
+    padding: 1.5em;
+
+    @media(max-width: 991px) {
+        width: 250px;
+    }
+}
+.magazin-list a:visited {
+    opacity: 50% !important;
+}
+.magazin-card .white-block {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    padding: 0.5em;
+}
+.magazin-card .white-block p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+.magazin-card .white-block span {
+    font-size: 16px;
+    font-weight: 400;
+}
+.magazin-card img {
+    position: absolute;
+    bottom: -110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media(max-width: 1200px) {
+        bottom: -90%;
+    }
+}
+.magazin-card .img-block {
+    width: 100%;
+    height: 5em;
+    position: relative;
+}
+
+
+/* Пагинация */
+.pagination .page-link {
+    color: #263238;
+    font-weight: 700;
+    box-shadow: none;
+}
+.pagination .page-link,
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+.pagination .page-link.active,
+.pagination .page-link.next {
+    border-radius: 67px;
+    background: linear-gradient(113deg, #E64EFF 0%, #FF7A00 100%);
+    color: #FFF;
+}
+
+
+/* Тематики */
+.catalog-card {
+    border-radius: 18px;
+    box-shadow: 2px 4px 11px -4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.catalog-card.blue:hover {
+    background-color: #ECF2FF;
+}
+.catalog-card.violet:hover {
+    background-color: #FBECFF;
+}
+.catalog-card.pink:hover {
+    background-color: #FFECFA;
+}
+.catalog-card.orange:hover {
+    background-color: #FFF7EC;
+}
+.catalog-card p {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px
+}

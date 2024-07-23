@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+</head>
+<body>
+    <div class="container py-4 d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form-modal">
+            Открыть форму
+        </button>
+    </div>
+
+    <div class="modal fade" id="form-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="p-4 d-flex flex-column gap-4 form">
+                        <h1 class="fw-bold fs-40 m-0">ЗАПОЛНИТЕ ФОРМУ И МЫ СВЯЖЕМСЯ С ВАМИ!</h1>
+            
+                        <p class="fs-16 fw-500 m-0">
+                            Издательство IPR SMART предоставляет услугу по публикации статей в журналах, 
+                            индексируемых в РИНЦ и DOI.
+                        </p>
+            
+                        <p class="fs-16 fw-500 m-0">
+                            Наши специалисты подберут издания, которые входят в Российский индекс научного 
+                            цитирования. Вы легко сможете опубликовать научную статью в РИНЦ и DOI.
+                        </p>
+            
+                        <div class="row g-4" id="features">
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/guaranteed-publication.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Гарантированная публикация</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">В согласованные сроки</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/reference.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Справка о публикации</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">Предоставляется после принятия статьи журналом</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/optimal-edition.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Подбор оптимального издания</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">Индексируемого в базе цитирования РИНЦ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/preparation-of-the-article.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Подготовка статьи</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">Согласно требованиям научного журнала</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/article-support.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Сопровождение статьи</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">На всех этапах вплоть до публикации</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/informing.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Информирование</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">О любых изменениях в статусе вплоть до размещения статьи</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/communications.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Коммуникации</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">Ведение деловой переписки с редакторами научных журналов</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-3 align-items-start">
+                                    <img src="img/reporting.svg" alt="">
+                                    <div>
+                                        <span class="fs-16 fw-600">Отчётность</span>
+                                        <p class="m-0 fs-16 fw-500 grey-text">
+                                            Предоставление авторам печатной версии журнала (при заказе), 
+                                            а также ссылки на опубликованную статью или pdf-версию
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="advantages">
+                            <h2 class="m-0 fs-20 fw-600">Преимущества</h2>
+            
+                            <div class="row pt-3 gy-3">
+                                <div class="col-6 d-flex gap-3">
+                                    <img src="img/orange-li.svg" alt="">
+                                    <span>улучшение показателей цитируемости</span>
+                                </div>
+                                <div class="col-6 d-flex gap-3">
+                                    <img src="img/orange-li.svg" alt="">
+                                    <span>возможность заявить о своем открытии или достижениях</span>
+                                </div>
+                                <div class="col-6 d-flex gap-3">
+                                    <img src="img/orange-li.svg" alt="">
+                                    <span>возможность получения премий/стипендий</span>
+                                </div>
+                                <div class="col-6 d-flex gap-3">
+                                    <img src="img/orange-li.svg" alt="">
+                                    <span>получение признания в научном мире</span>
+                                </div>
+                                <div class="col-6 d-flex gap-3">
+                                    <img src="img/orange-li.svg" alt="">
+                                    <span>получение гранта на исследования</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <form action="#" class="d-grid gap-3" id="form">
+                            <input class="p-3" type="text" placeholder="ФИО">
+
+                            <input class="p-3" type="text" placeholder="Ваш номер телефона">
+
+                            <input class="p-3" type="text" placeholder="Ваш E-mail">
+
+                            <select class="specify-position">
+                                <option></option>
+                                <option value="1">Вариант 1</option>
+                                <option value="2">Вариант 2</option>
+                            </select>
+
+                            <select class="choose-university">
+                                <option></option>
+                                <option value="1">Вариант 1</option>
+                                <option value="2">Вариант 2</option>
+                            </select>
+
+                            <a href="#" class="submit-button fw-500 fs-16 text-center text-decoration-none mt-3 px-2 py-3">
+                                ОТПРАВИТЬ ЗАЯВКУ
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('select.specify-position').select2({
+                    minimumResultsForSearch: -1,
+                    placeholder: 'Уточните вашу должность',
+                });
+                $('select.choose-university').select2({
+                    minimumResultsForSearch: -1,
+                    placeholder: 'Выберите университет',
+                });
+            });
+        </script>
+    </footer>
+</body>
+</html>

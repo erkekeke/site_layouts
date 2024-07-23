@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url('fonts/Sansation-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Sansation', sans-serif;
+    color: rgba(2, 48, 131, 1);
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
+}
+.display-inline-block {
+    display: inline-block;
+}
+
+/* Тексты */
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.fs-36 {
+    font-size: 36px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.fs-52 {
+    font-size: 52px;
+
+    @media(max-width: 576px) {
+        font-size: 46px;
+    }
+    @media(max-width: 576px) {
+        font-size: 32px;
+    }
+}
+.fs-60 {
+    font-size: 60px;
+
+    @media(max-width: 576px) {
+        font-size: 52px;
+    }
+    @media(max-width: 576px) {
+        font-size: 44px;
+    }
+}
+
+.blue-text {
+    color: rgba(2, 48, 131, 1);
+}
+.fw-500 {
+    font-weight: 600;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+
+
+
+
+/* Кнопки */
+.blue-button {
+    background: rgba(2, 48, 131, 1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 77, 215, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+}

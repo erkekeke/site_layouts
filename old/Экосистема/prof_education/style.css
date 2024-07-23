@@ -1,0 +1,135 @@
+@import url("font/stylesheet.css");
+
+* {
+    color: #263238;
+    font-family: "Montserrat", sans-serif;
+    overflow-wrap: break-word;
+}
+
+.large-text {
+    font-size: 44px;
+    line-height: 55px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(180deg, #F87631 0%, #FFA928 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.medium-text {
+    font-size: 32px;
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
+
+.small-text {
+    font-size: 20px;
+}
+
+/* Buttons */
+.orange-btn {
+    border-radius: 66px;
+    background: linear-gradient(180deg, #F87631 0%, #FFA928 100%);
+    padding: 10px 32px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.img {
+    @media(max-width: 576px) {
+        margin: 32px 0;
+    }
+}
+
+.custom-card-text {
+    font-size: 18px;
+
+    @media(max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.quantity {
+    font-size: 46px;
+    font-weight: 600;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+
+.custom-card {
+    box-shadow: 0px 0px 15px 0px #00000026;
+    border-radius: 24px;
+    max-height: 110px;
+}
+
+.image-el-overflow {
+    overflow: visible;
+    position: relative;
+    margin-left: -72%;
+
+    @media (max-width: 992px) {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+        position: inherit;
+    }
+}
+
+.attention {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #00000026;
+}
+
+.opportunities {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #00000026;
+}
+
+.opportunity {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.inner-li {
+    list-style-type: none;
+    font-weight: 500;
+}
+.inner-li:before {
+    content: "- ";
+}
+
+.certificate {
+    font-size: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.phone-call-text {
+    font-size: 20px;
+
+    @media (max-width: 576px) {
+        font-size: 18px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "•";
+    font-size: 120%;
+    padding-right: 10px;
+    margin-top: 20px;
+}

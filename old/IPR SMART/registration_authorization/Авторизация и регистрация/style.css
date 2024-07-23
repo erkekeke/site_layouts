@@ -1,0 +1,283 @@
+* {
+    color: rgba(38, 50, 56, 1);
+    font-family: "Montserrat", sans-serif;;
+}
+
+
+/* Тексты */
+.large-text {
+    font-size: 40px;
+    margin: 0;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.orange-text {
+    color: rgba(255, 169, 39, 1) !important;
+}
+.medium-text {
+    font-size: 18px;
+    margin: 0;
+
+    @media(max-width: 576px) {
+        font-size: 16px;
+    }
+}
+.small-text {
+    font-size: 16px;
+    margin: 0;
+    @media(max-width: 576px) {
+        font-size: 14px;
+    }
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Модалка */
+.modal-content,
+.modal-body {
+    padding: 0 !important;
+    border-radius: 24px !important;
+    border: none !important;
+}
+.modal-dialog {
+    max-width: 50% !important;
+}
+
+
+/* Форма авторизации */
+#authorization-modal .form-container .parameter {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+#authorization-modal .authorization-card {
+    border-radius: 24px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+#authorization-modal .parameter::placeholder {
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5);
+
+    @media(max-width: 576px) {
+        font-size: 16px;
+    }
+}
+/* Скрыть оригинальный чекбокс */
+#authorization-modal .form-container input[type="checkbox"] {
+    display: none;
+}
+/* Стилизация для внешнего вида чекбокса */
+#authorization-modal .form-container input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(38, 50, 56, 1);
+    border-radius: 2px;
+    margin-right: 15px;
+    padding: 10px
+}
+#authorization-modal .form-container input[type="checkbox"]:checked + label:before {
+    background-image: url('img/checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#authorization-modal .form-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#authorization-modal .form-container .submit-btn {
+    background: rgba(255, 169, 39, 1);
+    height: 40px;
+    border-radius: 66px;
+    border: none;
+    width: 100%;
+}
+#authorization-modal .form-container .registration-btn {
+    border: 2px solid rgba(255, 169, 39, 1);
+    border-radius: 66px;
+    height: 40px;
+    background-color: white;
+    color: rgba(255, 169, 39, 1);
+    width: 100%;
+}
+
+
+
+/* Форма регистрации по коду */
+#invitation-code-registration-modal .code-input {
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+#invitation-code-registration-modal .code-input::placeholder {
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5);
+}
+#invitation-code-registration-modal .submit-btn {
+    background: rgba(255, 169, 39, 1);
+    border-radius: 66px;
+    border: none;
+}
+#invitation-code-registration-modal .registration-card {
+    border-radius: 24px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Форма регистрации */
+#registration-modal .submit-btn {
+    background: rgba(255, 169, 39, 1);
+    border-radius: 66px;
+    border: none;
+}
+#registration-modal .registration-card {
+    border-radius: 24px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgba(249, 250, 252, 1);
+}
+#registration-modal .stepper .step-display {
+    background: #CFD2D5;
+    height: 6px;
+}
+#registration-modal .stepper .active-step-display {
+    background: #70777C;
+}
+/* Поля ввода */
+#registration-modal input[type="text"],
+#registration-modal input[type="text"]:focus,
+#registration-modal input[type="text"]:focus-visible,
+#registration-modal input.form-control {
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    outline: none;
+}
+#registration-modal input.typeahead {
+    border-radius: 12px 0 0 12px;
+}
+#registration-modal input::placeholder {
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5) !important;
+    word-break: keep-all;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+#registration-modal .arrow {
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5) !important;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+#registration-modal ul.dropdown-menu[style*="display: block"] + .arrow img {
+    transform: rotate(180deg);
+}
+#registration-modal ul.dropdown-menu[style*="display: none"] + .arrow img {
+    content: url('img/cross.svg');
+}
+#registration-modal .form-control:focus {
+    box-shadow: none !important;
+}
+/* Выпадающий список */
+#registration-modal ul.typeahead.dropdown-menu {
+    border-radius: 0 0 12px 12px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: none;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
+    margin-top: -0.5rem;
+}
+#registration-modal .typeahead.dropdown-menu .dropdown-item {
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+}
+#registration-modal .typeahead.dropdown-menu .active,
+#registration-modal .typeahead.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 247, 236, 1);
+}
+/* Настройка внешнего вида скролла */
+#registration-modal .bootstrap-select .dropdown-item {
+    font-size: 18px;
+    padding: 10px;
+}
+#registration-modal .bootstrap-select .dropdown-menu {
+    border: none !important;
+    max-height: 200px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+}
+#registration-modal .bootstrap-select .dropdown-menu .inner::-webkit-scrollbar,
+#registration-modal .typeahead.dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+}
+#registration-modal .bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-track,
+#registration-modal .typeahead.dropdown-menu::-webkit-scrollbar-track {
+    background: #F8FCF0;;
+    border-radius: 10px;
+}
+#registration-modal .bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-thumb,
+#registration-modal .typeahead.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 169, 39, 1);
+    border-radius: 10px;
+    border: 0 solid #FFFFFF;
+}
+#registration-modal .bootstrap-select.dropdown {
+    width: 100% !important;
+}
+#registration-modal .btn.dropdown-toggle,
+#registration-modal .btn.dropdown-toggle:hover {
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+}
+#registration-modal .btn.dropdown-toggle.bs-placeholder .filter-option-inner-inner {
+    color: rgba(38, 50, 56, 0.5);
+}
+/* Чекбоксы */
+#registration-modal input[type="checkbox"] {
+    appearance: none;
+}
+#registration-modal #fourth-step input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid rgba(38, 50, 56, 1);
+    margin-right: 12px;
+}
+#registration-modal #fourth-step input[type="checkbox"]:checked {
+    background-image: url('img/checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#registration-modal .custom-shadow,
+#registration-modal .custom-shadow:focus {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px;
+}
+#registration-modal .step {
+    display: none;
+}
+#registration-modal #first-step {
+    display: block;
+}

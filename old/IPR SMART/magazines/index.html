@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPR SMART</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://dev.datalib.ru/fonts/awesome/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container py-4" id="search-container">
+            <ul class="nav nav-pills justify-content-center pt-5 gap-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a href="#" class="nav-link switch-button button active" data-bs-toggle="pill" data-bs-target="#pills-filter" role="tab">
+                        <span>ПОИСК ПО ПАРАМЕТРАМ</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link switch-button button" data-bs-toggle="pill" data-bs-target="#pills-topic" role="tab">
+                        <span>ПОКАЗАТЬ ТЕМАТИКИ</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content pt-5">
+                <div class="tab-pane active" id="pills-filter" role="tabpanel">
+                    <h2 class="text-center fs-40 fw-bold ">РАСШИРЕННЫЙ ПОИСК</h2>
+
+                    <form class="form p-4 mt-4">
+                        <div class="row g-4">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div>
+                                    <label for="title" class="form-label">Заглавие</label>
+                                    <input type="text" class="form-control" id="title"
+                                        placeholder="Начните ввод...">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div>
+                                    <label for="publication" class="form-label">Издательство</label>
+                                    <input type="text" class="form-control" id="publication"
+                                        placeholder="Начните ввод...">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div>
+                                    <label for="ugsn" class="form-label">УГСН</label>
+                                    <input type="text" class="form-control" id="ugsn"
+                                        placeholder="Начните ввод...">
+                                </div>
+                            </div>
+                            
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div>
+                                    <label for="availability" class="form-label">Доступность журнала</label>
+                                    <input type="text" class="form-control" id="availability"
+                                        placeholder="Начните ввод...">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <label for="vak" class="form-label">Входит ли в ВАК</label>
+                                <select class="select" name="vak" id="vak">
+                                    <option></option>
+                                    <option value="1">Выбор из списка</option>
+                                    <option value="0">Выбор из списка</option>
+                                </select>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <label for="subscribe" class="form-label">Вариант подписки</label>
+                                <select class="select" name="subscribe" id="subscribe">
+                                    <option></option>
+                                    <option value="1">Выбор из списка</option>
+                                    <option value="0">Выбор из списка</option>
+                                </select>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 mt-xl-auto">
+                                <button class="button orange-button" type="reset">
+                                    <span>ОЧИСТИТЬ ВСЕ <i class="fa-solid fa-circle-xmark ps-3"></i></span>
+                                </button>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 mt-xl-auto">
+                                <button class="button gradient-button" type="submit">
+                                    <span>ПРИМЕНИТЬ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="pills-topic" role="tabpanel" tabindex="0">
+                    <h2 class="text-center fw-bold fs-40">ТЕМАТИКИ</h2>
+                    <div class="row g-4 pt-4 justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center blue">
+                                <a href="#"><img src="img/1.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Промышленность</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center violet">
+                                <a href="#"><img src="img/5.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">IT-технологии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center pink">
+                                <a href="#"><img src="img/9.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Культура</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center orange">
+                                <a href="#"><img src="img/13.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Энергетика</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center blue">
+                                <a href="#"><img src="img/2.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Науки об обществе и человеке</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center violet">
+                                <a href="#"><img src="img/6.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Социальная сфера</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center pink">
+                                <a href="#"><img src="img/10.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Гуманитарные науки</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center orange">
+                                <a href="#"><img src="img/14.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Транспорт</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center blue">
+                                <a href="#"><img src="img/3.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Инженерные науки</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center violet">
+                                <a href="#"><img src="img/7.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Оборона и безопасность</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center pink">
+                                <a href="#"><img src="img/11.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Архитектура и строительство</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center orange">
+                                <a href="#"><img src="img/15.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Сельское хозяйство</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center blue">
+                                <a href="#"><img src="img/4.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Естественные науки</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center violet">
+                                <a href="#"><img src="img/8.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Педагогика</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center pink">
+                                <a href="#"><img src="img/12.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Музыка и искусство</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card catalog-card d-flex flex-row align-items-center orange">
+                                <a href="#"><img src="img/16.svg" alt=""></a>
+                                <a href="#">
+                                    <p class="m-0">Здравоохранение</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="content-container">
+            <h3 class="fs-36 fw-600">В найденных журналах 22 560 номеров</h3>
+        
+            <div class="d-flex justify-content-between align-items-center pt-4">
+                <ul class="nav nav-pills" id="viewing-tab" role="tablist">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ps-0" data-bs-toggle="pill" data-bs-target="#pills-list" role="tab">
+                            <i class="fa-solid fa-list"></i>
+                            Смотреть списком
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0" data-bs-toggle="pill" data-bs-target="#pills-full" role="tab">
+                            <i class="fa-solid fa-border-all"></i>
+                            Смотреть наглядно
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="upload-results">
+                    <p class="fw- m-0 p-0"><i class="fa-solid fa-download"></i> Выгрузить
+                        результаты
+                    </p>
+                </a>
+            </div>
+
+            <div class="tab-content pt-4 tab-content">
+                <div class="tab-pane active" id="pills-list" role="tabpanel" tabindex="0">
+                    <div class="magazin-list g-3 row">
+                        <div class="col">
+                            <a href="#">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-1.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="#">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-2.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-3.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-1.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-2.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-3.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-1.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-2.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-3.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=BLqktDBIew8&list=RDu-Bg2ok9Rp8&index=8">
+                                <div class="magazin-card">
+                                    <div class="white-block">
+                                        <div class="img-block">
+                                            <img src="img/example-book-1.png" class="img-fluid" alt="">
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-1">
+                                            <p>“Новое пособие по&nbsp;механике” (2022)</p>
+                                            <span>И.И. Иванов</span>
+                                            <span>(ACADEMIA)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-4">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination flex-wrap">
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link next" href="#">ДАЛЬШЕ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://kit.fontawesome.com/406508d26b.js" crossorigin="anonymous"></script>
+
+        <script>
+            function initSelect(tag, placeholder) {
+                $(tag).select2({
+                    minimumResultsForSearch: -1,
+                    placeholder: placeholder,
+                    width: '100%',
+                });
+            }
+            $(document).ready(function () {
+                initSelect('.select', 'Выбор из списка...');
+            });
+        </script>
+    </footer>
+</body>
+</html>

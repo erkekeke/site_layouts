@@ -1,0 +1,186 @@
+@import url("font/stylesheet.css");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(38, 50, 56, 1);
+}
+
+
+/* Тексты */
+.fs-48 {
+    font-size: 48px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.fs-40 {
+    font-size: 40px;
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+
+/* Навигационные табы*/
+#alt-forms-list .nav-link {
+    padding: 0;
+    border-radius: 18px;
+    box-shadow: 2px 4px 11px -4px rgba(0, 0, 0, 0.25);
+    background: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: inherit;
+}
+#alt-forms-list,
+#alt-forms-list .nav-link {
+    border: none !important;
+    outline: none !important;
+}
+#alt-forms-list .l-1.active {
+    background: rgba(236, 242, 255, 1);
+}
+#alt-forms-list .l-2.active {
+    background: rgba(251, 236, 255, 1);
+}
+#alt-forms-list .l-3.active {
+    background: rgba(255, 236, 250, 1);
+}
+#alt-forms-list .l-4.active {
+    background: rgba(255, 247, 236, 1);
+}
+
+
+/* Форма */
+.form {
+    background: rgba(249, 250, 252, 1);
+    border-radius: 20px;
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.13);
+}
+/* Поля формы */
+.form-label {
+    font-weight: 600;
+    font-size: 16px;
+}
+.form-control {
+    padding: 1em;
+    border: none;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 7px;
+}
+.form-control::placeholder {
+    color: rgba(38, 50, 56, 0.5);
+    border-bottom: 1px solid rgba(38, 50, 56, 0.5);
+}
+#tab-content .select2-container--default .select2-selection--single {
+    border-radius: 7px;
+    border: none;
+    padding: 1rem !important;
+    height: 100%;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09);
+}
+#tab-content .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: -15px;
+}
+#tab-content .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    display: inline-block;
+    transform: rotate(0deg);
+    margin-top: 12px;
+    margin-left: -15px;
+}
+#tab-content .select2-selection__rendered {
+    padding: 0;
+}
+
+
+/* Кнопки */
+.button {
+    padding: 0.5em 1.5em;
+    width: 100%;
+    height: 100%;
+    border-radius: 71px;
+    border: 2px solid transparent;
+    margin-top: 20px;
+}
+.button span {
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Очистка формы */
+.reset-btn {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%) border-box;
+}
+.reset-btn span {
+    background: linear-gradient(180deg, #FF8A00 0%, #FE5B00 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reset-btn:hover {
+    background: linear-gradient(180deg, #FE5B00 100%, #FF8A00 0%);
+}
+.reset-btn:hover span {
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Отправка формы */
+.submit-btn {
+    background: linear-gradient(90.49deg, #E64EFF -4.13%, #FF7A00 115.24%);
+}
+.submit-btn span {
+    color: white;
+}
+
+
+/* Табы для просмотра */
+.nav-pills .nav-link{
+    background: linear-gradient(90.49deg, #FF7A00 -4.13%, #E64EFF 101.56%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+    font-weight: 500;
+}
+.nav-pills .nav-link.active {
+    opacity: 1;
+}
+.upload-results {
+    background: linear-gradient(90.95deg, #8B2CF5 -8.31%, #D92CF5 50.82%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+
+/* Пагинация */
+.pagination .page-link {
+    color: #263238;
+    font-weight: 700;
+    box-shadow: none;
+}
+.pagination .page-link,
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+.pagination .page-link.active,
+.pagination .page-link.next {
+    border-radius: 67px;
+    background: linear-gradient(113deg, #E64EFF 0%, #FF7A00 100%);
+    color: #FFF;
+}

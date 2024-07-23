@@ -1,0 +1,230 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(38, 50, 56, 1);
+}
+
+/* Тексты */
+.large-text {
+    font-size: 44px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.small-text {
+    font-size: 20px;
+
+    @media(max-width: 576px) {
+        font-size: 16px;
+    }
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-36 {
+    font-size: 36px;
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
+}
+.red-text {
+    color: rgba(185, 12, 12, 1);
+}
+.grey-text {
+    color: rgba(38, 50, 56, 1);
+}
+.orange-text {
+    color: rgba(255, 137, 6, 1);
+}
+.gradient-text {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+/* Слайдер */
+.date-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-win {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.slider-control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.date-slider .slider-item {
+    width: auto;
+    font-size: 20px;
+    margin: 5px;
+
+    flex-grow: 0;
+    flex-shrink:0;
+}
+.date-slider .sl-btn {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: white;
+}
+
+/* Текущие выбранные события*/
+.active-option {
+    color: rgba(255, 137, 6, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Контейнер для событий*/
+.content-card {
+    border-radius: 24px 24px 0 0;
+    background-color: white;
+}
+.grey-bottom {
+    background-color: #F9FAFC;
+    border-radius: 24px;
+    padding-bottom: 35px;
+    box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.14);
+}
+
+/* Карточка события */
+.custom-card {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.date {
+    top: 20px;
+    left: 20px;
+}
+.date span {
+    background-color: rgba(255, 137, 6, 1);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 36px;
+}
+
+/* Пагинация */
+.page-link.active-tag,
+.page-link.active-tag:hover,
+.page-link.active-tag:focus {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: #FFFFFF;
+    z-index: 10;
+}
+.page-link,
+.page-link:hover {
+    border: 0;
+    color: rgba(38, 50, 56, 1);
+    border-radius: 10px;
+    font-weight: 600;
+}
+.sr-only {
+    font-weight: 500;
+}
+
+/* Форма рассылки */
+.mailing-form {
+    background: linear-gradient(180deg, #FFFEFF 0%, #FEF7EB 100%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+}
+.mailing-form input {
+    border-radius: 12px;
+    padding: 1.5em;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+.mailing-form input::placeholder {
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5);
+}
+.mailing-form-container {
+    --b: .3em;
+    --c: 3em;
+    --r: 1.6em;
+    position: relative;
+    border: solid var(--b) transparent;
+}
+.mailing-form-container::before {
+    background: linear-gradient(180deg, #FFC327 0%, #FF5C01 113.39%) border-box;
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1*var(--b));
+    border: inherit;
+    border-radius: var(--r);
+    --corner: conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
+    0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+    --inner: conic-gradient(red 0 0) padding-box;
+    -webkit-mask: var(--corner), var(--inner);
+    -webkit-mask-composite: source-out;
+    mask: var(--corner) subtract, var(--inner);
+    content: ''
+}
+.gradient {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+}
+.custom-button {
+    border-radius: 20px;
+}
+
+/* Owl карусель*/
+.owl-carousel {
+    position: relative;
+}
+#all button.owl-prev {
+    position: absolute;
+    top: 45%;
+    left: -15px;
+    padding: 20px;
+    background-color: rgba(38, 50, 56, 0.7);
+    border-radius: 100px;
+
+    @media(max-width: 576px) {
+        top: 35%;
+    }
+}
+#all button.owl-next {
+    position: absolute;
+    top: 45%;
+    right: -15px;
+    padding: 20px;
+    background-color: rgba(38, 50, 56, 0.7);
+    border-radius: 100px;
+
+    @media(max-width: 576px) {
+        top: 35%;
+    }
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.img-block {
+    position: absolute;
+    bottom: 0;
+
+    @media(max-width: 991px) {
+        position: relative;
+        margin-top: 20px;
+    }
+}

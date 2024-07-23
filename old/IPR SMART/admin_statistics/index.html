@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика Администратора</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="bootstrap-select.css">
+</head>
+<body>
+    <main>
+        <div class="container py-4">
+            <ul class="nav nav-tabs" id="tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="platform-tab" data-bs-toggle="tab" data-bs-target="#platform"
+                            type="button" role="tab" aria-controls="platform" aria-selected="true">
+                        <span>Использование платформы</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads"
+                            type="button" role="tab" aria-controls="downloads" aria-selected="false"><span>Скачивание
+                            изданий</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reports-tab" data-bs-toggle="tab" data-bs-target="#reports"
+                            type="button" role="tab" aria-controls="reports" aria-selected="false"><span>Отчеты</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="usage-tab" data-bs-toggle="tab" data-bs-target="#usage"
+                            type="button" role="tab" aria-controls="usage" aria-selected="false">
+                        <span>Использование мобильного приложения</span>
+                    </button>
+                </li>
+            </ul>
+            <div id="main-content-card" class="p-4">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="platform" role="tabpanel" aria-labelledby="platform-tab" tabindex="0">
+                        <form class="p-4 filter-card">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <label for="start" class="form-label fs-16 fw-600">Начало периода</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="start" placeholder="23.08.2022">
+                                    </div>
+                                </div>
+                                 <div class="col-lg-3">
+                                    <label for="end" class="form-label fs-16 fw-600">Конец периода</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="end" placeholder="23.08.2023">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="sort" class="form-label fs-16 fw-600">Параметры сортировки</label>
+                                    <div>
+                                        <select class="selectpicker" name="sort" id="sort">
+                                            <option value="2" selected>Количество книговыдач(по&nbsp;возрастанию)</option>
+                                            <option value="1">Количество книговыдач(по&nbsp;убыванию)</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="branches" class="form-label fs-16 fw-600" title="Выбор из списка">Филиалы</label>
+                                    <div>
+                                        <select class="selectpicker" name="branches" id="branches">
+                                            <option value="1">Выбор из списка</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="sections">
+                                        <label for="sections" class="fs-16 fw-600">Сгруппировать по&nbsp;разделам</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="graphs">
+                                        <label for="graphs" class="fs-16 fw-600">Представить графически</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <button class="reset-button button" type="reset">
+                                        <span class="fs-16 fw-bold">ОЧИСТИТЬ ВСЕ&nbsp;<i class="fa-solid fa-circle-xmark ps-3"></i></span>
+                                    </button>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button class="submit-button button" type="submit">
+                                        <span class="fs-16 fw-bold">ПРИМЕНИТЬ</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="row pt-4 g-3">
+                            <div class="col-lg-3 info d-flex flex-column gap-3">
+                                <div class="col-12 b-1">
+                                    <span>4 546</span>
+                                    <p>Количество посещений преподавателями платформы</p>
+                                </div>
+                                <div class="col-12 b-2">
+                                    <span>3 546</span>
+                                    <p>Количество посещений студентами платформы</p>
+                                </div>
+                                <div class="col-12 b-3">
+                                    <span>14 546 часов</span>
+                                    <p>Среднее время студентов и&nbsp;преподавателей на&nbsp;платформе</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9">
+                                <canvas id="chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="reports" role="tabpanel" aria-labelledby="reports-tab" tabindex="0">
+                        <form class="p-4 filter-card">
+                            <div class="row g-3">
+                                <div class="col-lg-3 position-relative">
+                                    <label for="magazines" class="form-label fs-16 fw-600" title="Выбор из списка...">Журналы</label>
+                                    <div>
+                                        <select class="selectpicker" name="magazines" id="magazines">
+                                            <option value="1">Выбор из списка</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="collections" class="form-label fs-16 fw-600" title="Выбор из списка...">Коллекции</label>
+                                    <div>
+                                        <select class="selectpicker" name="collections" id="collections">
+                                            <option value="1">Выбор из списка</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="reports-branches" class="form-label fs-16 fw-600" title="Выбор из списка...">Филиалы</label>
+                                    <div>
+                                        <select class="selectpicker" name="reports-branches" id="reports-branches">
+                                            <option value="1">Выбор из списка</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="houses" class="form-label fs-16 fw-600" title="Выбор из списка...">Издательства</label>
+                                    <div>
+                                        <select class="selectpicker" name="houses" id="houses">
+                                            <option value="1">Выбор из списка</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="reports-start" class="form-label fs-16 fw-600">Начало&nbsp;периода</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="reports-start" placeholder="23.08.2022">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="reports-end" class="form-label fs-16 fw-600">Конец&nbsp;периода</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="reports-end" placeholder="23.08.2023">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 position-relative">
+                                    <label for="reports-sort" class="form-label fs-16 fw-600">Параметры&nbsp;сортировки</label>
+                                    <div>
+                                        <select class="selectpicker" name="reports-sort" id="reports-sort">
+                                            <option value="2" selected>Количество книговыдач(по&nbsp;возрастанию)</option>
+                                            <option value="1">Количество книговыдач(по&nbsp;убыванию)</option>
+                                            <option value="0">Выбор из списка</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 d-flex flex-column gap-2 mt-auto">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="reports-sections">
+                                        <label for="reports-sections" class="fs-16 fw-600">Сгруппировать по&nbsp;разделам</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" id="reports-graphs">
+                                        <label for="reports-graphs" class="fs-16 fw-600">Представить графически</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-center gap-3">
+                                    <div class="col-lg-3">
+                                        <button class="reset-button button" type="reset">
+                                            <span class="fs-16 fw-bold">ОЧИСТИТЬ ВСЕ&nbsp;<i class="fa-solid fa-circle-xmark ps-3"></i></span>
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <button class="submit-button button" type="submit">
+                                            <span class="fs-16 fw-bold">ПРИМЕНИТЬ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h2 class="text-center fw-600 fs-24 pt-5">Отчеты по&nbsp;ресурсам</h2>
+
+                        <div class="row pt-4 g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Отчет о&nbsp;новых ресурсах</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Отчет о&nbsp;доступных ресурсах</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Истекающий доступ</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Исключенные книги</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Замененные книги</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Отчет по&nbsp;УГСН</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Отчет по&nbsp;контенту для&nbsp;незрячих</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Содержание ЭБС</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="resource-card">Мониторинг</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h2 class="text-center fw-600 fs-24 pt-5">Журналы</h2>
+                        <h3 class="text-center fw-600 fs-16 pt-2 opacity-50">Дата формирования 24.08.2023  15:19:11</h3>
+
+                        <div class="table-div table-responsive-xl mt-4">
+                            <table class="table text-center table-bordered border-dark m-0">
+                                <thead>
+                                    <tr style="border-top: none;">
+                                        <th class="br-none">Журнал</th>
+                                        <th>Издательство</th>
+                                        <th>Перечень ВАК</th>
+                                        <th>Страна</th>
+                                        <th>Количество выпусков</th>
+                                        <th class="br-none">Количество статей</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="gradient-text br-none">#Ученичество</td>
+                                        <td>Тульский государственный педагогический университет им. Л.Н. Толстого</td>
+                                        <td>Не входит</td>
+                                        <td>Россия</td>
+                                        <td>3</td>
+                                        <td class="br-none">22</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gradient-text br-none">Acta Biomedica Scientifica</td>
+                                        <td>Научный центр проблем здоровьясемьи и&nbsp;репродукции человека</td>
+                                        <td>Не входит</td>
+                                        <td>Россия</td>
+                                        <td>35</td>
+                                        <td class="br-none">937</td>
+                                    </tr>
+                                    <tr style="border-bottom: none;">
+                                        <td class="gradient-text br-none">Arctic Enviromental Research</td>
+                                        <td>Северный (Арктический) федеральный университет им. М.В. Ломоносова</td>
+                                        <td>Входит</td>
+                                        <td>Россия</td>
+                                        <td>26</td>
+                                        <td class="br-none">275</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap-select.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/createGraph.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.selectpicker').selectpicker();
+            });
+        </script>
+    </footer>
+</body>
+</html>

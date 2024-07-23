@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Sansation';
+    src: url('fonts/Sansation-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Sansation', sans-serif;
+    color: rgba(2, 48, 131, 1);
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
+}
+.display-inline-block {
+    display: inline-block;
+}
+
+/* Тексты */
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.fs-36 {
+    font-size: 36px;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.fs-52 {
+    font-size: 52px;
+
+    @media(max-width: 576px) {
+        font-size: 46px;
+    }
+    @media(max-width: 576px) {
+        font-size: 32px;
+    }
+}
+.fs-60 {
+    font-size: 60px;
+
+    @media(max-width: 576px) {
+        font-size: 52px;
+    }
+    @media(max-width: 576px) {
+        font-size: 44px;
+    }
+}
+.fw-500 {
+    font-weight: 600;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+/* Первый раздел */
+.lin-page-grad {
+    background: linear-gradient(180deg, #9CC4FF 0%, #FAF9FF 91.53%);
+}
+.profession-card {
+    border-radius: 44px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 46px 46px 40px rgba(0, 0, 0, 0.25);
+
+    @media(max-width: 576px) {
+        box-shadow: none;
+    }
+}
+
+/* Второй раздел */
+#second-chapter {
+    background: radial-gradient(58.29% 58.29% at 52.06% 32.38%, #080F4F 0%, #004DA7 67.29%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(50% 50% at 50% 50%, rgba(133, 131, 255, 0.6) 40.66%, rgba(133, 131, 255, 0) 99.99%, rgba(133, 131, 255, 0) 100%),
+    linear-gradient(180deg, rgba(8, 15, 79, 0.75) 0%, rgba(8, 15, 79, 0.55) 71.34%);
+}
+.skills div {
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Третий раздел */
+.test-drive-card {
+    position: relative;
+    margin-top: -10%;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 46px 46px 40px 0px rgba(0, 0, 0, 0.1);
+    padding: 5rem 3rem;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+
+    @media(max-width: 576px) {
+        box-shadow: none;
+    }
+}
+.circle {
+    background: rgba(2, 48, 131, 1);
+    border-radius: 100px;
+    height: 18px;
+    min-width: 18px;
+    margin-top: 10px;
+    margin-right: 24px;
+}
+.vertical-line {
+    background: rgba(2, 48, 131, 1);
+    max-width: 2px;
+    min-width: 2px;
+    opacity: 50%;
+    height: calc(100% + 40px);
+    margin-left: 9px;
+}
+.video-block {
+    border-radius: 26px;
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid rgba(225, 221, 221, 0.5);
+    box-shadow: 46px 46px 40px 0px rgba(0, 0, 0, 0.15);
+
+    @media(max-width: 576px) {
+        box-shadow: none;
+    }
+}
+.in-simulator {
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(225, 221, 221, 0.5);
+    box-shadow: 46px 46px 40px 0px rgba(0, 0, 0, 0.1);
+    padding: 5rem 3rem;
+
+    @media(max-width: 576px) {
+        box-shadow: none;
+    }
+}
+.top-border-line {
+    border-top: 1px solid rgba(2, 48, 131, 0.5);
+}
+.bottom-border-line {
+    border-bottom: 1px solid rgba(2, 48, 131, 0.5);
+}
+.blur-page-1 {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(177, 147, 246, 0.84) 68.75%, rgba(38, 164, 255, 0.84) 83.33%);
+    top: 0;
+    right: 0;
+    filter: blur(79px);
+    border-radius: 100rem 0 0 100rem;
+    width: 29%;
+    height: 11rem;
+}
+.blur-page-2 {
+    position: absolute;
+    background: linear-gradient(0deg, #00D1FF, #00D1FF);
+    top: 30%;
+    right: 0;
+    filter: blur(130px);
+    border-radius: 100rem;
+    width: 6%;
+    height: 40%;
+}
+.blur-page-3 {
+    position: absolute;
+    background: radial-gradient(35.22% 35.22% at 50% 50%, #26A4FF 66.15%, #8C98FF 72.92%);
+    top: 0;
+    left: 0;
+    filter: blur(110px);
+    border-radius: 0 100rem 100rem 0;
+    width: 8%;
+    height: 40rem;
+}
+.blur-page-4 {
+    position: absolute;
+    background: radial-gradient(35.22% 35.22% at 50% 50%, #26A4FF 66.15%, #8C98FF 72.92%);
+    top: 0;
+    right: 0;
+    filter: blur(115px);
+    border-radius: 0 0 0 100rem;
+    width: 6%;
+    height: 40rem;
+}
+.blur-page-5 {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(177, 147, 246, 0.64) 68.75%, rgba(38, 164, 255, 0.64) 83.33%);
+    top: 0;
+    left: 0;
+    filter: blur(115px);
+    border-radius: 0 0 100rem 0;
+    width: 6%;
+    height: 60rem;
+}
+.blur-page-6 {
+    position: absolute;
+    background: radial-gradient(35.22% 35.22% at 50% 50%, #26A4FF 66.15%, #8C98FF 72.92%);
+    top: 35%;
+    left: 0;
+    filter: blur(115px);
+    border-radius: 0 0 100rem 0;
+    width: 6%;
+    height: 35rem;
+}
+.blur-page-7 {
+    position: absolute;
+    background: linear-gradient(0deg, #00D1FF, #00D1FF);
+    top: 33%;
+    right: 0;
+    filter: blur(163px);
+    border-radius: 100rem 0 0 100rem;
+    width: 3%;
+    height: 50rem;
+}
+.blur-page-8 {
+    position: absolute;
+    background: radial-gradient(35.22% 35.22% at 50% 50%, #26A4FF 66.15%, #8C98FF 72.92%);
+    bottom: 9%;
+    right: 0;
+    filter: blur(140px);
+    border-radius: 100rem 0 0 100rem;
+    width: 8%;
+    height: 50rem;
+}
+.blur-page-9 {
+    position: absolute;
+    background: linear-gradient(0deg, #00D1FF, #00D1FF);
+    bottom: 0%;
+    left: 0;
+    filter: blur(140px);
+    border-radius: 0 100rem 100rem 0;
+    width: 3%;
+    height: 50rem;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+.pt-main {
+    padding-top: 10rem;
+}
+
+/* Кнопки */
+.blue-button {
+    background: rgba(2, 48, 131, 1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 77, 215, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+}

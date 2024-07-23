@@ -1,0 +1,178 @@
+* {
+    color: rgba(38, 50, 56, 1);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Стилизация текста */
+.large-text {
+    font-size: 40px;
+    margin: 0;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.small-text {
+    font-size: 18px;
+    margin: 0;
+}
+.link-text {
+    color: inherit;
+    text-decoration: none;
+}
+.orange-text {
+    color: rgba(255, 169, 39, 1);
+}
+.link {
+    color: inherit;
+}
+
+
+/* Форма */
+.submit-btn {
+    background: rgba(255, 169, 39, 1);
+    border-radius: 66px;
+    border: none;
+}
+.registration-card {
+    border-radius: 24px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgba(249, 250, 252, 1);
+}
+.stepper .step-display {
+    background: #CFD2D5;
+    height: 6px;
+}
+.stepper .active-step-display {
+    background: #70777C;
+}
+/* Поля ввода */
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:focus-visible,
+input.form-control {
+    padding: 20px 0 20px 20px !important;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    outline: none;
+}
+input.typeahead {
+    border-radius: 12px 0 0 12px;
+}
+input::placeholder {
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5) !important;
+    word-break: keep-all;
+
+    @media(max-width: 576px) {
+        font-size: 30px;
+    }
+}
+.arrow {
+    padding: 20px 20px 20px 20px;
+    border-radius: 0 12px 12px 0;
+    font-size: 18px;
+    color: rgba(38, 50, 56, 0.5) !important;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+ul.dropdown-menu[style*="display: block"] + .arrow img {
+    transform: rotate(180deg);
+}
+ul.dropdown-menu[style*="display: none"] + .arrow img {
+    content: url('img/cross.svg');
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+/* Выпадающий список */
+ul.typeahead.dropdown-menu {
+    border-radius: 0 0 12px 12px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: none;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
+    margin-top: -0.5rem;
+}
+.typeahead.dropdown-menu .dropdown-item {
+    padding: 20px;
+    font-size: 18px;
+}
+.typeahead.dropdown-menu .active,
+.typeahead.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 247, 236, 1);
+}
+/* Настройка внешнего вида скролла */
+.bootstrap-select .dropdown-item {
+    font-size: 18px;
+    padding: 10px;
+}
+.bootstrap-select .dropdown-menu {
+    border: none !important;
+    max-height: 200px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar,
+.typeahead.dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+}
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-track,
+.typeahead.dropdown-menu::-webkit-scrollbar-track {
+    background: #F8FCF0;;
+    border-radius: 10px;
+}
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-thumb,
+.typeahead.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 169, 39, 1);
+    border-radius: 10px;
+    border: 0 solid #FFFFFF;
+}
+.bootstrap-select.dropdown {
+    width: 100% !important;
+}
+.btn.dropdown-toggle,
+.btn.dropdown-toggle:hover {
+    padding: 20px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+}
+.btn.dropdown-toggle.bs-placeholder .filter-option-inner-inner {
+    color: rgba(38, 50, 56, 0.5);
+}
+/* Чекбоксы */
+input[type="checkbox"] {
+    appearance: none;
+}
+#fourth-step input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid rgba(38, 50, 56, 1);
+    margin-right: 12px;
+}
+#fourth-step input[type="checkbox"]:checked {
+    background-image: url('img/checked.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-shadow,
+.custom-shadow:focus {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px;
+}
+.step {
+    display: none;
+}
+#first-step {
+    display: block;
+}

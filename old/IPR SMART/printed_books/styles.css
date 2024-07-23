@@ -1,0 +1,238 @@
+@import url("font/stylesheet.css");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(38, 50, 56, 1);
+}
+
+/* Texts */
+.gradient {
+    background-image: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.large-text {
+    font-size: 44px;
+    font-weight: 700;
+
+    @media(max-width: 567px) {
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.card-header-text {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* Tabs */
+.type {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Buttons */
+#submit-btn {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+}
+
+.favourites-btn {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: #FFFFFF;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Filter form */
+.search-input {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border: 0;
+}
+
+.filter {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+
+    @media(max-width: 991px) {
+        margin-top: 24px;
+    }
+}
+
+.form-select {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border: 0;
+}
+
+.page-link{
+    border: 0;
+    color: rgba(38, 50, 56, 1);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.sr-only {
+    font-weight: 500;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 991px) {
+        display: block;
+    }
+}
+
+.nav {
+    @media(max-width: 991px) {
+        padding-top: 40px;
+    }
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.pagination {
+    @media(max-width: 557px) {
+        justify-content: left;
+    } 
+}
+
+.active-tag,
+.active-tag:hover,
+.active-tag:focus {
+    background: linear-gradient(180deg, #FAB336 0%, #F46F40 100%);
+    color: #FFFFFF;
+    z-index: 10;
+    border-color: #FFFFFF;
+}
+
+.quantity {
+    border-radius: 100px;
+    background: rgba(254, 135, 5, 1);
+    color: #FFFFFF;
+    height: 32px;
+    text-align: center;
+}
+
+.universities {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 50%;
+
+    @media(max-width: 567px) {
+        justify-content: center;
+    }
+}
+
+.universities-small-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    height: auto;
+}
+
+.universities-large-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* Radio buttons*/
+.form_radio input[type=radio] {
+    display: none;
+}
+.form_radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url("img/radio.svg");
+}
+
+.form_radio input[type=radio]:checked + label:before {
+    background: url("img/radio-checked.svg") 0 0 no-repeat;
+}
+
+.form_radio label:hover:before {
+    filter: brightness(120%);
+}
+
+.btn.dropdown-toggle.btn-light {
+    border-radius: 14px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 1rem 1rem !important;
+    background-color: #fff;
+}
+
+.bootstrap-select .dropdown-menu.show {
+    border: none;
+    box-shadow: 0 4px 4px rgba(233, 229, 227, 0.55);
+}
+.dropdown-item.active.selected {
+    background-color: #d7e6c6;
+}
+
+.mult .bootstrap-select .dropdown-toggle::after {
+    content: none;
+    border: none;
+}
+
+.bootstrap-select {
+    padding: 0 !important;
+    width: 100% !important;
+    background-color: #FFFFFF;
+}
+
+.bootstrap-select .filter-option-inner-inner {
+    font-size: 14px;
+    color: #26323880;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.search-input::placeholder {
+    color: #26323880;
+}
