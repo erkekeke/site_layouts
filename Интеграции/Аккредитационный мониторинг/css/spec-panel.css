@@ -1,0 +1,165 @@
+#special-header {
+    display: none;
+    padding-bottom: 11px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 35px 0px 0px black inset !important;
+    -moz-box-shadow: 0px 35px 0px 0px black inset !important;
+    box-shadow: 0px 35px 0px 0px black inset !important; }
+#special-header p, #special-header a, #special-header span, #special-header button {
+    color: #000 !important;
+    font-size: 16px; }
+#special-header a.btn-out-secondary {
+    font-weight: bold; }
+#special-header span.header-uppercase {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: #fff !important;
+    text-align: center;
+    text-transform: uppercase; }
+#special-header span.header-uppercase + div, #special-header span.header-uppercase + ul {
+    margin-top: 10px; }
+#special-header span.header-uppercase + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; }
+#special-header .list.active {
+    box-shadow: 0px 0px 0px 4px #008000;
+    z-index: 10; }
+#special-header .change-font-size .font-size a:link, #special-header .change-font-size .font-size a:visited {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none; }
+#special-header .change-font-size .font-size a:active, #special-header .change-font-size .font-size a:hover {
+    box-shadow: 0px 0px 0px 4px #008000; }
+#special-header .change-font-size .font-size .active {
+    box-shadow: 0px 0px 0px 4px #008000 !important; }
+#special-header .change-font-size .font-size .text-xs {
+    font-size: 20px; }
+#special-header .change-font-size .font-size .text-sm {
+    font-size: 30px; }
+#special-header .change-font-size .font-size .text-lg {
+    font-size: 40px; }
+#special-header .change-color-theme .set-themes {
+    display: flex;
+    justify-content: space-around; }
+#special-header .change-color-theme a {
+    width: 25%;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+    margin: 0 3px;
+    border: solid 1px #333; }
+#special-header .change-color-theme a.set-default {
+    background-color: #fff; }
+#special-header .change-color-theme a.set-black {
+    background-color: #000; }
+#special-header .change-color-theme a.set-blue {
+    background-color: #5300ff; }
+#special-header .change-color-theme a.set-green {
+    background-color: #94ef2d; }
+#special-header .change-visibility-image .set-image-visible a.btn {
+    border: solid 2px #000; }
+#special-header .change-visibility-image .set-image-visible a.btn:focus, #special-header .change-visibility-image .set-image-visible a.btn:active {
+    border: solid 2px #000;
+    box-shadow: none;
+    outline: none; }
+#special-header .change-visibility-image .set-image-visible a.btn.active {
+    background: #000;
+    color: #fff !important;
+    font-weight: bold; }
+#special-header .change-font-family button.btn-outline-dark,
+#special-header .change-kerning button.btn-outline-dark,
+#special-header .close-panel button.btn-outline-dark {
+    border: solid 2px #000;
+    font-weight: bold;
+    text-transform: uppercase; }
+/*#special-header .change-font-family button.btn-outline-dark:hover,*/
+/*#special-header .change-kerning button.btn-outline-dark:hover,*/
+/*#special-header .close-panel button.btn-outline-dark:hover {*/
+/*    color: #fff !important; }*/
+
+.set-font-family,
+.set-kerning {
+    list-style: none; }
+.set-font-family li,
+.set-kerning li {
+    padding: 5px 0 5px 5px; }
+.set-font-family li.active::marker,
+.set-kerning li.active::marker {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    content: '\f00c';
+    color: #000; }
+.set-font-family li.fa4.active::marker,
+.set-kerning li.fa4.active::marker {
+    font-family: 'FontAwesome';
+    font-weight: bold;
+    content: '\f00c';
+    color: #000; }
+.set-font-family li a,
+.set-kerning li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000 !important;
+    text-transform: uppercase;
+    text-decoration: none; }
+#special-header a.list {
+    border-radius: 10px;
+}
+#special-header .btn-outline-dark:hover {
+    background-color: #fff;
+}
+
+/*# sourceMappingURL=special-panel.css.map */
+body.special nav.desktop {
+    top: 130px;
+}
+@media (max-width:1199px) {
+    #special-header {
+        -webkit-box-shadow: 0px 55px 0px 0px black inset !important;
+        -moz-box-shadow: 0px 55px 0px 0px black inset !important;
+        box-shadow: 0px 55px 0px 0px black inset !important; }
+    #special-header span.header-uppercase + div {
+        height: 40px !important;
+    }
+    body.special nav.desktop {
+        top: 60px;
+    }
+    #special-header span.header-uppercase {
+        color: #000 !important;
+    }
+    #special-header {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+    body.special .spec-top {
+        transition: 0.5s;
+        top: 158px !important;
+    }
+    #special-header .navbar-collapse{
+        padding-top: 10px;
+    }
+}
+@media (max-width:992px) {
+    body.special .spec-top {
+        transition: 0.5s;
+        top: 251px !important;
+    }
+}
+@media (max-width:575px) {
+    body.special .spec-top {
+        transition: 0.5s;
+        top: 335px !important;
+    }
+}
+@media(max-width: 425px) {
+    #special-header .navbar-collapse {
+        height: 285px;
+    }
+    body.special .spec-top {
+        transition: 0.5s;
+        top: 340px !important;
+    }
+}

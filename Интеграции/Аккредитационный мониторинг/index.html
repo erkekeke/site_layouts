@@ -6,15 +6,138 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Аккредитационный мониторинг</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Special css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/spec.css">
+    <link rel="stylesheet" href="css/spec-navbar.css">
+    <link rel="stylesheet" href="css/spec-panel.css">
+    <link rel="stylesheet" href="css/datalib-style.css">
+    <!-- End Special css-->
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <main class="position-relative">
+    <!-- Special tags   -->
+    <div id="special-header" class="fixed-top navbar navbar-expand-xl" style="display: none;">
+        <div class="container">
+            <button id="specNavButton" class="navbar-toggler collapsed box-shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#specNav" aria-controls="specNav" aria-expanded="false" aria-label="Меню">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg>
+            </button>
+
+            <div class="navbar-collapse collapse justify-content-end" id="specNav">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-6 change-font-size">
+                        <span class="header-uppercase pt-lg-0 pt-3">Размер шрифта</span>
+                        <div class="font-size">
+                            <a href="#" class="text-xs px-1 mx-1" title="Размер шрифта 14pt" role="button" tabindex="1" data-value="text-xs">A</a>
+                            <a href="#" class="text-sm px-1 mx-1" title="Размер шрифта 18pt" role="button" tabindex="2" data-value="text-sm">A</a>
+                            <a href="#" class="text-lg px-1 mx-1" title="Размер шрифта 24pt" role="button" tabindex="3" data-value="text-lg">A</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 change-color-theme">
+                        <span class="header-uppercase pt-lg-0 pt-3">Цветовая гамма</span>
+                        <div class="set-themes">
+                            <a class="list set-default" title="Тема сайта: черный текст на белом фоне" tabindex="4" data-value="default"></a>
+                            <a class="list set-black" title="Тема сайта: белый текст на черном фоне" tabindex="5" data-value="black"></a>
+                            <a class="list set-blue" title="Тема сайта: темно-синий текст на голубом фоне" tabindex="6" data-value="blue"></a>
+                            <a class="list set-green" title="Тема сайта: зеленый текст на зеленом фоне" tabindex="7" data-value="green"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 change-visibility-image">
+                        <span class="header-uppercase pt-lg-0 pt-3">Изображения</span>
+                        <div class="btn-group set-image-visible">
+                            <a href="#" class="image-visible imageson btn btn-out-secondary" data-value="imageson">ВКЛ</a>
+                            <a href="#" class="image-visible imagesoff btn btn-out-secondary" data-value="imagesoff">ВЫКЛ</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 change-font-family">
+                        <span class="header-uppercase pt-lg-0 pt-3">Выбор шрифта</span>
+                        <div>
+                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#fontModal">
+                                Изменить шрифт
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 change-kerning">
+                        <span class="header-uppercase pt-lg-0 pt-3">Кернинг</span>
+                        <div style="margin-bottom:6px;">
+                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#kerningModal">
+                                Изменить кернинг
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 close-panel">
+                        <span class="header-uppercase pt-lg-0 pt-3">&nbsp;</span>
+                        <div>
+                            <button type="button" class="special-button special-close btn btn-outline-dark">
+                                Обычный режим
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="fontModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="Модальное окно изменения шрифта" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content spec">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="fontModalLabel" style="color: #000 !important">Выберите шрифт</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="set-font-family">
+                        <li class="text-arial active"><a href="#" tabindex="10" data-value="text-arial" style="color: #000 !important"><span></span>Arial</a></li>
+                        <li class="text-roboto"><a href="#" tabindex="11" data-value="text-roboto" style="color: #000 !important"><span></span>Roboto</a></li>
+                        <li class="text-tnm"><a href="#" tabindex="12" data-value="text-tnm" style="color: #000 !important"><span></span>Times New Roman</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark fw-bold text-uppercase spec" data-bs-dismiss="modal">Закрыть</button>
+                    <!-- <button type="button" class="btn btn-dark">Применить</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="kerningModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Модальное окно изменения кернинга" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content spec">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="kerningModalLabel" style="color: #000 !important">Выберите кернинг</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="set-kerning">
+                        <li class="kerning-xs"><a href="#" tabindex="13" data-value="kerning-xs" style="color: #000 !important"><span></span>Стандартный</a></li>
+                        <li class="kerning-sm"><a href="#" tabindex="14" data-value="kerning-sm" style="color: #000 !important"><span></span>Средний</a></li>
+                        <li class="kerning-lg"><a href="#" tabindex="15" data-value="kerning-lg" style="color: #000 !important"><span></span>Большой</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark fw-bold text-uppercase spec" data-bs-dismiss="modal">Закрыть</button>
+                    <!-- <button type="button" class="btn btn-dark">Применить</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Special tags   -->
+
     <img src="img/img-1.svg" class="img-1" alt="">
     <img src="img/img-3.jpg" class="img-3" alt="">
 
     <div class="container py-96 position-relative">
+
+        <div class="py-5">
+            <button class="btn special-button special-open p-0 fs-14 d-inline fs-24">
+                <i class="fas fa-eye"></i>
+            </button>
+        </div>
+
         <div class="row">
             <div class="col-xl-6">
                 <h1 class="fw-bold fs-44 lh-54 text-uppercase">
@@ -158,7 +281,40 @@
     </div>
 </main>
 <footer>
+    <!--    Special js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/special.js"></script>
+
+    <script>
+        $(".special-button.special-open").on('click', function () {
+            $(this).removeClass('d-inline').addClass('d-none');
+            $('#nav-top').css('top', '120px');
+            $('#special-header').slideToggle('slow');
+            $('html').css('background', 'transparent');
+        });
+        $(".special-button.special-close").on('click', function () {
+            $('#nav-top').css('top', '0');
+            $('body').removeClass();
+            $(".special-button.special-open").removeClass('d-none').addClass('d-inline');
+            $('#special-header').slideToggle('slow');
+        });
+    </script>
+
+    <script>
+        $("#specNavButton").on("click", function () {
+            var navSpec = "nav.desktop";
+            if ($(navSpec).hasClass("spec-top")) {
+                $(navSpec).removeClass("spec-top");
+            } else {
+                $(navSpec).addClass("spec-top");
+            }
+        });
+    </script>
+
+<!--    End Special js-->
 </footer>
 </body>
 </html>

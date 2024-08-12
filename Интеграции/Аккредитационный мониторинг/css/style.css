@@ -1,7 +1,7 @@
-@import url("font/stylesheet.css");
+@import url("../font/stylesheet.css");
 
 * {
-    font-family: Montserrat;
+    font-family: Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     color: #263238;
@@ -17,7 +17,7 @@
     }
 }
 .fs-24 {
-    font-size: 24px;
+    font-size: 24px !important;
 
     @media(max-width: 576px) {
         font-size: 16px;
@@ -158,16 +158,16 @@ p, h1, h2 {
 }
 
 /* Точка в li */
-li {
-    list-style: none;
-}
-li:before {
-    content:"·";
-    font-size: 40px;
-    vertical-align: -5px;
-    line-height: 32px;
-    margin-right: 10px;
-}
-ul {
-    padding-left: 0 !important;
-}
+/*li {*/
+/*    list-style: none;*/
+/*}*/
+/*li:before {*/
+/*    content:"·";*/
+/*    font-size: 40px;*/
+/*    vertical-align: -5px;*/
+/*    line-height: 32px;*/
+/*    margin-right: 10px;*/
+/*}*/
+/*ul {*/
+/*    padding-left: 0 !important;*/
+/*}*/

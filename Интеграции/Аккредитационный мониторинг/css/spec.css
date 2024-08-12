@@ -1,0 +1,1393 @@
+body #search-form input, #search-form select, #search-form button {
+    background: #FFFFFF;
+    color: #000;
+    border: 1px solid #000;
+}
+body.special header {
+    margin-bottom: 215px !important;
+}
+body.special.imagesoff img {
+    opacity: 0; }
+body.special.text-xs {
+    font-size: 14px; }
+body.special.text-xs a {
+    font-size: 14px; }
+body.special.text-xs a h3, body.special.text-xs a h4 {
+    font-size: 14px; }
+body.special.text-xs span {
+    font-size: 14px; }
+body.special.text-xs div.mr-auto button {
+    font-size: 14px; }
+body.special.text-xs div.me-auto button {
+    font-size: 14px; }
+body.special.text-xs header .header form div.form-switch label {
+    font-size: 14px; }
+body.special.text-xs small {
+    font-size: 14px; }
+body.special.text-xs #navigation a.nav-item h3 {
+    font-size: 14px; }
+body.special.text-sm {
+    font-size: 18px; }
+body.special.text-sm h5, body.special.text-sm p, body.special.text-sm h6, body.special.text-sm button, body.special.text-sm label {
+    font-size: 18px !important; }
+body.special.text-sm a {
+    font-size: 18px; }
+body.special.text-sm button.btn-outline-dark {
+    font-size: 16px !important; }
+body.special.text-sm a h3,body.special.text-sm a h4 {
+    font-size: 18px; }
+body.special.text-sm span {
+    font-size: 18px !important; }
+body.special.text-sm span.header-uppercase {
+    font-size: 16px !important; }
+body.special.text-sm div.mr-auto button {
+    font-size: 18px; }
+body.special.text-sm div.me-auto button {
+    font-size: 18px; }
+body.special.text-sm header .header form div.form-switch label {
+    font-size: 18px; }
+body.special.text-sm small {
+    font-size: 16px; }
+body.special.text-sm #navigation a.nav-item h3 {
+    font-size: 18px; }
+body.special.text-sm ol li {
+    font-size: 18px; }
+body.special.text-sm ul li {
+    font-size: 18px; }
+body.special.text-sm p a {
+    font-size: 18px !important; }
+body.special.text-sm .post {
+    font-size: 18px !important;
+}
+body.special.text-sm li a {
+    font-size: 18px !important;
+}
+body.special.text-sm .table th {
+    font-size: 18px !important;
+}
+body.special.text-sm td {
+    font-size: 18px !important;
+}
+body.special.text-sm div {
+    font-size: 18px !important;
+}
+body.special.text-sm strong {
+    font-size: 18px !important;
+}
+body.special.text-lg {
+    font-size: 24px; }
+body.special.text-lg h5, body.special.text-lg h6, body.special.text-lg p, body.special.text-lg button, body.special.text-lg label {
+    font-size: 24px !important; }
+body.special.text-lg button.btn-outline-dark {
+    font-size: 16px !important; }
+body.special.text-lg a {
+    font-size: 24px; }
+body.special.text-lg h5 a {
+    font-size: 24px !important; }
+body.special.text-lg a h3,body.special.text-lg a h4 {
+    font-size: 24px; }
+body.special.text-lg span {
+    font-size: 24px !important; }
+body.special.text-lg span.header-uppercase {
+    font-size: 16px !important; }
+body.special.text-lg div.mr-auto button {
+    font-size: 24px; }
+body.special.text-lg div.me-auto button {
+    font-size: 24px; }
+body.special.text-lg small {
+    font-size: 20px; }
+body.special.text-lg header .header form div.form-switch label {
+    font-size: 24px; }
+body.special.text-lg #navigation a.nav-item h3 {
+    font-size: 24px; }
+body.special.text-lg ol li {
+    font-size: 24px; }
+body.special.text-lg #navigation div.nav-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px; }
+body.special.text-lg ul li {
+    font-size: 24px; }
+body.special.text-lg p a {
+    font-size: 24px !important; }
+body.special.text-lg .post {
+    font-size: 24px !important;
+}
+body.special.text-lg li a {
+    font-size: 24px !important;
+}
+body.special.text-lg .table th {
+    font-size: 24px !important;
+}
+body.special.text-lg td {
+    font-size: 24px !important;
+}
+body.special.text-lg div {
+    font-size: 24px !important;
+}
+body.special.text-lg strong {
+    font-size: 24px !important;
+}
+@media only screen and (max-width: 1024px) {
+    body.special.text-lg #navigation div.nav-block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; } }
+@media only screen and (max-width: 800px) {
+    body.special.text-lg #navigation div.nav-block {
+        grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (max-width: 600px) {
+    body.special.text-lg #navigation div.nav-block {
+        grid-template-columns: 1fr; } }
+body.special.text-lg #reviews .reviews .last-reviews .single-review p.organization {
+    font-size: 18px; }
+body.special.text-arial,
+body.special.text-arial h1,
+body.special.text-arial h2,
+body.special.text-arial h3,
+body.special.text-arial h4,
+body.special.text-arial h5,
+body.special.text-arial h6,
+body.special.text-arial p,
+body.special.text-arial span,
+body.special.text-arial a,
+body.special.text-arial label,
+body.special.text-arial button {
+    font-family: 'Arial', sans-serif !important; }
+body.special.text-tnm,
+body.special.text-tnm h1,
+body.special.text-tnm h2,
+body.special.text-tnm h3,
+body.special.text-tnm h4,
+body.special.text-tnm h5,
+body.special.text-tnm h6,
+body.special.text-tnm p,
+body.special.text-tnm span,
+body.special.text-tnm a,
+body.special.text-tnm label,
+body.special.text-tnm button {
+    font-family: "Times New Roman", sans-serif !important; }
+body.special.text-roboto h1,
+body.special.text-roboto h2,
+body.special.text-roboto h3,
+body.special.text-roboto h4,
+body.special.text-roboto h5,
+body.special.text-roboto h6,
+body.special.text-roboto p,
+body.special.text-roboto span,
+body.special.text-roboto a,
+body.special.text-roboto label,
+body.special.text-roboto button {
+    font-family: "Roboto", sans-serif !important; }
+body.special.kerning-sm {
+    letter-spacing: 2px; }
+body.special.kerning-lg {
+    letter-spacing: 5px; }
+body.special.default {
+    background: #fff !important; }
+body.special.default .bg-blue {
+    background: #fff !important; }
+body.special.default h1, body.special.default h2, body.special.default h3, body.special.default h4, body.special.default h5, body.special.default h6, body.special.default p, body.special.default a, body.special.default span, body.special.default div {
+    color: #000 !important; }
+body.special.default #nav-top, body.special.default #nav-mid {
+    background: #ffffff !important; }
+body.special.default #navigation a.nav-item {
+    background: none; }
+body.special.default form.f label {
+    font-size: 18px; }
+body.special.default form.f input[type="submit"] {
+    color: #000;
+    border-color: #000;
+    background-color: #fff; }
+body.special.default form.f span.btn {
+    color: #000;
+    border-color: #000;
+    background-color: #fff; }
+body.special.default footer ul.social i {
+    color: #000 !important; }
+body.special.default .bg-blue {
+    background: #fff !important; }
+body.special.default .bg-blue-blue-blue {
+    background: #fff !important; }
+body.special.default nav {
+    background: #fff !important; }
+body.special.default span.badge {
+    background: #fff !important;
+    border: 1px solid #000;
+}
+body.special.default .bg-grey-blue-light {
+    background: #fff; }
+body.special.default .bg-blue-grey {
+    background: #fff !important; }
+body.special.default .bg-white {
+    background: #fff !important; }
+body.special.default .card {
+    background: #fff !important; }
+body.special.default .category {
+    background: #fff !important; }
+body.special.default .breadcrumb-item+.breadcrumb-item::before {
+    color: #000 !important; }
+body.special.default .badge-main {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+body.special.default input[type="radio"]:checked + .badge-main {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+body.special.default .form-control {
+    background: transparent;
+    border: solid 1px #000 !important;
+}
+body.special.default .btn {
+    border: 1px solid #000;
+}
+body.special.default .br-blue-light-2, body.special.default .br-grey-2, body.special.default .br-blue-grey-2,body.special.default .br-blue-grey-1 {
+    border: 1px solid #000;
+}
+body.special.default .text-white {
+    color: #000 !important;
+}
+body.special.default .bg-grey,body.special.default #mainpage #catalog-categories::before {
+    background: #fff !important;
+    border: 1px solid #000;
+}
+body.special.default .text-red {
+    color: #000 !important;
+}
+body.special.default .select2-container--default .select2-selection--single {
+    border-color: #000 !important;
+}
+body.special.default .text-blue {
+    color: #000 !important;
+}
+body.special.default input[type="radio"]:hover + .badge-main {
+    color: #000 !important;
+}
+body.special.default .br-b-grey-2, body.special.blue .border-bottom {
+    border-bottom: 1px solid #000;
+}
+body.special .input-group-text {
+    background: transparent!important;
+}
+body.special .btn.dropdown-toggle,body.special .br-blue-grey-2 .btn {
+    border: none !important;
+}
+body.special.default .btn-primary, body.special.default .btn-blue, body.special.default .btn-grey {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+body.special.default #mainpage #catalog-categories ul.nav button,  body.special.default main .page-section .section-title .more a {
+    background: #fff !important;
+    border: 1px solid #000;
+    color: #000;
+}
+body.special.default #mainpage #catalog-categories ul.nav, body.special.default #forUniversity .datalib-composition *, body.special.default .text-muted {
+    color: #000 !important;
+}
+body.special.default #mainpage .category-card:hover, #mainpage .category-card.active {
+    background: #fff !important;
+    border: 1px solid #000;
+}
+body.special.default .bg-grey-dark, body.special.default .content-block, body.special.default .page-link,  body.special.default #lectoriy .lectoriy-header, body.special.default .block.white-block {
+    background: #fff !important;
+}
+body.special.default #forUniversity .form-request-test-access input[type=text], body.special.default #forUniversity .form-request-test-access textarea, body.special.default #forUniversity .form-request-test-access select {
+    background: #fff !important;
+    border: 1px solid #000;
+    color: #000;
+}
+body.special.default .block {
+    border: 1px solid #000 !important;
+}
+body.special.default h1.underline, body.special.default #university .border-grey-bottom, body.special.default #programs_show .border-grey-bottom, body.special.default #programs .border-grey-bottom {
+    border-bottom: 2px solid #000 !important;
+}
+body.special.default #university .border-grey-top, body.special.default #programs_show .border-grey-top, body.special.default #programs .border-grey-top {
+    border-top: 2px solid #000 !important;
+}
+body.special.default #university .border-grey-left, body.special.default #programs_show .border-grey-left, body.special.default #programs .border-grey-left {
+    border-left: 2px solid #000 !important;
+}
+body.special.default #university .border-grey-right, body.special.default #programs_show .border-grey-right, body.special.default #programs .border-grey-right {
+    border-right: 2px solid #000 !important;
+}
+body.special.default #about_us #categories, body.special.default .bg-blue-light {
+    background: #fff !important;
+}
+body.special.default #events .list-events .calendar, body.special.default #events .list-events .calendar button {
+    background: #fff !important;
+}
+body.special.default #events .list-events .calendar:after {
+    background: #fff;
+}
+body.special.default #events .list-events .calendar .nav-tabs.today {
+    border-right: 1px solid #000 !important;
+}
+body.special.default i, body.special.default #course .text-opacity-grey {
+    color: #000 !important;
+}
+body.special.default .divider {
+    background-color: #000;
+}
+body.special.default .card {
+    border: 1px solid #000;
+}
+body.special.default main .content {
+    background: #fff !important;
+}
+body.special.default .modal-content {
+    background: #fff !important;
+    border: 1px solid #000;
+}
+body.special.default .modal-header {
+    border-bottom: 1px solid #000;
+}
+body.special.default #course .btn-arrow {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+body.special.default .accordion-item, body.special.default .accordion-button {
+    background: #fff !important;
+}
+body.special.default #coursePassing .lesson-step {
+    background-color: #fff;
+}
+body.special.default  #coursePassing .lesson-step .simplePagination li.active span:after {
+    background-color: #fff;
+}
+body.special.default #coursePassing .lesson-step .simplePagination ul {
+    border-bottom: 3px solid #000;
+}
+body.special.default .alert-primary {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+body.special.default .table tr {
+    border-bottom: 3px solid #000 !important;
+}
+body.special.default .table th span {
+    border-bottom: 3px solid #fff !important;
+}
+body.special.default .table th, body.special.default td  {
+    color: #000;
+}
+body.special.default .badge.bg-grey-light {
+    background: #fff!important;
+    border: 1px solid #000;
+}
+body.special.default .my-questions .nav-tabs .nav-item.show .nav-link, body.special.default .my-questions .nav-tabs .nav-link.active {
+    background-color: #000;
+    color: #fff !important;
+}
+body.special.default .offcanvas {
+    background: #fff!important;
+}
+body.special.default button {
+    color: #000 !important;
+}
+body.special.default .brandName {
+    background-color: #000;
+    border: 5px solid #000;
+}
+body.special.default .form-control::placeholder {
+    color: #000 !important;
+}
+body.special.default .navbar-toggler.nav-icon {
+    background-color: #000;
+}
+body.special.black {
+    background: #000 !important; }
+body.special.black .bg-blue {
+    background: #000 !important; }
+body.special.black .bg-blue-blue-blue {
+    background: #000 !important; }
+body.special.black nav {
+    background: #000 !important; }
+body.special.black span.badge {
+    background: #000 !important;
+    border: 1px solid #fff;
+}
+body.special.black .br-blue-light-2 {
+    border: 1px solid #fff;
+}
+body.special.black .bg-grey-blue-light {
+    background: #000; }
+body.special.black .bg-blue-grey {
+    background: #000 !important; }
+body.special.black .bg-white {
+    background: #000 !important; }
+body.special.black .card {
+    background: #000 !important; }
+body.special.black .category {
+    background: #000 !important; }
+body.special.black .form-label-file {
+    background: #000 !important;
+    border: 1px solid #fff;
+}
+body.special.black .text-blue {
+    color: #fff !important;
+}
+body.special.black .btn {
+    border: 1px solid #fff;
+}
+body.special.black .btn-primary, body.special.black .btn-blue, body.special.black .btn-grey {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*body.special.black li a {*/
+/*    background: #000 !important; }*/
+body.special.black .form-control::placeholder {
+    color: #fff!important;
+}
+body.special.black label {
+    color: #fff !important;
+}
+body.special.black .bg-grey {
+    background: #000 !important;
+}
+body.special.black .badge-main {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+body.special.black #profile .profile-wrapper .navigation .first-menu {
+    background-color: #000;
+    border-right: 2px solid #fff;
+}
+body.special.black #profile .profile-wrapper .navigation .second-menu {
+    background-color: #000;
+    border-right: 2px solid #fff;
+}
+body.special.black #profile .profile-wrapper .navigation .first-menu .nav-link.active {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+body.special.black .profile-content {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+body.special.black .roles-stat {
+    background-color: #000 !important;
+    border: 2px solid #fff;
+}
+body.special.black input[type="radio"]:checked + .badge-main {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+body.special.black .select2-container--default .select2-selection--single {
+    background-color: #000;
+    border: 2px solid #D7E7F6 !important;
+    border-radius: 8px !important;
+    height: 40px !important;
+}
+body.special.black .select2-dropdown {
+    background-color: #000 !important;
+    border: 2px solid #D7E7F6 !important;
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    font-size: 14px;
+}
+body.special.black .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #fff !important;
+    font-size: 14px;
+}
+body.special.black h1, body.special.black h2, body.special.black h3, body.special.black h4, body.special.black h5, body.special.black h6, body.special.black p, body.special.black a, body.special.black span, body.special.black div {
+    color: #fff !important; }
+body.special.black header nav,
+body.special.black header #nav-mid {
+    background-color: #000; }
+body.special.black #nav-top, body.special.black #nav-mid {
+    background: #000 !important; }
+body.special.black #navigation a.nav-item {
+    background: none; }
+body.special.black #nav-mid a.col.events {
+    background: none; }
+body.special.black #nav-mid a.col.active {
+    border: solid 2px #fff;
+    background: none; }
+body.special.black header .header form .search input[type="search"] {
+    color: #fff;
+    border-color: #fff;
+    background: transparent; }
+body.special.black header .header form .search input[type="search"]::placeholder {
+    color: #fff; }
+body.special.black header .header form .search button {
+    border-color: #fff;
+    background: transparent; }
+body.special.black header .header form .search button i {
+    color: #fff; }
+body.special.black header div.form-switch label {
+    color: #fff; }
+body.special.black .dropdown-menu {
+    border: solid 2px #fff;
+    background-color: #000; }
+body.special.black .dropdown-menu a:hover {
+    text-decoration: underline;
+    background-color: #000; }
+body.special.black .stripe .nav-tabs .nav-link.active {
+    border-color: #fff;
+    background-color: transparent; }
+body.special.black .tab-content {
+    border: solid 1px #fff; }
+body.special.black .form-control {
+    background: transparent;
+    border: solid 1px #fff; }
+body.special.black .bootstrap-select button.dropdown-toggle {
+    background: transparent; }
+body.special.black #filterForm label {
+    color: #fff !important; }
+body.special.black form.f label {
+    font-size: 18px; }
+body.special.black form.f input[type="submit"] {
+    color: #fff;
+    border-color: #fff;
+    background-color: #000; }
+body.special.black form.f span.btn {
+    color: #fff;
+    border-color: #fff;
+    background-color: #000; }
+body.special.black #loginModal .modal-content {
+    background: #000;
+    border: solid 2px #fff; }
+body.special.black #loginModal .modal-content label {
+    color: #fff !important; }
+body.special.black #loginModal .modal-content button[type="submit"] {
+    color: #fff;
+    border: solid 2px #fff;
+    background: transparent; }
+body.special.black button {
+    color: #fff;
+}
+body.special.black #search-form input {
+    background: #000 !important;
+    color: #fff !important;
+}
+body.special.black #search-form input,body.special.black #search-form select,body.special.black #search-form button {
+    background: #000 !important;
+    color: #fff;
+    border: 1px solid #fff;
+}
+body.special.black span.page-link {
+    color: #fff;
+    background-color: transparent !important;
+}
+body.special.black .card-body {
+    background: #000 !important;
+    color: #fff;
+}
+body.special.black #profile .profile-wrapper .navigation .second-menu .nav-link.active {
+    color: #000 !important;
+    border-right: solid 2px #000;
+    background: #fff !important;
+}
+body.special.black .form-control.search {
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+body.special.black .card-body.text-left, body.special.black  .card-lecturer .card-body {
+    border-radius: 10px !important;
+}
+body.special.black #mainpage #catalog-categories ul.nav button,  body.special.black main .page-section .section-title .more a {
+    background: #000 !important;
+    border: 1px solid #fff;
+    color: #fff;
+}
+body.special.black #mainpage #catalog-categories ul.nav, body.special.black #forUniversity .datalib-composition *, body.special.black .text-muted {
+    color: #fff !important;
+}
+body.special.black #mainpage .category-card:hover, #mainpage .category-card.active {
+    background: #000 !important;
+    border: 1px solid #fff;
+}
+body.special.black .bg-grey-dark, body.special.black .content-block, body.special.black .page-link,  body.special.black #lectoriy .lectoriy-header, body.special.black .block.white-block {
+    background: #000 !important;
+}
+body.special.black #forUniversity .form-request-test-access input[type=text], body.special.black #forUniversity .form-request-test-access textarea, body.special.black #forUniversity .form-request-test-access select {
+    background: #000 !important;
+    border: 1px solid #fff;
+    color: #fff;
+}
+body.special.black .block {
+    border: 1px solid #fff !important;
+}
+body.special.black h1.underline, body.special.black #university .border-grey-bottom, body.special.black #programs_show .border-grey-bottom, body.special.black #programs .border-grey-bottom {
+    border-bottom: 2px solid #fff !important;
+}
+body.special.black #university .border-grey-top, body.special.black #programs_show .border-grey-top, body.special.black #programs .border-grey-top {
+    border-top: 2px solid #fff !important;
+}
+body.special.black #university .border-grey-left, body.special.black #programs_show .border-grey-left, body.special.black #programs .border-grey-left {
+    border-left: 2px solid #fff !important;
+}
+body.special.black #university .border-grey-right, body.special.black #programs_show .border-grey-right, body.special.black #programs .border-grey-right {
+    border-right: 2px solid #fff !important;
+}
+body.special.black #about_us #categories, body.special.black .bg-blue-light {
+    background: #000 !important;
+}
+body.special.black #events .list-events .calendar, body.special.black #events .list-events .calendar button {
+    background: #000 !important;
+}
+body.special.black #events .list-events .calendar:after {
+    background: #fff;
+}
+body.special.black #events .list-events .calendar .nav-tabs.today {
+    border-right: 1px solid #fff !important;
+}
+body.special.black i, body.special.black #course .text-opacity-grey {
+    color: #fff !important;
+}
+body.special.black .divider {
+    background-color: #fff;
+}
+body.special.black .card {
+    border: 1px solid #fff;
+}
+body.special.black main .content {
+    background: #000 !important;
+}
+body.special.black .modal-content {
+    background: #000 !important;
+    border: 1px solid #fff;
+}
+body.special.black .modal-header {
+    border-bottom: 1px solid #fff;
+}
+body.special.black #course .btn-arrow {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+body.special.black .accordion-item, body.special.black .accordion-button {
+    background: #000 !important;
+}
+body.special.black #coursePassing .lesson-step {
+    background-color: #000;
+}
+body.special.black  #coursePassing .lesson-step .simplePagination li.active span:after {
+    background-color: #fff;
+}
+body.special.black #coursePassing .lesson-step .simplePagination ul {
+    border-bottom: 3px solid #000;
+}
+body.special.black .alert-primary {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+body.special.black .table tr {
+    border-bottom: 3px solid #000 !important;
+}
+body.special.black .table th span {
+    border-bottom: 3px solid #fff !important;
+}
+body.special.black .table th, body.special.black td  {
+    color: #fff;
+}
+body.special.black .badge.bg-grey-light {
+    background: #000!important;
+    border: 1px solid #fff;
+}
+body.special.black .my-questions .nav-tabs .nav-item.show .nav-link, body.special.black .my-questions .nav-tabs .nav-link.active {
+    background-color: #fff;
+    color: #000 !important;
+}
+body.special.black .offcanvas {
+    background: #000!important;
+}
+body.special.blue {
+    background: #9fcbff; }
+body.special.blue .bg-blue {
+    background: #9fcbff !important; }
+body.special.blue .bg-blue-blue-blue {
+    background: #9fcbff !important; }
+body.special.blue nav {
+    background: #9fcbff !important; }
+body.special.blue span.badge {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+}
+body.special.blue .form-control.search {
+    background: #9fcbff !important;
+    color: #182963 !important;
+    border: 1px solid #182963 !important;
+}
+body.special.blue .br-grey-2, body.special.blue .br-blue-grey-2  {
+    border: 2px solid #182963 !important;
+}
+body.special.blue .text-white, body.special.blue .breadcrumb-item+.breadcrumb-item::before {
+    color: #182963 !important;
+}
+body.special.blue .br-b-grey-2, body.special.blue .border-bottom {
+    border-bottom: 2px solid #182963 !important;
+}
+body.special.blue .card-body.text-left,body.special.blue  .card-lecturer .card-body {
+    border-radius: 10px !important;
+}
+body.special.blue .br-blue-light-2, body.special.blue .br-blue-grey-1 {
+    border: 2px solid #182963;
+}
+body.special.blue .border-top {
+    border-top: 1px solid #182963 !important;
+}
+body.special.blue .bg-grey-blue-light {
+    background: #9fcbff; }
+body.special.blue .bg-blue-grey {
+    background: #9fcbff !important; }
+body.special.blue .bg-white {
+    background: #9fcbff !important; }
+body.special.blue .card {
+    background: #9fcbff !important; }
+body.special.blue .category {
+    background: #9fcbff !important; }
+body.special.blue .form-label-file {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+}
+body.special.blue .text-blue, body.special.blue .text-red {
+    color: #182963 !important;
+}
+body.special.blue .btn, body.special.blue .form-control-input {
+    border: 1px solid #182963;
+    background-color: transparent;
+}
+body.special.blue header nav .dropdown-menu.show {
+    background: #9fcbff;
+    border: 2px solid #182963!important;
+}
+/*body.special.blue li a {*/
+/*    background-color: #9fcbff; }*/
+body.special.blue li a.dropdown-item:hover {
+    background-color: #182963;
+    color: #fff !important;
+}
+body.special.blue .form-control::placeholder {
+    color: #182963!important;
+}
+body.special.blue label {
+    color: #182963 !important;
+}
+body.special.blue .bg-grey {
+    background: #9fcbff !important;
+}
+body.special.blue .badge-main {
+    background-color: #9fcbff;
+    border: 1px solid #182963;
+}
+body.special.blue #profile .profile-wrapper .navigation .first-menu {
+    background-color: #9fcbff;
+    border-right: 2px solid #182963;
+}
+body.special.blue #profile .profile-wrapper .navigation .second-menu {
+    background-color: #9fcbff;
+    border-right: 2px solid #182963;
+}
+body.special.blue #profile .profile-wrapper .navigation .first-menu .nav-link.active {
+    background-color: #9fcbff;
+    border: 2px solid #182963;
+}
+body.special.blue .profile-content {
+    background-color: #9fcbff;
+    border: 2px solid #182963;
+}
+body.special.blue .roles-stat {
+    background-color: #9fcbff !important;
+    border: 2px solid #182963;
+}
+body.special.blue input[type="radio"]:checked + .badge-main {
+    background-color: #182963 !important;
+    color: #9fcbff !important;
+}
+body.special.blue .select2-container--default .select2-selection--single {
+    background-color: #9fcbff;
+    border: 2px solid #182963 !important;
+    border-radius: 8px !important;
+    height: 40px !important;
+}
+body.special.blue .select2-dropdown {
+    background-color: #9fcbff !important;
+    border: 2px solid #182963 !important;
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    font-size: 14px;
+}
+body.special.blue .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #182963 !important;
+    font-size: 14px;
+}
+body.special.blue .simplePagination ul li.active span {
+    color: #fff !important;
+}
+body.special.blue .bg-grey,body.special.blue #mainpage #catalog-categories::before {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+}
+body.special.blue #daterange {
+    background-color: transparent;
+}
+body.special.blue .btn-group.radio-group .btn-check:active + .btn-outline-grey, body.special.blue .btn-group.radio-group .btn-check:checked + .btn-outline-grey {
+    background-color: #182963;
+    color: #fff !important;
+}
+body.special.blue .btn-primary,body.special.blue .btn-blue,body.special.blue .btn-grey {
+    background-color: transparent !important;
+    color: #182963;
+}
+body.special.blue #profile .profile-wrapper .navigation .second-menu .nav-link.active {
+    color: #fff !important;
+    border-right: solid 2px #fff;
+    background: #182963;
+}
+body.special.blue .form-control,body.special.blue .form-select {
+    background-color: transparent !important;
+    border: 1px solid #182963;
+}
+body.special.blue .text-blue-light,body.special.blue .modal-title {
+    color: #182963;
+}
+body.special.blue .bootstrap-select.form-control {
+    background: #9fcbff !important;
+}
+body.special.blue h1, body.special.blue h2, body.special.blue h3, body.special.blue h4, body.special.blue h5, body.special.blue h6, body.special.blue p, body.special.blue a, body.special.blue span, body.special.blue div {
+    color: #182963 !important; }
+body.special.blue header nav,
+body.special.blue header #nav-mid {
+    background-color: #9fcbff; }
+body.special.blue #nav-top, body.special.blue #nav-mid {
+    background: #9fcbff !important; }
+body.special.blue #navigation a.nav-item {
+    background: none; }
+body.special.blue #nav-mid a.col.events {
+    background: none; }
+body.special.blue #nav-mid a.col.active {
+    border: solid 2px #9fcbff;
+    background: none; }
+body.special.blue form.f label {
+    font-size: 18px; }
+body.special.blue form.f input[type="submit"] {
+    color: #182963;
+    border-color: #182963;
+    background-color: #fff; }
+body.special.blue form.f span.btn {
+    color: #182963;
+    border-color: #182963;
+    background-color: #fff; }
+body.special.blue .stripe .nav-tabs .nav-link.active {
+    border-color: #9fcbff; }
+body.special.blue footer ul.social i {
+    color: #182963 !important; }
+body.special.blue .card-body {
+    background: #9fcbff !important;
+    color: #182963;
+}
+body.special.blue #mainpage #catalog-categories ul.nav button,  body.special.blue main .page-section .section-title .more a {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+    color: #182963;
+}
+body.special.blue #mainpage #catalog-categories ul.nav, body.special.blue #forUniversity .datalib-composition *, body.special.blue .text-muted {
+    color: #182963 !important;
+}
+body.special.blue #mainpage .category-card:hover, #mainpage .category-card.active {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+}
+body.special.blue .bg-grey-dark, body.special.blue .content-block, body.special.blue .page-link,  body.special.blue #lectoriy .lectoriy-header, body.special.blue .block.white-block {
+    background: #9fcbff !important;
+}
+body.special.blue #forUniversity .form-request-test-access input[type=text], body.special.blue #forUniversity .form-request-test-access textarea, body.special.blue #forUniversity .form-request-test-access select {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+    color: #182963;
+}
+body.special.blue .block {
+    border: 1px solid #182963 !important;
+}
+body.special.blue h1.underline, body.special.blue #university .border-grey-bottom, body.special.blue #programs_show .border-grey-bottom, body.special.blue #programs .border-grey-bottom {
+    border-bottom: 2px solid #182963 !important;
+}
+body.special.blue #university .border-grey-top, body.special.blue #programs_show .border-grey-top, body.special.blue #programs .border-grey-top {
+    border-top: 2px solid #182963 !important;
+}
+body.special.blue #university .border-grey-left, body.special.blue #programs_show .border-grey-left, body.special.blue #programs .border-grey-left {
+    border-left: 2px solid #182963 !important;
+}
+body.special.blue #university .border-grey-right, body.special.blue #programs_show .border-grey-right, body.special.blue #programs .border-grey-right {
+    border-right: 2px solid #182963 !important;
+}
+body.special.blue #about_us #categories, body.special.blue .bg-blue-light {
+    background: #9fcbff !important;
+}
+body.special.blue #events .list-events .calendar, body.special.blue #events .list-events .calendar button {
+    background: #9fcbff !important;
+}
+body.special.blue #events .list-events .calendar:after {
+    background: #182963;
+}
+body.special.blue #events .list-events .calendar .nav-tabs.today {
+    border-right: 1px solid #182963 !important;
+}
+body.special.blue i, body.special.blue #course .text-opacity-grey {
+    color: #182963 !important;
+}
+body.special.blue .divider {
+    background-color: #182963;
+}
+body.special.blue .card {
+    border: 1px solid #182963;
+}
+body.special.blue main .content {
+    background: #9fcbff !important;
+}
+body.special.blue .modal-content {
+    background: #9fcbff !important;
+    border: 1px solid #182963;
+}
+body.special.blue .modal-header {
+    border-bottom: 1px solid #182963;
+}
+body.special.blue #course .btn-arrow {
+    background-color: #9fcbff;
+    border: 1px solid #182963;
+}
+body.special.blue .accordion-item, body.special.blue .accordion-button {
+    background: #9fcbff !important;
+}
+body.special.blue #coursePassing .lesson-step {
+    background-color: #9fcbff;
+}
+body.special.blue  #coursePassing .lesson-step .simplePagination li.active span:after {
+    background-color: #fff;
+}
+body.special.blue #coursePassing .lesson-step .simplePagination ul {
+    border-bottom: 3px solid #9fcbff;
+}
+body.special.blue .alert-primary {
+    background-color: #9fcbff;
+    border: 1px solid #182963;
+}
+body.special.blue .table tr {
+    border-bottom: 3px solid #9fcbff !important;
+}
+body.special.blue .table th span {
+    border-bottom: 3px solid #182963 !important;
+}
+body.special.blue .table th, body.special.blue td  {
+    color: #182963;
+}
+body.special.blue .badge.bg-grey-light {
+    background: #9fcbff!important;
+    border: 1px solid #182963;
+}
+body.special.blue .my-questions .nav-tabs .nav-item.show .nav-link, body.special.blue .my-questions .nav-tabs .nav-link.active {
+    background-color: #182963;
+    color: #9fcbff !important;
+}
+body.special.blue .offcanvas {
+    background: #9fcbff!important;
+}
+body.special.green {
+    background: #3c2714; }
+body.special.green .bg-blue {
+    background: #3c2714 !important; }
+body.special.green .bg-blue-blue-blue {
+    background: #3c2714 !important; }
+body.special.green nav {
+    background: #3c2714 !important; }
+body.special.green span.badge {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .form-control.search {
+    background: #3c2714 !important;
+    color: #94ef2d !important;
+    border: 1px solid #94ef2d !important;
+}
+body.special.green .br-grey-2, body.special.green .br-blue-grey-2  {
+    border: 2px solid #94ef2d !important;
+}
+body.special.green .text-white, body.special.green .breadcrumb-item+.breadcrumb-item::before {
+    color: #94ef2d !important;
+}
+body.special.green .br-b-grey-2, body.special.green .border-bottom {
+    border-bottom: 2px solid #94ef2d !important;
+}
+body.special.green .card-body.text-left,body.special.green  .card-lecturer .card-body {
+    border-radius: 10px !important;
+}
+body.special.green .br-blue-light-2, body.special.green .br-blue-grey-1 {
+    border: 2px solid #94ef2d;
+}
+body.special.green .border-top {
+    border-top: 1px solid #94ef2d !important;
+}
+body.special.green .bg-grey-blue-light {
+    background: #3c2714; }
+body.special.green .bg-blue-grey {
+    background: #3c2714 !important; }
+body.special.green .bg-white {
+    background: #3c2714 !important; }
+body.special.green .card {
+    background: #3c2714 !important; }
+body.special.green .category {
+    background: #3c2714 !important; }
+body.special.green .form-label-file {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .text-blue, body.special.green .text-red {
+    color: #94ef2d !important;
+}
+body.special.green .btn, body.special.green .form-control-input {
+    border: 1px solid #94ef2d;
+    background-color: transparent;
+}
+body.special.green header nav .dropdown-menu.show {
+    background: #3c2714;
+    border: 2px solid #94ef2d!important;
+}
+/*body.special.green li a {*/
+/*    background-color: #3c2714; }*/
+body.special.green li a.dropdown-item:hover {
+    background-color: #94ef2d;
+    color: #3c2714 !important;
+}
+body.special.green .form-control::placeholder {
+    color: #94ef2d!important;
+}
+body.special.green label {
+    color: #94ef2d !important;
+}
+body.special.green .bg-grey {
+    background: #3c2714 !important;
+}
+body.special.green .badge-main {
+    background-color: #3c2714;
+    border: 1px solid #94ef2d;
+}
+body.special.green #profile .profile-wrapper .navigation .first-menu {
+    background-color: #3c2714;
+    border-right: 2px solid #94ef2d;
+}
+body.special.green #profile .profile-wrapper .navigation .second-menu {
+    background-color: #3c2714;
+    border-right: 2px solid #94ef2d;
+}
+body.special.green #profile .profile-wrapper .navigation .first-menu .nav-link.active {
+    background-color: #3c2714;
+    border: 2px solid #94ef2d;
+}
+body.special.green .profile-content {
+    background-color: #3c2714;
+    border: 2px solid #94ef2d;
+}
+body.special.green .roles-stat {
+    background-color: #3c2714 !important;
+    border: 2px solid #94ef2d;
+}
+body.special.green input[type="radio"]:checked + .badge-main {
+    background-color: #94ef2d !important;
+    color: #3c2714 !important;
+}
+body.special.green .select2-container--default .select2-selection--single {
+    background-color: #3c2714;
+    border: 2px solid #94ef2d !important;
+    border-radius: 8px !important;
+    height: 40px !important;
+}
+body.special.green .select2-dropdown {
+    background-color: #3c2714 !important;
+    border: 2px solid #94ef2d !important;
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    font-size: 14px;
+}
+body.special.green .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #94ef2d !important;
+    font-size: 14px;
+}
+body.special.green .simplePagination ul li.active span {
+    color: #fff !important;
+}
+body.special.green .bg-grey, body.special.green #mainpage #catalog-categories::before {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green #daterange {
+    background-color: transparent;
+}
+body.special.green .btn-group.radio-group .btn-check:active + .btn-outline-grey, body.special.green .btn-group.radio-group .btn-check:checked + .btn-outline-grey {
+    background-color: #94ef2d;
+    color: #fff !important;
+}
+body.special.green .btn-primary,body.special.green .btn-blue,body.special.green .btn-grey {
+    background-color: transparent !important;
+    color: #94ef2d;
+}
+body.special.green #profile .profile-wrapper .navigation .second-menu .nav-link.active {
+    color: #3c2714 !important;
+    border-right: solid 2px #3c2714;
+    background: #94ef2d;
+}
+body.special.green .form-control,body.special.green .form-select {
+    background-color: transparent !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .text-blue-light,body.special.green .modal-title {
+    color: #94ef2d;
+}
+body.special.green .bootstrap-select.form-control {
+    background: #3c2714 !important;
+}
+body.special.green h1, body.special.green h2, body.special.green h3, body.special.green h4, body.special.green h5, body.special.green h6, body.special.green p, body.special.green a, body.special.green span, body.special.green div {
+    color: #94ef2d !important; }
+body.special.green header nav,
+body.special.green header #nav-mid {
+    background-color: #3c2714; }
+body.special.green #nav-top, body.special.green #nav-mid {
+    background: #3c2714 !important; }
+body.special.green #navigation a.nav-item {
+    background: none; }
+body.special.green #nav-mid a.col.events {
+    background: none; }
+body.special.green #nav-mid a.col.active {
+    border: solid 2px #6fff1f;
+    background: none; }
+body.special.green .dropdown-menu {
+    border: solid 2px #fff;
+    background-color: #3d2812; }
+body.special.green .dropdown-menu a:hover {
+    text-decoration: underline;
+    background-color: #3d2812; }
+body.special.green .stripe .nav-tabs .nav-link.active {
+    border: solid 1px #6fff1f; }
+body.special.green .tab-content {
+    border: solid 1px #6fff1f; }
+body.special.green #filterForm label {
+    color: #6fff1f !important; }
+body.special.green #loginModal .modal-content {
+    background: #3c2714;
+    border: solid 2px #6fff1f; }
+body.special.green #loginModal .modal-content label {
+    color: #6fff1f !important; }
+body.special.green #loginModal .modal-content button[type="submit"] {
+    color: #6fff1f;
+    border: solid 2px #6fff1f; }
+body.special.green form.f label {
+    font-size: 18px;
+    color: #94ef2d; }
+body.special.green form.f input[type="submit"] {
+    color: #94ef2d;
+    border-color: #94ef2d;
+    background-color: transparent; }
+body.special.green form.f span.btn {
+    color: #94ef2d;
+    border-color: #94ef2d;
+    background-color: transparent; }
+body.special.green .form-control {
+    background: transparent;
+    border: solid 1px #94ef2d;
+    color: #94ef2d; }
+body.special.green .bootstrap-select button.dropdown-toggle {
+    background: transparent; }
+body.special.green header .header form .search input[type="search"] {
+    color: #94ef2d;
+    border-color: #94ef2d;
+    background: transparent; }
+body.special.green header .header form .search input[type="search"]::placeholder {
+    color: #94ef2d; }
+body.special.green header .header form .search button {
+    border-color: #94ef2d;
+    background: transparent; }
+body.special.green header .header form .search button i {
+    color: #94ef2d; }
+body.special.green header div.form-switch label {
+    color: #94ef2d; }
+body.special.green footer ul.social i {
+    color: #94ef2d !important; }
+body.special.green button {
+    color: #94ef2d !important;
+}
+body.special.green #search-form input {
+    background: #3c2714 !important;
+    color: #94ef2d !important;
+}
+body.special.green #search-form input,body.special.green #search-form select,body.special.green #search-form button {
+    background: #3c2714 !important;
+    color: #94ef2d;
+    border: 1px solid #94ef2d;
+}
+body.special.green span.page-link {
+    color: #94ef2d;
+    background-color: transparent !important;
+}
+body.special.green .card-body {
+    background: #3c2714 !important;
+    color: #94ef2d;
+}
+body.special.green #mainpage #catalog-categories ul.nav button,  body.special.green main .page-section .section-title .more a {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+    color: #94ef2d;
+}
+body.special.green #mainpage #catalog-categories ul.nav, body.special.green #forUniversity .datalib-composition *, body.special.green .text-muted {
+    color: #94ef2d !important;
+}
+body.special.green #mainpage .category-card:hover, #mainpage .category-card.active {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .bg-grey-dark, body.special.green .content-block, body.special.green .page-link,  body.special.green #lectoriy .lectoriy-header, body.special.green .block.white-block {
+    background: #3c2714 !important;
+}
+body.special.green #forUniversity .form-request-test-access input[type=text], body.special.green #forUniversity .form-request-test-access textarea, body.special.green #forUniversity .form-request-test-access select {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+    color: #94ef2d;
+}
+body.special.green .block {
+    border: 1px solid #94ef2d !important;
+}
+body.special.green h1.underline, body.special.green #university .border-grey-bottom, body.special.green #programs_show .border-grey-bottom, body.special.green #programs .border-grey-bottom {
+    border-bottom: 2px solid #94ef2d !important;
+}
+body.special.green #university .border-grey-top, body.special.green #programs_show .border-grey-top, body.special.green #programs .border-grey-top {
+    border-top: 2px solid #94ef2d !important;
+}
+body.special.green #university .border-grey-left, body.special.green #programs_show .border-grey-left, body.special.green #programs .border-grey-left {
+    border-left: 2px solid #94ef2d !important;
+}
+body.special.green #university .border-grey-right, body.special.green #programs_show .border-grey-right, body.special.green #programs .border-grey-right {
+    border-right: 2px solid #94ef2d !important;
+}
+body.special.green #about_us #categories, body.special.green .bg-blue-light {
+    background: #3c2714 !important;
+}
+body.special.green #events .list-events .calendar, body.special.green #events .list-events .calendar button {
+    background: #3c2714 !important;
+}
+body.special.green #events .list-events .calendar:after {
+    background: #94ef2d;
+}
+body.special.green #events .list-events .calendar .nav-tabs.today {
+    border-right: 1px solid #94ef2d !important;
+}
+body.special.green i, body.special.green #course .text-opacity-grey {
+    color: #94ef2d !important;
+}
+body.special.green .divider {
+    background-color: #94ef2d;
+}
+body.special.green .card {
+    border: 1px solid #94ef2d;
+}
+body.special.green main .content {
+    background: #3c2714 !important;
+}
+body.special.green .modal-content {
+    background: #3c2714 !important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .modal-header {
+    border-bottom: 1px solid #94ef2d;
+}
+body.special.green #course .btn-arrow {
+    background-color: #3c2714;
+    border: 1px solid #94ef2d;
+}
+body.special.green .accordion-item, body.special.green .accordion-button {
+    background: #3c2714 !important;
+}
+body.special.green #coursePassing .lesson-step {
+    background-color: #3c2714;
+}
+body.special.green  #coursePassing .lesson-step .simplePagination li.active span:after {
+    background-color: #fff;
+}
+body.special.green #coursePassing .lesson-step .simplePagination ul {
+    border-bottom: 3px solid #3c2714;
+}
+body.special.green .alert-primary {
+    background-color: #3c2714;
+    border: 1px solid #94ef2d;
+}
+body.special.green .table tr {
+    border-bottom: 3px solid #3c2714 !important;
+}
+body.special.green .table th span {
+    border-bottom: 3px solid #94ef2d !important;
+}
+body.special.green .table th, body.special.green td  {
+    color: #94ef2d;
+}
+body.special.green .badge.bg-grey-light {
+    background: #3c2714!important;
+    border: 1px solid #94ef2d;
+}
+body.special.green .my-questions .nav-tabs .nav-item.show .nav-link, body.special.green .my-questions .nav-tabs .nav-link.active {
+    background-color: #94ef2d;
+    color: #3c2714 !important;
+}
+body.special.green .offcanvas {
+    background: #3c2714!important;
+}
+body.special header .header,
+body.special header #students {
+    background: none; }
+body.special header nav,
+body.special header #nav-mid {
+    background-color: transparent; }
+body.special #students {
+    background: none; }
+body.special #navigation {
+    background-color: transparent; }
+body.special #nav-mid a.col.events {
+    background: none; }
+body.special #nav-mid a.col.active {
+    background: none; }
+body.special #nav-top, body.special #nav-mid {
+    box-shadow: none;
+    background: transparent !important; }
+body.special .nav.stable-nav {
+    display: block; }
+body.special .nav.stable-nav a.nav-link {
+    white-space: pre-line; }
+body.special .nav.stable-nav div.nav-link a {
+    white-space: pre-line; }
+body.special #main {
+    background: transparent; }
+body.special .stripe .nav-tabs .nav-link.active {
+    background-color: transparent; }
+body.special footer, body.special footer .b-gree {
+    background: transparent; }
+body.special .modal-content.spec {
+    background: #fff !important;
+}
+body.special button.spec {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+@media (max-width: 1199px){
+    body.special .navbar-expand-md.fixed-top {
+        top: 129px !important;
+    }
+    body.special #students {
+        margin-top: 50px !important;
+    }
+}
+@media (max-width: 991px){
+    body.special .navbar-expand-md.fixed-top {
+        top: 200px !important;
+    }
+    body.special #students {
+        margin-top: 100px !important;
+    }
+}
+@media (max-width: 575px){
+    body.special .navbar-expand-md.fixed-top {
+        top: 285px !important;
+    }
+    body.special #students {
+        margin-top: 150px !important;
+    }
+}
