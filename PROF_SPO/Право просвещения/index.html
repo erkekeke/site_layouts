@@ -11,11 +11,12 @@
 </head>
 <body>
 <main>
-    <div>
-        <img src="images/view-3d-justice-scales%201.png" class="img-fluid position-absolute z-index-1" alt="">
-        <div class="container position-relative z-index-10" style="padding-top: 172px; padding-bottom: 169px;">
+    <section class="position-relative">
+        <img src="images/view-3d-justice-scales%201.png"
+             class="w-100 position-absolute z-index-1 h-100" alt="" style="object-fit: cover">
+        <div id="first-container" class="container position-relative z-index-10">
             <div class="half-br-card py-3 px-36 bg-white d-inline-block">
-                <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex gap-4 align-items-sm-center align-items-start">
                     <img src="images/profspo_icon.svg" alt="">
                     <p class="text-uppercase">
                         <span class="fs-30 lh-36 text-color-shark opacity-85">Вы даёте знания!</span> <br>
@@ -24,14 +25,15 @@
                 </div>
             </div>
 
-            <p class="text-white pt-5 fs-44 lh-40">
-                <span class="fw-bold lh-40 fs-60">Профобразование —</span><br>
+            <p class="text-white pt-5 fs-44 lh-50">
+                <span class="fw-bold lh-40 fs-60 text-uppercase">Профобразование —</span><br>
                 юридический консалтинг<br>
                 образовательных учреждений СПО
             </p>
         </div>
-    </div>
-    <div class="container pt-100 pb-100">
+    </section>
+    <section>
+        <div class="container pt-100 pb-100">
         <section>
             <h2 class="fw-bold fs-52 lh-45 text-color-blue-stone">
                 КАКИЕ ВОПРОСЫ
@@ -39,7 +41,7 @@
             </h2>
 
             <div class="pt-74">
-                <div class="row">
+                <div class="row mx-auto g-5">
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
                             <div class="half-br-card border-white-green bg-white-green position-relative pt-3" style="height: 150px;">
@@ -136,7 +138,7 @@
                             </p>
 
                             <div class="d-flex flex-column gap-3 pt-42">
-                                <div class="d-flex gap-4">
+                                <div class="d-flex align-items-center gap-4">
                                     <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
                                     <p class="fs-16 lh-22">
                                         <span class="fw-bold">Непрохождение колледжем аккредитации</span>
@@ -146,7 +148,7 @@
                                 <div class="d-flex gap-4">
                                     <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
                                     <p class="fs-16 lh-22">
-                                        <span class="fw-bold">Реорганизации колледжа</span><br>
+                                        <span class="fw-bold">Реорганизации колледжа</span>
                                         (слияние, присоединение и пр.) и последующая проверка
                                     </p>
                                 </div>
@@ -177,7 +179,7 @@
             </h2>
 
             <div class="pt-5">
-                <div class="row g-5">
+                <div class="row mx-auto g-5">
                     <div class="col-lg-4">
                         <div class="half-br-card bg-wild-watermelon text-white p-4 border-shadow-1">
                             <p class="fs-64 lh-73">50%</p>
@@ -216,7 +218,7 @@
                 </p>
             </div>
         </section>
-    </div>
+    </div></section>
     <section style="background: #DBF9FB;">
         <div class="container pt-100 pb-50 fw-bold">
             <h2 class="text-color-blue-stone text-uppercase fs-48 lh-54 fw-bold">
@@ -225,35 +227,36 @@
                 затрагивающие деятельность образовательного учреждения СПО:
             </h2>
 
-            <div class="mt-72 position-relative" style="height: 443px">
-                <div class="bg-wild-watermelon fs-32 fw-bold text-uppercase position-absolute-centered
-                            text-white py-4 b-shadow-1 px-36 br-100 d-inline-block col-4 text-center">
+            <div id="college-section" class="mt-72 position-relative">
+                <div id="college-block" class="bg-wild-watermelon fs-32 fw-bold text-uppercase
+                        position-xl-absolute-centered text-white py-4 b-shadow-1 px-36 br-100
+                        d-inline-block col-4 text-center">
                     колледж
                 </div>
 
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-1">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-1">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-1.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">трудовое право</span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-2">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-2">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-2.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">гражданское право</span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-3">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-3">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-3.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">
                             Опыт <br>
@@ -261,11 +264,11 @@
                         </span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-4">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-4">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-4.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">
                             арбитражное <br>
@@ -274,11 +277,11 @@
                         </span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-5">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-5">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-5.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">
                             административное <br>
@@ -286,31 +289,31 @@
                         </span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-6">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-6">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-6.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">
                             семейное право
                         </span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-7">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-7">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-1.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">земельное право</span>
                     </div>
                 </div>
-                <div class="half-br-card bg-white p-3 d-inline-block position-absolute" id="card-8">
+                <div class="half-br-card bg-white p-3 d-inline-block position-xl-absolute" id="card-8">
                     <div class="d-flex align-items-center" style="gap: 22px">
                         <div class="position-relative">
                             <img src="images/img-7.png" alt="">
-                            <div class="overlay"></div>
+                            <div class="overlay-2"></div>
                         </div>
                         <span class="fw-bold fs-20 lh-30 text-uppercase text-color-shark">финансовое право</span>
                     </div>
@@ -328,7 +331,16 @@
 
             <div class="d-flex flex-column gap-4 pt-5">
                 <div class="half-br-card py-3 px-4 bg-white">
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-sm-center align-items-start gap-4">
+                        <img src="images/check.svg" alt="">
+                        <p class="fs-22 lh-30">
+                            Вместо одного юриста <span class="fw-bold">для колледжа работает полноценный штат</span>
+                            квалифицированных специалистов, которые отвечают оперативно
+                        </p>
+                    </div>
+                </div>
+                <div class="half-br-card py-3 px-4 bg-white">
+                    <div class="d-flex align-items-sm-center align-items-start gap-4">
                         <img src="images/check.svg" alt="">
                         <p class="fs-22 lh-30">
                             Мы оказываем устные консультации по выделенному телефону
@@ -337,7 +349,7 @@
                     </div>
                 </div>
                 <div class="half-br-card py-3 px-4 bg-white">
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-sm-center align-items-start gap-4">
                         <img src="images/check.svg" alt="">
                         <p class="fs-22 lh-30">
                             Подготовим или проверим юридические
@@ -347,21 +359,12 @@
                     </div>
                 </div>
                 <div class="half-br-card py-3 px-4 bg-white">
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-sm-center align-items-start gap-4">
                         <img src="images/check.svg" alt="">
                         <p class="fs-22 lh-30">
                             Образовательному учреждению
                             <span class="fw-bold">нет необходимости в собственном юристе —</span>
                             стоимость сервиса несколько раз ниже годового фонда оплаты труда одного штатного юриста
-                        </p>
-                    </div>
-                </div>
-                <div class="half-br-card py-3 px-4 bg-white">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="images/check.svg" alt="">
-                        <p class="fs-22 lh-30">
-                            Вместо одного юриста <span class="fw-bold">для колледжа работает полноценный штат</span>
-                            квалифицированных специалистов, которые отвечают оперативно
                         </p>
                     </div>
                 </div>
@@ -374,13 +377,629 @@
                 Как <span class="text-color-wild-watermelon">работает</span> услуга?
             </h2>
 
-            <div class="mt-72">
-                <div class="d-flex">
-                    <img src="images/service-img-1.svg" class="img-fluid" alt="">
-                    <div class="half-br-card py-3 px-4 text-white fs-20 lh-22 bg-blue-green d-inline-block">
-                        После заключения контракта заказчик получает доступ к личному
-                        кабинету, в котором ведется письменное общение с юристами
+            <section id="services-section" class="mt-72 position-relative">
+                <div class="row align-items-start">
+                    <div class="col-auto">
+                        <img src="images/service-img-1.svg" class="img-fluid custom-display-xxl-none" alt="">
                     </div>
+                    <div class="col-xl-3 custom-w-xxl-100">
+                        <div class="half-br-card py-3 px-4 text-white fs-20 lh-22 bg-blue-green d-inline-block custom-w-xxl-100" style="margin-top: 44px;">
+                            После заключения контракта заказчик получает доступ к личному
+                            кабинету, в котором ведется письменное общение с юристами
+                        </div>
+                    </div>
+                </div>
+
+                <div id="service-work-row-2" class="position-xl-absolute pt-4" style="top: 238px;">
+                    <div class="row align-items-end">
+                        <div class="col-xl-3 custom-w-xxl-100">
+                            <div class="half-br-card p-4 text-white bg-wild-watermelon d-inline-block custom-w-xxl-100" style="margin-bottom: 20px;">
+                                <span class="text-uppercase fs-24 fw-bold lh-22">Возможные способы связи</span>
+
+                                <ul class="pt-3">
+                                    <li>Бесплатная телефонная линия</li>
+                                    <li class="mt-2">Обращение в личном кабинете</li>
+                                    <li class="mt-2">Взаимодействие через персонального менеджера при нестандартных ситуациях</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <img src="images/service-img-2.svg" class="img-fluid custom-display-xxl-none" alt="">
+                        </div>
+                    </div>
+
+                    <p class="pt-32 fs-15 lh-22 text-color-shark">
+                        Передача данных в личном кабинете защищена двойным шифрованием и
+                        <span class="fw-bold">обеспечивает полную конфиденциальность,</span>
+                        согласно требованиям российского законодательства
+                    </p>
+                </div>
+            </section>
+
+            <section class="pt-100">
+                <h2 class="text-color-blue-stone fw-bold fs-36 lh-45 text-uppercase">
+                    <span class="fw-bold text-color-wild-watermelon">Преимущества</span>
+                    дистанционного юридического<br>
+                    сервиса Профобразование
+                </h2>
+
+                <div class="row mx-auto g-5 pt-5">
+                    <div class="col-lg-4">
+                        <div class="half-br-card b-shadow-1 border-white-green h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-center align-items-end bg-white-green br-left-top"
+                                 style="padding-top: 20px; height: 150px;">
+                                <div class="position-relative">
+                                    <img src="images/advantage-img-1.png" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 br-right-bottom flex-grow-1">
+                                <p class="fs-24 fw-bold lh-22 text-color-shark text-center">Устные обращения</p>
+
+                                <div class="d-flex flex-column gap-3 pt-4">
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">85% решены в процессе первого диалога</p>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">15% после дополнительной обработки (30-40 мин)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="half-br-card b-shadow-1 border-white-green h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-center align-items-start bg-white-green pt-4 br-left-top" style="padding-bottom: 12px; height: 150px;">
+                                <div class="position-relative">
+                                    <img src="images/advantage-img-2.png" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 br-right-bottom flex-grow-1">
+                                <p class="fs-24 fw-bold lh-22 text-color-shark text-center">
+                                    Письменные обращения <br>
+                                    (документы, заключения)
+                                </p>
+
+                                <div class="d-flex flex-column gap-3 pt-4">
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">Большая часть в течение 4-6 часов выложены в личном кабинете</p>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">Остальные в течение 24 часов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="half-br-card b-shadow-1 border-white-green h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-center align-items-end bg-white-green pt-32 br-left-top" style="height: 150px;">
+                                <div class="position-relative">
+                                    <img src="images/advantage-img-3.png" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 br-right-bottom flex-grow-1">
+                                <p class="fs-24 fw-bold lh-22 text-color-shark text-center">
+                                    Урегулирование споров
+                                </p>
+
+                                <div class="d-flex flex-column gap-3 pt-4">
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">
+                                            Значительное снижение количества трудовых и арбитражных споров
+                                        </p>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <div class="pink-point bg-wild-watermelon br-100 my-2"></div>
+                                        <p class="fs-18">
+                                            Повышение общего уровня правовой безопасности организации
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section style="background: linear-gradient(180deg, #DBF9FB 0%, #FFF6F9 79.64%);">
+        <div class="container pt-100 pb-100">
+            <h2 class="fw-bold fs-52 lh-45 text-color-blue-stone text-uppercase">
+                Пакеты Юридического сопровождения
+            </h2>
+
+            <table class="mt-72 w-100 b-shadow-1 bg-white half-br-card" id="support-packages-table">
+                <thead>
+                    <tr>
+                        <td class="bg-gulf-stream py-3 text-white text-center fs-32 fw-bold br-left-top">
+                            ЭКОНОМ
+                        </td>
+                        <td class="bg-blue-green py-3 text-white text-center fs-32 fw-bold">
+                            СТАНДАРТ
+                        </td>
+                        <td class="bg-wild-watermelon py-3 text-white text-center fs-32 fw-bold">
+                            БЕЗЛИМИТ
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Библиотека шаблонов документов</span><br>
+                                (все локальные акты + формы документов по частым вопросам)
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Библиотека шаблонов документов</span><br>
+                                (все локальные акты + формы документов по частым вопросам)
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Библиотека шаблонов документов</span><br>
+                                (все локальные акты + формы документов по частым вопросам)
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Устные правовые консультации</span>
+                                по всем вопросам, возникающим в процессе текущей образовательной деятельности
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Устные правовые консультации</span>
+                                по всем вопросам, возникающим в процессе текущей образовательной деятельности
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Устные правовые консультации</span>
+                                по всем вопросам, возникающим в процессе текущей образовательной деятельности
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Письменная консультация по всем вопросам</span>
+                                (экспертиза документов, подготовка допсоглашений, ответов на запросы физ/юрлиц
+                                и госорганов, ведение претензионной работы с подрядчиками,
+                                подготовка судебных документов и пр.)
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;5&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Письменная консультация по всем вопросам</span>
+                                (экспертиза документов, подготовка допсоглашений, ответов на запросы физ/юрлиц
+                                и госорганов, ведение претензионной работы с подрядчиками,
+                                подготовка судебных документов и пр.)
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;10&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Письменная консультация по всем вопросам</span>
+                                (экспертиза документов, подготовка допсоглашений, ответов на запросы физ/юрлиц
+                                и госорганов, ведение претензионной работы с подрядчиками,
+                                подготовка судебных документов и пр.)
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Экспертиза, корректировка и подготовка</span>
+                                локально-нормативных актов
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;3&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Экспертиза, корректировка и подготовка</span>
+                                локально-нормативных актов
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;5&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Экспертиза, корректировка и подготовка</span>
+                                локально-нормативных актов
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Проверка документов</span>
+                                (в т.ч. банковских гарантий) при проведении закупок
+                                для обеспечения государственных
+                                и муниципальных нужд в соответствии
+                                с Законом № 44-ФЗ
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;3&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Проверка документов</span>
+                                (в т.ч. банковских гарантий) при проведении закупок
+                                для обеспечения государственных
+                                и муниципальных нужд в соответствии
+                                с Законом № 44-ФЗ
+                            </p>
+                            <div class="bg-blue-green text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до&nbsp;5&nbsp;запросов/месяц
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Проверка документов</span>
+                                (в т.ч. банковских гарантий) при проведении закупок
+                                для обеспечения государственных
+                                и муниципальных нужд в соответствии
+                                с Законом № 44-ФЗ
+                            </p>
+                            <div class="bg-wild-watermelon text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                неограниченно
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22" style="word-wrap: break-word;">
+                                <span class="fw-bold">Звонок юриста/<br>онлайн-представительство</span><br>
+                                от имени образовательной организации (общение с родителями/сотрудниками/поставщиками,
+                                кроме суда)
+                            </p>
+                            <div class="bg-hit-gray text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                не входит в пакет
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22" style="word-wrap: break-word;">
+                                <span class="fw-bold">Звонок юриста/<br>онлайн-представительство</span><br>
+                                от имени образовательной организации (общение с родителями/сотрудниками/поставщиками,
+                                кроме суда)
+                            </p>
+                            <div class="bg-gulf-stream text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до 2 раз/год
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold" style="word-wrap: break-word;">Звонок юриста/<br>онлайн-представительство</span><br>
+                                от имени образовательной организации (общение с родителями/сотрудниками/поставщиками,
+                                кроме суда)
+                            </p>
+                            <div class="bg-gulf-stream text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                до 6 раз/год
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Аудит сайта по ЛНА</span>
+                                (аудит сайта согласно требованиям Рособрнадзора с 1.09.24,
+                                корректировка и создание лна, инструкция по размещению)
+                            </p>
+                            <div class="bg-hit-gray text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                не входит в пакет
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Аудит сайта по ЛНА</span>
+                                (аудит сайта согласно требованиям Рособрнадзора с 1.09.24,
+                                корректировка и создание лна, инструкция по размещению)
+                            </p>
+                            <div class="bg-hit-gray text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                не входит в пакет
+                            </div>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3">
+                            <p class="fs-18 lh-22">
+                                <span class="fw-bold">Аудит сайта по ЛНА</span>
+                                (аудит сайта согласно требованиям Рособрнадзора с 1.09.24,
+                                корректировка и создание лна, инструкция по размещению)
+                            </p>
+                            <div class="bg-gulf-stream text-white fs-14 fw-bold d-inline-block border-radius-60
+                                        px-10 py-2 mt-2">
+                                1 раз/год
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-36 lh-30 text-center text-color-shark">
+                                <span class="strikethrough">396 000 ₽</span>
+                            </p>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-36 lh-30 text-center text-color-shark">
+                                <span class="strikethrough">480 000 ₽</span>
+                            </p>
+                        </td>
+                        <td class="px-sm-4 px-2 py-3 border-right">
+                            <p class="fs-36 lh-30 text-center text-color-shark">
+                                <span class="strikethrough">672 000 ₽</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="border-top">
+                        <td colspan="3" class="pt-3">
+                            <div class="d-flex align-items-center py-4 text-center justify-content-center
+                                        px-36 text-color-genoa fs-36 lh-36 fw-bold">
+                                Специальное предложение! <br> Только до конца сентября цены снижены!
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-2 mb-5">
+                                <a href="#" class="text-center text-decoration-none bg-wild-watermelon text-white fs-20 fw-bold
+                                                   d-inline-block border-radius-60 px-5 py-3 text-uppercase">
+                                    Получить коммерческое предложение
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="container pb-100 pt-100">
+            <h2 class="text-uppercase fw-bold fs-52 lh-45 text-color-blue-stone">
+                С нами работать
+                <span class="text-color-wild-watermelon">выгодно</span>
+            </h2>
+            <div class="mt-72">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                        border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Специалисты во всех областях права гарантируют профессиональную <br>
+                                экспертизу
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/specialists.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Обращения доступны 24/7
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/technical-support.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Защита репутации колледжа <br>
+                                в конфликтных ситуациях
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/defense.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Защита преподавателей <br>
+                                при обращении родителей
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/teachers-defense.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-20 g-4">
+                    <div class="col-lg-4">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Подготовка колоссального объема документов переходит на сторону Профобразование
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/documents.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Стоимость сервиса намного ниже <br>
+                                ФОТ штатного юриста
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/price.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="half-br-card py-4 px-3 b-shadow-1 h-100 d-flex flex-column
+                                    border-white-green-opacity-10">
+                            <p class="fs-18 lh-23 text-color-shark">
+                                Возможность заключения единого <br>
+                                контракта для всех или части <br>
+                                колледжей региона
+                            </p>
+                            <div class="d-flex justify-content-end position-relative mt-auto">
+                                <img src="images/contract.png" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative">
+        <img src="images/background-image-2.png"
+             class="w-100 position-absolute z-index-1 h-100" alt=""
+             style="object-fit: cover">
+        <div class="container pt-100 pb-100 position-relative z-index-10">
+            <div class="row g-4 p-5 half-br-card" id="application">
+                <div class="col-lg-6">
+                    <h2 class="text-color-blue-stone fw-bold fs-48 lh-54 text-uppercase">
+                        Оставьте заявку <br>
+                        на консультацию
+                    </h2>
+
+                    <div class="pt-36 text-color-blue-stone fs-32 lh-36">
+                        Опишите Вашу ситуацию, <br>
+                        и <span class="text-color-wild-watermelon fw-bold">
+                        мы подберем оптимальное <br> решение!</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="#" id="application-form" class="d-flex flex-column gap-3">
+                        <div>
+                            <label for="fio" class="fs-16 text-color-shark-75">ФИО</label>
+                            <input type="text" class="mt-1 form-control bg-white" name="fio" id="fio">
+                        </div>
+
+                        <div>
+                            <label for="educational-organization" class="fs-16 text-color-shark-75">
+                                Название образовательной организации
+                            </label>
+                            <input type="text" class="mt-1 form-control bg-white"
+                                   name="educational-organization" id="educational-organization">
+                        </div>
+
+                        <div>
+                            <label for="post" class="fs-16 text-color-shark-75">Должность</label>
+                            <input type="text" class="mt-1 form-control bg-white" name="post" id="post">
+                        </div>
+
+                        <div>
+                            <label for="phone-number" class="fs-16 text-color-shark-75">Телефон</label>
+                            <input type="text" class="mt-1 form-control bg-white"
+                                   name="phone-number" id="phone-number">
+                        </div>
+
+                        <div>
+                            <label for="email" class="fs-16 text-color-shark-75">E-mail</label>
+                            <input type="text" class="mt-1 form-control bg-white" name="email" id="email">
+                        </div>
+
+                        <div>
+                            <label for="message" class="fs-16 text-color-shark-75">Сообщение</label>
+                            <textarea class="mt-1 form-control bg-white" name="message" id="message" rows="3"
+                                      style="resize: none;" placeholder="Опишите вашу ситуацию..."></textarea>
+                        </div>
+
+                        <div class="pt-36">
+                            <button type="submit"
+                                    class="bg-wild-watermelon py-3 px-5 text-white border-wild-watermelon
+                                           fs-16 lh-22 fw-bold text-center border-radius-60 text-uppercase w-100">
+                                ПОДАТЬ заявку
+                            </button>
+
+                            <div class="mt-3">
+                                <div class="d-flex align-items-sm-center align-items-start">
+                                    <input type="checkbox" name="user-agreement" id="user-agreement">
+                                    <label for="user-agreement" class="text-color-shark-75 fs-16">
+                                        Согласен с условиями
+                                        <a href="#" class="text-color-blue-stone">Пользовательского соглашения</a>
+                                    </label>
+                                </div>
+
+                                <div class="d-flex align-items-sm-center align-items-start mt-3">
+                                    <input type="checkbox" name="personal-data" id="personal-data">
+                                    <label for="personal-data" class="text-color-shark-75 fs-16">
+                                        Согласен на
+                                        <a href="#" class="text-color-blue-stone">Обработку персональных данных</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
