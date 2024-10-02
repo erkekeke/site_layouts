@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400; /* Обычный вес */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500; /* Средний вес */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Полужирный */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700; /* Жирный */
+    font-style: normal;
+}
+
+* {
+    font-family: Montserrat;
+    color: #263238 !important;
+}
+
+
+/* Texts */
+.text-orange {
+    color: rgba(255, 137, 6, 1) !important;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+
+/* Общие */
+.opacity-75 {
+    opacity: 75%;
+}
+.bg-purple {
+    background-color: #D823F226 !important;
+}
+.bg-white-purple {
+    background-color: #D823F20D !important;
+}
+.rotate-1 {
+    transform: rotate(180deg);
+    transition: all 0.4s ease; /* Анимация поворота */
+}
+
+/* Отступы */
+.py-14 {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
+
+
+/* boostrap-select */
+.btn.dropdown-toggle.btn-light {
+    background-color: white;
+    border-radius: 40px !important;
+    border: 1px solid #FF8906;
+}
+.btn.dropdown-toggle.btn-light:focus {
+    outline: none !important;
+}
+.filter-option-inner-inner {
+    text-align: center;
+    opacity: 75%;
+    font-size: 16px;
+}
+.bootstrap-select>.green.dropdown-toggle:after {
+    color: #1C9C75;
+}
+.bootstrap-select>.red.dropdown-toggle:after {
+    color: #E81616;
+}
+.bootstrap-select>.dropdown-toggle:after {
+    color: #FF8906;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #FF8906 !important;
+}
+
+/* borders */
+.border-top-1 {
+    border-top: 1px solid;
+}
+.border-left-1 {
+    border-left: 1px solid;
+}
+.border-bottom-1 {
+    border-bottom: 1px solid;
+}
+.border-right-1 {
+    border-right: 1px solid;
+}
+.border-color-purple {
+    border-color: #D823F280 !important;
+}
+.border-color-grey {
+    border-color: #26323880 !important;
+}
+/* Начальные стили */
+.bg-green {
+    background-color: #1C9C750D !important;
+}
+.bg-red {
+    background-color: #E816160D !important;
+}
